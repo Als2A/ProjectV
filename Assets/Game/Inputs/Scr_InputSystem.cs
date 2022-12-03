@@ -21,6 +21,8 @@ public class Scr_InputSystem : MonoBehaviour
     public bool Sprint;
     public float ValueSprint;
 
+    public bool Crouch;
+
     public float Look_x;
     public float Look_y;
 
@@ -98,6 +100,18 @@ public class Scr_InputSystem : MonoBehaviour
         else if (value.Get<float>() < 0.5)
         {
             Sprint = false;
+        }
+    }
+
+    void OnCrouch(InputValue value)
+    {
+        if (value.Get<float>() > 0.5)
+        {
+            Crouch = true;
+        }
+        else if (value.Get<float>() < 0.5)
+        {
+            Crouch = false;
         }
     }
 

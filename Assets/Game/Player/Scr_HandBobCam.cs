@@ -25,7 +25,7 @@ public class Scr_HandBobCam : MonoBehaviour
     // Start is called before the first frame update
     void Start()
     {
-        Player = transform.parent.GetComponent<Scr_PlayerMovement>();
+        Player = transform.parent.parent.GetComponent<Scr_PlayerMovement>();
 
         BobDefaultY = transform.localPosition.y;
     }

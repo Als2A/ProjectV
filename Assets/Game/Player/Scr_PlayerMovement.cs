@@ -49,12 +49,17 @@ public class Scr_PlayerMovement : MonoBehaviour
     public Scr_InputSystem Inputs;
     public LayerMask GroundMask; 
     CharacterController Controller;
+
+    public GameObject Cam;
+    public Vector3 CamStartPos;
     
 
 
     void Start()
     {
         Controller = GetComponent<CharacterController>();
+
+        CamStartPos = Cam.transform.localPosition;
     }
 
     void Update()
@@ -65,8 +70,8 @@ public class Scr_PlayerMovement : MonoBehaviour
         {
             Movement();
             Sprint();
+            Crouch();
         }
-
 
         ApplyGravity();
     }
@@ -144,6 +149,18 @@ public class Scr_PlayerMovement : MonoBehaviour
         if (!Inputs.Sprint || Stamina <= 0 || Inputs.ActionOne)
         {
             isSprinting = false;
+        }
+    }
+
+    void Crouch()
+    {
+        if (Inputs.Crouch)
+        {
+            Cam.transform.localPosition = CamStartPos + (Vector3.down * 0.75f);
+        }
+        else if (!Inputs.Crouch)
+        {
+            Cam.transform.localPosition = CamStartPos;
         }
     }
 
