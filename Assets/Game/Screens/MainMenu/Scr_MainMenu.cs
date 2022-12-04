@@ -127,6 +127,7 @@ public class Scr_MainMenu : MonoBehaviour
     {
         Destroy(gameObject.transform.parent.gameObject);
         Inputs.Inputs.SwitchCurrentActionMap("Player");
+        Cursor.lockState = CursorLockMode.Locked;
     }
 
     public void Button_Options()

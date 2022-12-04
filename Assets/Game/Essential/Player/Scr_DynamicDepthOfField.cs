@@ -30,7 +30,7 @@ public class Scr_DynamicDepthOfField : MonoBehaviour
         ray = new Ray(transform.position, transform.forward * 100f);
         isHit = false;
 
-        if (Physics.Raycast(ray, out hit, 100f))
+        if (Physics.SphereCast(ray,0.5f, out hit, 100f))
         {
             isHit = true;
             hitDistance = Vector3.Distance(transform.position, hit.point);
