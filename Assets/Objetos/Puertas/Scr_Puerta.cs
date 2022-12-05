@@ -6,7 +6,7 @@ public class Scr_Puerta : MonoBehaviour
 {
 
     [Header("Variables")]
-    public float Distancia;
+    public float Grados = 110;
     private float smoothSpeed = 0.12f;
     public bool inverted;
 
@@ -58,8 +58,8 @@ public class Scr_Puerta : MonoBehaviour
         if (Abertura > 1) Abertura = 1;
         if (Abertura < 0) Abertura = 0;
 
-        FollowPos.transform.localRotation = Quaternion.Euler(0,Abertura*110,0); 
+        FollowPos.transform.localRotation = Quaternion.Euler(0,Abertura*Grados,0); 
 
-        transform.rotation = Quaternion.Lerp(transform.rotation,FollowPos.transform.rotation,smoothSpeed);
+        transform.rotation = Quaternion.Lerp(transform.rotation,FollowPos.transform.rotation,Grados == 110f ? smoothSpeed : 1f);
     }
 }

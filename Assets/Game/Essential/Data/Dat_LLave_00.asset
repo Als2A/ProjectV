@@ -10,11 +10,11 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: b308441c78d87bc428dfde2c4f9e1dd0, type: 3}
-  m_Name: Dat_Linterna
+  m_Name: Dat_LLave_00
   m_EditorClassIdentifier: 
-  id: 101
-  Name: Linterna
-  Image: {fileID: 21300000, guid: 66748475b557f97489129fd7510f5ef7, type: 3}
-  Descripcion: Linterna para alumbrar
-  Object_Prefab: {fileID: 3246961288168210438, guid: eb92fed8a05106a45911f7b7bf19af90,
+  id: 200
+  Name: LLave
+  Image: {fileID: 21300000, guid: f8c9467a892580344bb697526dac0d13, type: 3}
+  Descripcion: Pistola reglamentaria que usa la policia nacional
+  Object_Prefab: {fileID: 7612527370960585522, guid: ebec1ec08d1fb9d40bc1a7c7c7655318,
     type: 3}
