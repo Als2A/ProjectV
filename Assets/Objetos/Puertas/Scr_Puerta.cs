@@ -17,9 +17,14 @@ public class Scr_Puerta : MonoBehaviour
     public Scr_InteractiveObject UsingObject;
     public Scr_MouseLook MouseCam;
     public Scr_InputSystem Input;
-    public GameObject FollowPos;   
+    public GameObject FollowPos;
 
-    
+    private void Start()
+    {
+        
+    }
+
+
     void Update()
     {
         if (UsingObject.PrimaryAction == true)
