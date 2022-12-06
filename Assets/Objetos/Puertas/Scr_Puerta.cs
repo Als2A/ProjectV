@@ -9,6 +9,7 @@ public class Scr_Puerta : MonoBehaviour
     public float Grados = 110;
     private float smoothSpeed = 0.12f;
     public bool inverted;
+    public bool Locked;
 
     [Header("Estados")]
     [Range(0.0f, 1f)] public float Abertura;
@@ -58,8 +59,18 @@ public class Scr_Puerta : MonoBehaviour
         if (Abertura > 1) Abertura = 1;
         if (Abertura < 0) Abertura = 0;
 
-        FollowPos.transform.localRotation = Quaternion.Euler(0,Abertura*Grados,0); 
+        FollowPos.transform.localRotation = Quaternion.Euler(0,Abertura * (Locked == true ? Grados = 2f : Grados = 110f) ,0);
+
+        if (Locked && Grados >= 0)
+            Invoke("ResetFollowPos", 1f * Time.deltaTime);
+            
+
 
         transform.rotation = Quaternion.Lerp(transform.rotation,FollowPos.transform.rotation,Grados == 110f ? smoothSpeed : 1f);
+    }
+
+    public void ResetFollowPos()
+    {
+        Abertura = 0;
     }
 }

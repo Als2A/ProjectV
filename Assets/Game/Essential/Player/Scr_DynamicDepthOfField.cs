@@ -15,6 +15,8 @@ public class Scr_DynamicDepthOfField : MonoBehaviour
 
     DepthOfField depthOfField;
 
+    public Scr_Inventory Inventory;
+
 
     // Start is called before the first frame update
     void Start()
@@ -27,18 +29,28 @@ public class Scr_DynamicDepthOfField : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        ray = new Ray(transform.position, transform.forward * 100f);
-        isHit = false;
-
-        if (Physics.SphereCast(ray,0.5f, out hit, 100f))
+        if(Inventory.isSee)
         {
-            isHit = true;
-            hitDistance = Vector3.Distance(transform.position, hit.point);
-            Debug.Log("Hit");
+            depthOfField.active = false;
+        }
+        else
+        {
+            depthOfField.active = true;
+
+            ray = new Ray(transform.position, transform.forward * 100f);
+            isHit = false;
+
+            if (Physics.SphereCast(ray, 0.3f, out hit, 100f))
+            {
+                isHit = true;
+                hitDistance = Vector3.Distance(transform.position, hit.point);
+                Debug.Log("Hit");
+            }
+
+
+            SetFocus();
         }
 
-
-        SetFocus();
 
     }
 

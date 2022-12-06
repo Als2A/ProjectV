@@ -870,6 +870,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 5240b076bb43143428024a2b123887ab, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  ButtonUsesPos: 0
 --- !u!1 &2247533432845652948
 GameObject:
   m_ObjectHideFlags: 0
@@ -1196,6 +1197,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 5240b076bb43143428024a2b123887ab, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  ButtonUsesPos: 0
 --- !u!114 &8274443100188009018
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -1930,6 +1932,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 5240b076bb43143428024a2b123887ab, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  ButtonUsesPos: 0
 --- !u!1 &4637830429353858998
 GameObject:
   m_ObjectHideFlags: 0
@@ -2107,6 +2110,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 5240b076bb43143428024a2b123887ab, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  ButtonUsesPos: 0
 --- !u!1 &4918414721637231275
 GameObject:
   m_ObjectHideFlags: 0
@@ -3432,10 +3436,50 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 2059081554036765570}
     m_Modifications:
+    - target: {fileID: 2073207510043043864, guid: ef0ad21b13dbdc947a4b302c3ba8f636,
+        type: 3}
+      propertyPath: ButtonPos
+      value: 1
+      objectReference: {fileID: 0}
     - target: {fileID: 3760208228344866438, guid: ef0ad21b13dbdc947a4b302c3ba8f636,
         type: 3}
       propertyPath: m_Name
       value: PrbO_PauseButton (1)
+      objectReference: {fileID: 0}
+    - target: {fileID: 4350104676453259233, guid: ef0ad21b13dbdc947a4b302c3ba8f636,
+        type: 3}
+      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.size
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 4350104676453259233, guid: ef0ad21b13dbdc947a4b302c3ba8f636,
+        type: 3}
+      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_Mode
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 4350104676453259233, guid: ef0ad21b13dbdc947a4b302c3ba8f636,
+        type: 3}
+      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_Target
+      value: 
+      objectReference: {fileID: 2989390386256089347}
+    - target: {fileID: 4350104676453259233, guid: ef0ad21b13dbdc947a4b302c3ba8f636,
+        type: 3}
+      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_CallState
+      value: 2
+      objectReference: {fileID: 0}
+    - target: {fileID: 4350104676453259233, guid: ef0ad21b13dbdc947a4b302c3ba8f636,
+        type: 3}
+      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_MethodName
+      value: Button_Options
+      objectReference: {fileID: 0}
+    - target: {fileID: 4350104676453259233, guid: ef0ad21b13dbdc947a4b302c3ba8f636,
+        type: 3}
+      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_TargetAssemblyTypeName
+      value: Scr_Pause, Assembly-CSharp
+      objectReference: {fileID: 0}
+    - target: {fileID: 4350104676453259233, guid: ef0ad21b13dbdc947a4b302c3ba8f636,
+        type: 3}
+      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_Arguments.m_ObjectArgumentAssemblyTypeName
+      value: UnityEngine.Object, UnityEngine
       objectReference: {fileID: 0}
     - target: {fileID: 4804098077865546122, guid: ef0ad21b13dbdc947a4b302c3ba8f636,
         type: 3}
@@ -6486,10 +6530,50 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 2059081554036765570}
     m_Modifications:
+    - target: {fileID: 2073207510043043864, guid: ef0ad21b13dbdc947a4b302c3ba8f636,
+        type: 3}
+      propertyPath: ButtonPos
+      value: 2
+      objectReference: {fileID: 0}
     - target: {fileID: 3760208228344866438, guid: ef0ad21b13dbdc947a4b302c3ba8f636,
         type: 3}
       propertyPath: m_Name
       value: PrbO_PauseButton
+      objectReference: {fileID: 0}
+    - target: {fileID: 4350104676453259233, guid: ef0ad21b13dbdc947a4b302c3ba8f636,
+        type: 3}
+      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.size
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 4350104676453259233, guid: ef0ad21b13dbdc947a4b302c3ba8f636,
+        type: 3}
+      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_Mode
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 4350104676453259233, guid: ef0ad21b13dbdc947a4b302c3ba8f636,
+        type: 3}
+      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_Target
+      value: 
+      objectReference: {fileID: 2989390386256089347}
+    - target: {fileID: 4350104676453259233, guid: ef0ad21b13dbdc947a4b302c3ba8f636,
+        type: 3}
+      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_CallState
+      value: 2
+      objectReference: {fileID: 0}
+    - target: {fileID: 4350104676453259233, guid: ef0ad21b13dbdc947a4b302c3ba8f636,
+        type: 3}
+      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_MethodName
+      value: Button_MainMenu
+      objectReference: {fileID: 0}
+    - target: {fileID: 4350104676453259233, guid: ef0ad21b13dbdc947a4b302c3ba8f636,
+        type: 3}
+      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_TargetAssemblyTypeName
+      value: Scr_Pause, Assembly-CSharp
+      objectReference: {fileID: 0}
+    - target: {fileID: 4350104676453259233, guid: ef0ad21b13dbdc947a4b302c3ba8f636,
+        type: 3}
+      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_Arguments.m_ObjectArgumentAssemblyTypeName
+      value: UnityEngine.Object, UnityEngine
       objectReference: {fileID: 0}
     - target: {fileID: 4804098077865546122, guid: ef0ad21b13dbdc947a4b302c3ba8f636,
         type: 3}
@@ -9294,6 +9378,41 @@ PrefabInstance:
         type: 3}
       propertyPath: m_Name
       value: PrbO_PauseButton
+      objectReference: {fileID: 0}
+    - target: {fileID: 4350104676453259233, guid: ef0ad21b13dbdc947a4b302c3ba8f636,
+        type: 3}
+      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.size
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 4350104676453259233, guid: ef0ad21b13dbdc947a4b302c3ba8f636,
+        type: 3}
+      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_Mode
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 4350104676453259233, guid: ef0ad21b13dbdc947a4b302c3ba8f636,
+        type: 3}
+      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_Target
+      value: 
+      objectReference: {fileID: 2989390386256089347}
+    - target: {fileID: 4350104676453259233, guid: ef0ad21b13dbdc947a4b302c3ba8f636,
+        type: 3}
+      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_CallState
+      value: 2
+      objectReference: {fileID: 0}
+    - target: {fileID: 4350104676453259233, guid: ef0ad21b13dbdc947a4b302c3ba8f636,
+        type: 3}
+      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_MethodName
+      value: Button_Continue
+      objectReference: {fileID: 0}
+    - target: {fileID: 4350104676453259233, guid: ef0ad21b13dbdc947a4b302c3ba8f636,
+        type: 3}
+      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_TargetAssemblyTypeName
+      value: Scr_Pause, Assembly-CSharp
+      objectReference: {fileID: 0}
+    - target: {fileID: 4350104676453259233, guid: ef0ad21b13dbdc947a4b302c3ba8f636,
+        type: 3}
+      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_Arguments.m_ObjectArgumentAssemblyTypeName
+      value: UnityEngine.Object, UnityEngine
       objectReference: {fileID: 0}
     - target: {fileID: 4804098077865546122, guid: ef0ad21b13dbdc947a4b302c3ba8f636,
         type: 3}

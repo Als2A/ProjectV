@@ -48,7 +48,8 @@ public class Scr_Inventory : MonoBehaviour
     // Start is called before the first frame update
     void Start()
     {
-        
+        ItemsMenu.SetActive(true);
+        ItemsMenu.SetActive(false);
     }
 
     // Update is called once per frame

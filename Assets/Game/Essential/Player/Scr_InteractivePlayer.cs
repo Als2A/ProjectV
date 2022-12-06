@@ -40,6 +40,11 @@ public class Scr_InteractivePlayer : MonoBehaviour
     {
         Mira.SetActive(true);
 
+        if (hit.transform.gameObject.GetComponent<Scr_InteractiveObject>() != null)
+        { InteractiveObject = hit.transform.gameObject.GetComponent<Scr_InteractiveObject>(); }
+        else if (hit.transform.gameObject.GetComponent<Scr_InteractiveObject>() == null)
+        { InteractiveObject = hit.transform.gameObject.GetComponentInChildren<Scr_InteractiveObject>(); }
+
         if (Inputs.ActionOne)
         {
             DoAction(hit);
@@ -83,7 +88,7 @@ public class Scr_InteractivePlayer : MonoBehaviour
     {
         //Inputs.ActionOne = false;
 
-        InteractiveObject = hit.transform.gameObject.GetComponent<Scr_InteractiveObject>();
+
         InteractiveObject.PrimaryAction = true;
     }
 
@@ -91,7 +96,7 @@ public class Scr_InteractivePlayer : MonoBehaviour
     {
         Inputs.ActionTwo = false;
 
-        InteractiveObject = hit.transform.gameObject.GetComponent<Scr_InteractiveObject>();
+        //InteractiveObject = hit.transform.gameObject.GetComponent<Scr_InteractiveObject>();
         InteractiveObject.SecondaryAction = true;
     }
 

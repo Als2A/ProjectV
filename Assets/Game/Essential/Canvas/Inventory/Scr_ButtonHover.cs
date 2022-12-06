@@ -5,6 +5,7 @@ using UnityEngine;
 public class Scr_ButtonHover : MonoBehaviour
 {
     Scr_Inventory Inventory;
+    public int ButtonUsesPos;
 
     // Start is called before the first frame update
     void Start()
@@ -35,6 +36,8 @@ public class Scr_ButtonHover : MonoBehaviour
         {
             Inventory.UsesSel.transform.parent = gameObject.transform;
             Inventory.UsesSel.transform.position = gameObject.transform.position;
+
+            Inventory.UsesPos = ButtonUsesPos;
         }
 
     }

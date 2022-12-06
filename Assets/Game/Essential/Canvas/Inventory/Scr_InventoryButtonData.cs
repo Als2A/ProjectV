@@ -17,7 +17,7 @@ public class Scr_InventoryButtonData : MonoBehaviour
     public string Descripcion;
 
     // Start is called before the first frame update
-    void Start()
+    void Awake()
     {
         Data = new Scr_ScripteableInventory();
         ObjectImage = GetComponent<Image>();
