@@ -24,7 +24,7 @@ public class Scr_PlayerMovement : MonoBehaviour
 
     private float DirX;
     private float DirZ;
-    private Vector3 DirMove;
+    public Vector3 DirMove;
 
     private Vector3 Velocity;
     

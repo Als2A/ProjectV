@@ -20,7 +20,7 @@ public class Scr_HandBobCam : MonoBehaviour
     public float SprintBob_Speed;
     [Space]
     private float BobDefaultY;
-    private float BobTimer;
+    public float BobTimer;
 
     // Start is called before the first frame update
     void Start()

@@ -44,7 +44,7 @@ public class Scr_DynamicDepthOfField : MonoBehaviour
             {
                 isHit = true;
                 hitDistance = Vector3.Distance(transform.position, hit.point);
-                Debug.Log("Hit");
+                
             }
 
 
