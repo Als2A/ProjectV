@@ -12,6 +12,7 @@ public class Scr_MouseLook : MonoBehaviour
 
     [Header("Estados")]
     public bool CameraLock;
+    public bool ToLock;
 
     [Header("Referencias")]
     public Scr_InputSystem Inputs;
@@ -58,7 +59,7 @@ public class Scr_MouseLook : MonoBehaviour
 
             }
 
-            if (CameraLock && !Inputs.ActionOne && !Menu.activeSelf)
+            if (CameraLock && !Inputs.ActionOne && !Menu.activeSelf && !ToLock)
             {
                 CameraLock = false;
             }
