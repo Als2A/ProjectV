@@ -52,7 +52,16 @@ public class Scr_PlayerMovement : MonoBehaviour
 
     public GameObject Cam;
     public Vector3 CamStartPos;
-    
+
+
+
+    [Header("GodMode")]
+    public bool isGodMode;
+    public float GodModeSpeed;
+    float StartSpeed_Walk;
+    float StartSpeed_Run;
+
+
 
 
     void Start()
@@ -60,6 +69,10 @@ public class Scr_PlayerMovement : MonoBehaviour
         Controller = GetComponent<CharacterController>();
 
         CamStartPos = Cam.transform.localPosition;
+
+        StartSpeed_Walk = Speed_Walk;
+        StartSpeed_Run = Speed_Sprint;
+
     }
 
     void Update()
@@ -71,6 +84,8 @@ public class Scr_PlayerMovement : MonoBehaviour
             Movement();
             Sprint();
             Crouch();
+
+            GodMode();
         }
 
         ApplyGravity();
@@ -161,6 +176,29 @@ public class Scr_PlayerMovement : MonoBehaviour
         else if (!Inputs.Crouch)
         {
             Cam.transform.localPosition = CamStartPos;
+        }
+    }
+
+    void GodMode()
+    {
+        if (Inputs.GodMode)
+        {
+            Inputs.GodMode = false;
+
+            if(!isGodMode)
+            {
+                Speed_Walk = GodModeSpeed;
+                Speed_Sprint = GodModeSpeed * 2;
+
+                isGodMode = true;
+            }
+            else if (isGodMode)
+            {
+                Speed_Walk = StartSpeed_Walk;
+                Speed_Sprint = StartSpeed_Run;
+
+                isGodMode = false;
+            }
         }
     }
 

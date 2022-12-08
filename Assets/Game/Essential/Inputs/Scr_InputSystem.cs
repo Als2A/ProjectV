@@ -35,7 +35,11 @@ public class Scr_InputSystem : MonoBehaviour
     public bool Accept;
     public bool Cancel;
 
-     
+    [Header("GodMode")]
+    public bool GodMode;
+
+
+
     [Header("Settings")]
     public float Sens;
     public int InvertX;
@@ -112,6 +116,18 @@ public class Scr_InputSystem : MonoBehaviour
         else if (value.Get<float>() < 0.5)
         {
             Crouch = false;
+        }
+    }
+
+    void OnGodMode(InputValue value)
+    {
+        if (value.Get<float>() > 0.5)
+        {
+            GodMode = true;
+        }
+        else if (value.Get<float>() < 0.5)
+        {
+            GodMode = false;
         }
     }
 
