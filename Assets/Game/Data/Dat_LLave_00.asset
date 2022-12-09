@@ -18,3 +18,4 @@ MonoBehaviour:
   Descripcion: Pistola reglamentaria que usa la policia nacional
   Object_Prefab: {fileID: 7612527370960585522, guid: ebec1ec08d1fb9d40bc1a7c7c7655318,
     type: 3}
+  InspectorScale: 1

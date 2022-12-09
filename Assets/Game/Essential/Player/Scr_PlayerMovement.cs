@@ -43,6 +43,8 @@ public class Scr_PlayerMovement : MonoBehaviour
     public bool isWalking;
     public bool isSprinting;
 
+    public bool isLock;
+
     [Space]
 
     [Header("Referencias")]
@@ -86,6 +88,11 @@ public class Scr_PlayerMovement : MonoBehaviour
             Crouch();
 
             GodMode();
+        }
+
+        if(isLock)
+        {
+            speed = 0;
         }
 
         ApplyGravity();
@@ -157,7 +164,7 @@ public class Scr_PlayerMovement : MonoBehaviour
                         SprintCoolDownTime -= Time.deltaTime;
                 }
 
-                speed = Speed_Walk; speed = Speed_Walk;
+                speed = Speed_Walk;
             }
         }
 

@@ -16,5 +16,6 @@ MonoBehaviour:
   Name: Linterna
   Image: {fileID: 21300000, guid: 66748475b557f97489129fd7510f5ef7, type: 3}
   Descripcion: Linterna para alumbrar
-  Object_Prefab: {fileID: 3246961288168210438, guid: eb92fed8a05106a45911f7b7bf19af90,
+  Object_Prefab: {fileID: 8352759035080666897, guid: 1489e04a8457b304380ac5dc46f9c973,
     type: 3}
+  InspectorScale: 1

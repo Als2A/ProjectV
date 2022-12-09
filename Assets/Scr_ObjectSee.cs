@@ -15,7 +15,10 @@ public class Scr_ObjectSee : MonoBehaviour
 
     public Scr_InputSystem Inputs;
 
+    public Scr_PlayerMovement Player;
     public Scr_InteractiveObject UsingObject;
+
+    public Scr_HandBobCam HandBob;
 
     public GameObject PlayerCam;
 
@@ -62,14 +65,16 @@ public class Scr_ObjectSee : MonoBehaviour
             isSleep = true;
 
             DesiredTransform.rotation = PlayerCam.transform.rotation;
-            DesiredTransform.position = PlayerCam.transform.position + (PlayerCam.transform.forward * 0.5f);
-            DesiredTransform.localScale = Vector3.one * (Scale);
+            DesiredTransform.position = PlayerCam.transform.position + (PlayerCam.transform.forward * 0.1f);
+            DesiredTransform.localScale = Vector3.one * (Scale/5);
             
             MouseLook.CameraLock = true;
             MouseLook.ToLock = true;
+            HandBob.isLock = true;
 
+            Player.isLock = true;
 
-            Invoke("SleepOff", 0.5f);
+            
 
             Invoke("OpenInspector", 0.2f);            
         }
@@ -85,8 +90,13 @@ public class Scr_ObjectSee : MonoBehaviour
 
                  
                 MouseLook.ToLock = false;
+                Player.isLock = false;
+                HandBob.isLock = false;
 
                 CloseInspector();
+
+
+                Invoke("SleepOff", 0.5f);
             }
         }
 

@@ -12,4 +12,6 @@ public class Scr_ScripteableInventory : ScriptableObject
     public string   Descripcion;
 
     public Object Object_Prefab;
+
+    public float InspectorScale = 1;
 }

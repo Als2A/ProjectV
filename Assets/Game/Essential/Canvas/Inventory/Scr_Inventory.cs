@@ -357,6 +357,8 @@ public class Scr_Inventory : MonoBehaviour
             Instantiate(Items[ItemsPos].GetComponentInChildren<Scr_InventoryButtonData>().Data.Object_Prefab,
                         InspectorObject.transform.position, InspectorObject.transform.rotation, InspectorRotatingObject.transform);
 
+            InspectorRotatingObject.transform.localScale = Vector3.one * Items[ItemsPos].GetComponentInChildren<Scr_InventoryButtonData>().Data.InspectorScale;
+
             ViewerTexture.SetActive(true);
             ViewerSet.SetActive(true);
 

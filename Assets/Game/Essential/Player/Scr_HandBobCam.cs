@@ -7,6 +7,8 @@ public class Scr_HandBobCam : MonoBehaviour
     [Header("References")]
     Scr_PlayerMovement Player;
 
+    public bool isLock;
+
     [Space]
 
     [Header("BobHead")]
@@ -40,6 +42,7 @@ public class Scr_HandBobCam : MonoBehaviour
     {
         if (!Player.isGrounded) return;
 
+        if(!isLock)
         BobTimer += Time.deltaTime * (Player.isSprinting ? SprintBob_Amount : Player.isWalking ? WalkBob_Amount : IdleBob_Amount);
 
         transform.localPosition = new Vector3(

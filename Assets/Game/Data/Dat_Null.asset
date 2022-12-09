@@ -18,3 +18,4 @@ MonoBehaviour:
   Descripcion: 
   Object_Prefab: {fileID: 8617495525905764127, guid: 0905becccee778b419dd7d4957b77e51,
     type: 3}
+  InspectorScale: 1

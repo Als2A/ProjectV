@@ -16,5 +16,6 @@ MonoBehaviour:
   Name: Pistola
   Image: {fileID: 21300000, guid: 4ddbd82d4c8230848a1504f39c185773, type: 3}
   Descripcion: Pistola reglamentaria que usa la policia nacional
-  Object_Prefab: {fileID: 1789953902583474573, guid: c895372fba7debb4b8ded6d673b93d78,
+  Object_Prefab: {fileID: 682519628524635103, guid: 473385acbdf15ce4db5165752e7cf165,
     type: 3}
+  InspectorScale: 1

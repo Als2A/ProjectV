@@ -991,6 +991,7 @@ MonoBehaviour:
   - {fileID: 3446510820752355377}
   PuzzleDone: 0
   PuzzleDesactivate: 0
+  Lights: {fileID: 0}
 --- !u!1 &2713885934264547165
 GameObject:
   m_ObjectHideFlags: 0
@@ -3134,7 +3135,7 @@ PrefabInstance:
     - target: {fileID: 7717005289083312129, guid: 343cc8afa6a2b534dbc020f563b90103,
         type: 3}
       propertyPath: m_IsActive
-      value: 0
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 7717005289251111981, guid: 343cc8afa6a2b534dbc020f563b90103,
         type: 3}
