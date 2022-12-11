@@ -12,10 +12,7 @@ Material:
   m_ValidKeywords:
   - _DISABLE_SSR_TRANSPARENT
   - _DISPLACEMENT_LOCK_TILING_SCALE
-  - _HEIGHTMAP
   - _MAPPING_TRIPLANAR
-  - _MASKMAP
-  - _NORMALMAP
   - _NORMALMAP_TANGENT_SPACE
   - _PIXEL_DISPLACEMENT
   - _PIXEL_DISPLACEMENT_LOCK_OBJECT_SCALE
@@ -75,7 +72,7 @@ Material:
         m_Scale: {x: 1, y: 1}
         m_Offset: {x: 0, y: 0}
     - _MainTex:
-        m_Texture: {fileID: 2800000, guid: 7efb759825f07484bba297c9cbaf61ba, type: 3}
+        m_Texture: {fileID: 0}
         m_Scale: {x: 1, y: 1}
         m_Offset: {x: 0, y: 0}
     - _MaskMap:
