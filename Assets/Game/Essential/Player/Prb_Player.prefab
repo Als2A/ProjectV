@@ -591,12 +591,15 @@ MonoBehaviour:
   isGrounded: 0
   isWalking: 0
   isSprinting: 0
+  isLock: 0
   Inputs: {fileID: 0}
   GroundMask:
     serializedVersion: 2
     m_Bits: 1024
   Cam: {fileID: 4827474787612453307}
   CamStartPos: {x: 0, y: 0, z: 0}
+  isGodMode: 0
+  GodModeSpeed: 0
 --- !u!114 &8561679593201182831
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -613,7 +616,8 @@ MonoBehaviour:
   Inputs: {fileID: 0}
   Cam: {fileID: 8561679593306392646}
   Mira: {fileID: 0}
-  InteractiveObject: {fileID: 0}
+  InteractiveObject: {fileID: 2275843269766638717, guid: dca26119337b25446a4913baf8970c3a,
+    type: 3}
 --- !u!1 &8561679593306392648
 GameObject:
   m_ObjectHideFlags: 0
@@ -840,6 +844,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   CameraLock: 0
+  ToLock: 0
   Inputs: {fileID: 0}
   Menu: {fileID: 0}
 --- !u!114 &8561679593306392643
@@ -854,6 +859,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: ff929c8c38e98754786a251592e87196, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  isLock: 0
   IdleBob_Amount: 0.5
   IdleBob_Speed: 0.04
   WalkBob_Amount: 10

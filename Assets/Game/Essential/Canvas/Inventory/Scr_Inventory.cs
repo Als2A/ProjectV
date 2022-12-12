@@ -10,6 +10,8 @@ public class Scr_Inventory : MonoBehaviour
     [Space]
     public GameObject Hand;
 
+    public Scr_EquipedPlayer EquipPlayer;
+
     public GameObject ButtonEquip;
     public GameObject ButtonDesEquip;
 
@@ -98,6 +100,8 @@ public class Scr_Inventory : MonoBehaviour
                 {
                     if (ItemsMenu.activeSelf)
                     {
+                        MenuInventoryIsOpen = false;
+
                         Inputs.OpenInventory = false;
                         Inputs.Cancel = false;
 
@@ -107,7 +111,7 @@ public class Scr_Inventory : MonoBehaviour
 
                         Inputs.Inputs.SwitchCurrentActionMap("Player");
 
-                        MenuInventoryIsOpen = false;
+                        
                     }
                 }
 
@@ -309,10 +313,16 @@ public class Scr_Inventory : MonoBehaviour
 
         Instantiate(Item0_Data.Data.Object_Prefab, Hand.transform.position, Hand.transform.rotation, Hand.transform);
 
-        
+        Invoke("DoEquipPlayer", 0.1f);
+
 
 
         CloseUsesMenu();
+    }
+
+    void DoEquipPlayer()
+    {
+        EquipPlayer.Object = Hand.transform.GetChild(0).gameObject.GetComponent<Scr_EquipedObject>();
     }
 
     public void DeUsesEquip()

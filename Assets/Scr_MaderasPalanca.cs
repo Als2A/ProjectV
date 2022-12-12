@@ -2,22 +2,23 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
-public class Scr_Candado : MonoBehaviour
+public class Scr_MaderasPalanca : MonoBehaviour
 {
     public bool Locked;
-    public int KeyOpen;
 
     public Scr_InteractiveObject UsingObject;
     public Scr_InputSystem Inputs;
-    public Scr_Puerta Puerta;
 
     public GameObject HandObject;
-    public Rigidbody Rb;
+
+    GameObject ObjectInHand;
+    Rigidbody Rb;
 
     // Start is called before the first frame update
     void Start()
     {
         Rb = GetComponent<Rigidbody>();
+        ObjectInHand = null;
     }
 
     // Update is called once per frame
@@ -26,39 +27,36 @@ public class Scr_Candado : MonoBehaviour
         if (UsingObject.PrimaryAction == true)
         {
             //Colocar su data en la data del primer hueco vacio.
-            Inputs.ActionOne = false;
-
-            GameObject ObjectInHand = null;
+            Inputs.ActionOne = false;             
 
             if (HandObject.transform.childCount == 1)
             {
                 ObjectInHand = HandObject.transform.GetChild(0).gameObject;
 
-                if (ObjectInHand.GetComponent<Scr_Key>().DoorToOpen == KeyOpen)
+                if (ObjectInHand.GetComponent<Scr_EQ_Palanca>())
                 {
                     //Animacion de llave
                     ObjectInHand.transform.parent = gameObject.transform;
 
-                    ObjectInHand.transform.localPosition = Vector3.forward * -0.05f;
+                    ObjectInHand.transform.localPosition = Vector3.forward * -0.50f;
                     ObjectInHand.transform.localRotation = Quaternion.Euler(Vector3.right * 90f);
 
 
-                    //Puerta Abierta
-                    Locked = false;
-                    Puerta.Locked = false;
-                    Puerta.ResetFollowPos();
+                    Invoke("Abrir", 1f);
 
 
-                    //Se aplica la gravedad
-                    Rb.isKinematic = false;
+    }   }   }   }        
 
-                }
-            }
-                
+    void Abrir()
+    {
+        ObjectInHand.transform.parent = HandObject.transform;
+        ObjectInHand.transform.position = HandObject.transform.position;
+        ObjectInHand.transform.rotation = HandObject.transform.rotation;
 
+        //Puerta Abierta
+        Locked = false;
 
-
-
-        }
+        //Se aplica la gravedad
+        Rb.isKinematic = false;
     }
 }
