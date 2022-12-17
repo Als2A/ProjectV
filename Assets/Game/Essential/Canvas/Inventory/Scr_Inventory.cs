@@ -15,6 +15,8 @@ public class Scr_Inventory : MonoBehaviour
     public GameObject ButtonEquip;
     public GameObject ButtonDesEquip;
 
+    public Scr_BlurUI Blur;
+
     [Header("Estados")]
     public bool MenuInventoryIsOpen;
 
@@ -66,6 +68,8 @@ public class Scr_Inventory : MonoBehaviour
             {
                 if (!ItemsMenu.activeSelf)
                 {
+                    Blur.BlurOn();
+
                     Movement.isWalking = false;
                     Movement.isSprinting = false;
 
@@ -100,6 +104,8 @@ public class Scr_Inventory : MonoBehaviour
                 {
                     if (ItemsMenu.activeSelf)
                     {
+                        Blur.BlurOff();
+
                         MenuInventoryIsOpen = false;
 
                         Inputs.OpenInventory = false;

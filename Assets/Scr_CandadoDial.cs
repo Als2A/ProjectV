@@ -13,9 +13,12 @@ public class Scr_CandadoDial : MonoBehaviour
 
     public GameObject PlayerHead;
     public GameObject PlayerCamera;
+    public GameObject HandObject;
 
 
     public Transform DesiredTransform;
+    private Vector3 SavePosition;
+    private Quaternion SaveRotation;
 
 
     public bool Lerp;
@@ -66,14 +69,15 @@ public class Scr_CandadoDial : MonoBehaviour
         isInterface = true;
 
 
+        HandObject.SetActive(false);
 
+        SavePosition = PlayerHead.transform.position;
+        SaveRotation = PlayerHead.transform.rotation;
 
+        PlayerHead.transform.rotation = DesiredTransform.rotation;
+        PlayerHead.transform.position = DesiredTransform.position;
 
-
-        PlayerHead.transform.rotation = gameObject.transform.rotation;
-        PlayerHead.transform.position = gameObject.transform.position - (gameObject.transform.forward * 0.5f);
-
-        PlayerCamera.transform.rotation = gameObject.transform.rotation;
+        PlayerCamera.transform.rotation = DesiredTransform.rotation;
     }
 
     void DesactiveInterface()
@@ -92,14 +96,14 @@ public class Scr_CandadoDial : MonoBehaviour
         isInterface = false;
 
 
+        HandObject.SetActive(true);
 
 
+        PlayerHead.transform.rotation = SaveRotation;
+        PlayerHead.transform.position = SavePosition;
 
-        PlayerHead.transform.localRotation = PlayerHead.transform.parent.localRotation;
-        PlayerHead.transform.localPosition = PlayerHead.transform.parent.localPosition + Vector3.up * 1.6f;
-
-        PlayerCamera.transform.localPosition = Vector3.zero;
-        PlayerCamera.transform.localRotation = PlayerHead.transform.localRotation;
+        //PlayerCamera.transform.localPosition = Vector3.zero;
+        //PlayerCamera.transform.localRotation = PlayerHead.transform.localRotation;
     }
 
 }
