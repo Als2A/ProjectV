@@ -7,8 +7,11 @@ public class Scr_DialSolo : MonoBehaviour
     public Scr_CandadoDial Candado;
     public Scr_InputSystem Inputs;
 
+    public int GoodNumber;
     [Range(0, 9)] public int Number;
     [Range(0, 1)] public float Vuelta;
+
+    private float Desired;
 
 
     public bool isUsing;
@@ -50,7 +53,7 @@ public class Scr_DialSolo : MonoBehaviour
         {
             float mouseX = Inputs.Look_x * (Inputs.Sens / 100) * Time.deltaTime;
 
-            Vuelta += mouseX;
+            Vuelta -= mouseX;
         }
 
         transform.localRotation = Quaternion.Euler(0, Vuelta * 360, 0);
@@ -61,12 +64,15 @@ public class Scr_DialSolo : MonoBehaviour
         if (!isUsing && !isLerp)
         {
             isLerp = true;
-            Vuelta = ((float)Number) / 10;
+            Desired = ((float)Number) / 10;
         }
 
         if(isLerp)
         {
+            Vuelta = Mathf.Lerp(Vuelta, Desired, 0.12f);
 
+            if(Vuelta == Desired)
+            { isLerp = false; }
         }
     }
 

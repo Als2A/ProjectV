@@ -56,9 +56,9 @@ public class Scr_CandadoDial : MonoBehaviour
             {
                 DesactiveInterface();
             }
-
-
         }
+
+        if(Locked == true) ComprobarSolucion();
     }
 
     void ActiveInterface()
@@ -116,6 +116,22 @@ public class Scr_CandadoDial : MonoBehaviour
 
         //PlayerCamera.transform.localPosition = Vector3.zero;
         //PlayerCamera.transform.localRotation = PlayerHead.transform.localRotation;
+    }
+
+    void ComprobarSolucion()
+    {
+        int Locks = Diales.Length;
+
+        for (int i = 0; i < Diales.Length; i++)
+        {
+            if (Diales[i].GetComponent<Scr_DialSolo>().Number == Diales[i].GetComponent<Scr_DialSolo>().GoodNumber)
+            { Locks -= 1; }
+        }
+
+        if(Locks == 0)
+        {
+            Locked = false;
+        }
     }
 
 }

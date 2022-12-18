@@ -113,7 +113,6 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   Candado: {fileID: 4767761598845732678}
-  Dial: {fileID: 6872895489803946688}
   ButtonPos: 2
 --- !u!114 &1336478240582006988
 MonoBehaviour:
@@ -158,10 +157,12 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   Candado: {fileID: 4767761598845732678}
   Inputs: {fileID: 0}
+  GoodNumber: 7
   Number: 0
   Vuelta: 0
   isUsing: 0
   isPos: 0
+  isLerp: 0
 --- !u!1 &533153208279326788
 GameObject:
   m_ObjectHideFlags: 0
@@ -388,7 +389,6 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   Candado: {fileID: 4767761598845732678}
-  Dial: {fileID: 3166659824659684456}
   ButtonPos: 1
 --- !u!114 &3166659824659684456
 MonoBehaviour:
@@ -404,10 +404,12 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   Candado: {fileID: 4767761598845732678}
   Inputs: {fileID: 0}
+  GoodNumber: 8
   Number: 0
   Vuelta: 0
   isUsing: 0
   isPos: 0
+  isLerp: 0
 --- !u!1 &3247350588765861259
 GameObject:
   m_ObjectHideFlags: 0
@@ -837,7 +839,6 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   Candado: {fileID: 4767761598845732678}
-  Dial: {fileID: 4828930229632510509}
   ButtonPos: 0
 --- !u!114 &4828930229632510509
 MonoBehaviour:
@@ -853,10 +854,12 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   Candado: {fileID: 4767761598845732678}
   Inputs: {fileID: 0}
+  GoodNumber: 5
   Number: 0
   Vuelta: 0
   isUsing: 0
   isPos: 0
+  isLerp: 0
 --- !u!1 &6287185272127282661
 GameObject:
   m_ObjectHideFlags: 0
@@ -969,7 +972,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: f72c7ef3d7b5301469deed54e573402c, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  Locked: 0
+  Locked: 1
   isInterface: 0
   UsingObject: {fileID: 4969942016157027699}
   Inputs: {fileID: 0}
