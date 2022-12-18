@@ -20,6 +20,12 @@ public class Scr_CandadoDial : MonoBehaviour
     private Vector3 SavePosition;
     private Quaternion SaveRotation;
 
+    public GameObject[] Diales;
+    public GameObject Arrow;
+    public int DialPos;
+
+
+
 
     public bool Lerp;
 
@@ -68,6 +74,9 @@ public class Scr_CandadoDial : MonoBehaviour
 
         isInterface = true;
 
+        Arrow.SetActive(true);
+
+        UsingObject.gameObject.SetActive(false);
 
         HandObject.SetActive(false);
 
@@ -95,8 +104,11 @@ public class Scr_CandadoDial : MonoBehaviour
 
         isInterface = false;
 
+        Arrow.SetActive(false);
 
         HandObject.SetActive(true);
+
+        UsingObject.gameObject.SetActive(true);
 
 
         PlayerHead.transform.rotation = SaveRotation;

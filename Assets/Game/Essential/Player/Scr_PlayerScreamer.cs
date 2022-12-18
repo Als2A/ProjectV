@@ -25,7 +25,7 @@ public class Scr_PlayerScreamer : MonoBehaviour
 
         if (Physics.SphereCast(Cam.transform.position,0.5f, Cam.transform.forward,out hit)) //codigo guiri Ignora LayerMask
         {
-            Debug.Log(hit.transform.name);
+            //Debug.Log(hit.transform.name);
 
             if(hit.transform.CompareTag("Demon"))
             {
