@@ -291,7 +291,7 @@ GameObject:
   m_Component:
   - component: {fileID: 469012463224767693}
   m_Layer: 0
-  m_Name: FadeCanvas
+  m_Name: Screens
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
