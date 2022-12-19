@@ -83,16 +83,23 @@ public class Scr_DialSolo : MonoBehaviour
         if (Vuelta >= 1) Vuelta -= 1;
         if (Vuelta < 0) Vuelta += 1;
 
-             if (Vuelta < 0.1f)    Number = 0;
-        else if (Vuelta < 0.2f)    Number = 1;
-        else if (Vuelta < 0.3f)    Number = 2;
-        else if (Vuelta < 0.4f)    Number = 3;
-        else if (Vuelta < 0.5f)    Number = 4;
-        else if (Vuelta < 0.6f)    Number = 5;
-        else if (Vuelta < 0.7f)    Number = 6;
-        else if (Vuelta < 0.8f)    Number = 7;
-        else if (Vuelta < 0.9f)    Number = 8;
-        else if (Vuelta < 1f)      Number = 9;        
+             if (Vuelta < 0.05f)    Number = 0;
+        else if (Vuelta < 0.15f)    Number = 1;
+        else if (Vuelta < 0.25f)    Number = 2;
+        else if (Vuelta < 0.35f)    Number = 3;
+        else if (Vuelta < 0.45f)    Number = 4;
+        else if (Vuelta < 0.55f)    Number = 5;
+        else if (Vuelta < 0.65f)    Number = 6;
+        else if (Vuelta < 0.75f)    Number = 7;
+        else if (Vuelta < 0.85f)    Number = 8;
+        else if (Vuelta < 0.95f)    Number = 9;
+        else if (Vuelta < 1f)       Number = 10;
+
+        if (Number == 10  && !isUsing)
+        {
+            Vuelta = 1f;
+        }
+
     }
 
 

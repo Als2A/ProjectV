@@ -128,7 +128,7 @@ public class Scr_CandadoDial : MonoBehaviour
             { Locks -= 1; }
         }
 
-        if(Locks == 0)
+        if(Locks == 0 && !Inputs.ActionOne)
         {
             Locked = false;
         }
