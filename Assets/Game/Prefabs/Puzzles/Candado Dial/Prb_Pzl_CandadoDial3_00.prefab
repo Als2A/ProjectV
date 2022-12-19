@@ -485,7 +485,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!4 &1225966471316445938
 Transform:
   m_ObjectHideFlags: 0
@@ -493,14 +493,14 @@ Transform:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 4023170606615570552}
-  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
   m_LocalPosition: {x: 0, y: 0, z: 0}
-  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_LocalScale: {x: 0.05, y: 0.02, z: 0.05}
   m_ConstrainProportionsScale: 0
   m_Children:
   - {fileID: 8430774094157912143}
-  m_Father: {fileID: 1484648765647348258}
-  m_RootOrder: 0
+  m_Father: {fileID: 9037381350686316489}
+  m_RootOrder: 3
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &4331701249851913037
 GameObject:
@@ -729,8 +729,7 @@ Transform:
   m_LocalPosition: {x: 0, y: 0, z: 0}
   m_LocalScale: {x: 0.05, y: 0.02, z: 0.05}
   m_ConstrainProportionsScale: 0
-  m_Children:
-  - {fileID: 1225966471316445938}
+  m_Children: []
   m_Father: {fileID: 9037381350686316489}
   m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
@@ -936,7 +935,7 @@ GameObject:
   - component: {fileID: 7258318553157830879}
   - component: {fileID: 4767761598845732678}
   m_Layer: 0
-  m_Name: CandadoDiales
+  m_Name: Prb_Pzl_CandadoDial3_00
   m_TagString: Interactive
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -1018,6 +1017,7 @@ Transform:
   - {fileID: 1484648765647348258}
   - {fileID: 7705611124460556126}
   - {fileID: 1422638962822933100}
+  - {fileID: 1225966471316445938}
   m_Father: {fileID: 9216165654202041739}
   m_RootOrder: 2
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}

@@ -36,15 +36,7 @@ public class Scr_PuzzleHover_00 : MonoBehaviour
 
     public void OnClick()
     {
-        if (gameObject.activeInHierarchy)
-        {
-            Debug.Log("Change");
-
-            Candado.Arrow.transform.parent = gameObject.transform;
-            Candado.Arrow.transform.position = gameObject.transform.position;
-
-            Candado.DialPos = ButtonPos;
-        }
+        //Candado.Diales[ButtonPos].GetComponent<Scr_DialSolo>().DialUse = true
     }
 
 }

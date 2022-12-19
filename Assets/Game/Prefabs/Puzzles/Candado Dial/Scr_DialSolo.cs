@@ -37,7 +37,7 @@ public class Scr_DialSolo : MonoBehaviour
             isPos = false;
         }
 
-        if (isPos && Inputs.ActionOne)
+        if (isPos && Inputs.ActionOne && Candado.isInterface)
         {
             isUsing = true;
             isLerp = false;
@@ -71,9 +71,11 @@ public class Scr_DialSolo : MonoBehaviour
         {
             Vuelta = Mathf.Lerp(Vuelta, Desired, 0.12f);
 
-            if(Vuelta == Desired)
-            { isLerp = false; }
+            
         }
+
+        if (Vuelta == Desired && isLerp)
+        { isLerp = false; }
     }
 
     void GradosNumeros()

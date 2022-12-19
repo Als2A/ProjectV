@@ -44,7 +44,7 @@ GameObject:
   - component: {fileID: 8234305316459979034}
   - component: {fileID: 5449704855295034992}
   m_Layer: 0
-  m_Name: Prb_EQ_Palanca
+  m_Name: Prb_Pzl_Palanca
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0

@@ -33,7 +33,7 @@ public class Scr_MaderasPalanca : MonoBehaviour
             {
                 ObjectInHand = HandObject.transform.GetChild(0).gameObject;
 
-                if (ObjectInHand.GetComponent<Scr_EQ_Palanca>())
+                if (ObjectInHand.GetComponent<Scr_Palanca>())
                 {
                     //Animacion de llave
                     ObjectInHand.transform.parent = gameObject.transform;
