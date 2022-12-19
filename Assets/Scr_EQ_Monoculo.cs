@@ -11,15 +11,21 @@ public class Scr_EQ_Monoculo : MonoBehaviour
     public bool isActive;
     public Scr_EquipedObject Object;
 
-    private GameObject HandObject;
+    public GameObject BlackFade;
+
+    public GameObject HandObject;
+
+    public Vector3 DesiredPos;
 
     public Volume Effects;
-    Vignette Vineta;
+    public Vignette Vineta;
 
     // Start is called before the first frame update
-    void Awake()
+    void Start()
     {
         Effects.sharedProfile.TryGet<Vignette>(out Vineta);
+        HandObject = gameObject.transform.parent.gameObject;
+        BlackFade = GameObject.Find("BlackFade");
     }
 
     // Update is called once per frame
@@ -27,10 +33,14 @@ public class Scr_EQ_Monoculo : MonoBehaviour
     {
         if (Object.PrimaryAction)
         {
-            if(!isActive)
+            //if(!isActive)
             StartAnimation();
+
+            BlackFade.GetComponent<Scr_BlackFade>().FadingOn();
+
+            Debug.Log("Monoculo");
         }
-        else
+        else if (!Object.PrimaryAction)
         {
             EndAnimation();
         }
@@ -38,22 +48,16 @@ public class Scr_EQ_Monoculo : MonoBehaviour
 
     void StartAnimation()
     {
-        isActive = true;
-
-        HandObject = gameObject.transform.parent.gameObject;
+        VinetaOn();
 
         gameObject.transform.parent = HandObject.transform.parent;
-        gameObject.transform.localPosition = gameObject.transform.localPosition + (Vector3.up * 1);
+        gameObject.transform.localPosition = Vector3.zero + (Vector3.forward * 0.05f);
 
         Invoke("VinetaOn", 0.5f);
-
-
     }
 
     void EndAnimation()
     {
-        isActive = false;
-
         gameObject.transform.parent = HandObject.transform;
         gameObject.transform.localPosition = Vector3.zero;
 
@@ -76,6 +80,7 @@ public class Scr_EQ_Monoculo : MonoBehaviour
     void VinetaOn()
     {
         Vineta.active = true;
+        BlackFade.GetComponent<Scr_BlackFade>().FadingOff();
     }
 
     void VinetaOff()

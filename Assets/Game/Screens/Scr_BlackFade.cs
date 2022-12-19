@@ -25,7 +25,7 @@ public class Scr_BlackFade : MonoBehaviour
 
     }
 
-    void FadingOn()
+    public void FadingOn()
     {
         CG.alpha += 0.4f * Time.deltaTime;
 
@@ -34,7 +34,7 @@ public class Scr_BlackFade : MonoBehaviour
         if (CG.alpha >= 1) FadeOn = false;
     }
 
-    void FadingOff()
+    public void FadingOff()
     {
         CG.alpha -= 0.4f * Time.deltaTime;
 
