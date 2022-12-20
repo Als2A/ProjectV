@@ -9,6 +9,8 @@ public class Scr_BlackFade : MonoBehaviour
     public bool FadeOn;
     public bool FadeOff;
 
+    public float Speed = 0.4f;
+
     // Start is called before the first frame update
     void Start()
     {
@@ -20,14 +22,12 @@ public class Scr_BlackFade : MonoBehaviour
     void Update()
     {
         if (FadeOn) FadingOn();
-
         if (FadeOff) FadingOff();
-
     }
 
     public void FadingOn()
     {
-        CG.alpha += 0.4f * Time.deltaTime;
+        CG.alpha += Speed * Time.deltaTime;
 
         CG.alpha = Mathf.Clamp01(CG.alpha);
 
@@ -36,7 +36,7 @@ public class Scr_BlackFade : MonoBehaviour
 
     public void FadingOff()
     {
-        CG.alpha -= 0.4f * Time.deltaTime;
+        CG.alpha -= Speed * Time.deltaTime;
 
         CG.alpha = Mathf.Clamp01(CG.alpha);
 

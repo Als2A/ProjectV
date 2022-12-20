@@ -11,7 +11,7 @@ public class Scr_EQ_Monoculo : MonoBehaviour
     public bool isActive;
     public Scr_EquipedObject Object;
 
-    public GameObject BlackFade;
+    public Scr_BlackFade BlackFade;
 
     public GameObject HandObject;
 
@@ -25,43 +25,66 @@ public class Scr_EQ_Monoculo : MonoBehaviour
     {
         Effects.sharedProfile.TryGet<Vignette>(out Vineta);
         HandObject = gameObject.transform.parent.gameObject;
-        BlackFade = GameObject.Find("BlackFade");
+        BlackFade = GameObject.Find("BlackFade").GetComponent<Scr_BlackFade>();
     }
 
     // Update is called once per frame
     void Update()
     {
         if (Object.PrimaryAction)
-        {
-            //if(!isActive)
-            StartAnimation();
-
-            BlackFade.GetComponent<Scr_BlackFade>().FadingOn();
-
-            Debug.Log("Monoculo");
+        {            
+            StartAnimation();            
         }
         else if (!Object.PrimaryAction)
         {
-            EndAnimation();
+            EndAnimation();            
         }
     }
 
     void StartAnimation()
     {
-        VinetaOn();
+        //Start Fade        
+        MonoculoFadeOn();
 
+        //Move Object
         gameObject.transform.parent = HandObject.transform.parent;
         gameObject.transform.localPosition = Vector3.zero + (Vector3.forward * 0.05f);
 
+        //Open Vintege
         Invoke("VinetaOn", 0.5f);
+        Invoke("MonoculoFadeOff", 1f);
     }
+
+
+
+
+
+
+
+
+
+
+
+
+
 
     void EndAnimation()
     {
+        //Start Fade        
+        MonoculoFadeOn();
+
+        //Return Object
         gameObject.transform.parent = HandObject.transform;
         gameObject.transform.localPosition = Vector3.zero;
 
+        //Vintagge
         CancelInvoke("VinetaOn");
+        CancelInvoke("MonoculoFadeOff");
+
+        MonoculoFadeOff();
+
+
+
         VinetaOff();
     }
 
@@ -80,11 +103,26 @@ public class Scr_EQ_Monoculo : MonoBehaviour
     void VinetaOn()
     {
         Vineta.active = true;
-        BlackFade.GetComponent<Scr_BlackFade>().FadingOff();
     }
 
     void VinetaOff()
     {
-        Vineta.active = false;
+        Vineta.active = false;        
+    }
+
+    void MonoculoFadeOff()
+    {
+        BlackFade.Speed = 9;
+
+        BlackFade.FadeOff = true;
+        BlackFade.FadeOn = false;
+    }
+
+    void MonoculoFadeOn()
+    {
+        BlackFade.Speed = 9;
+
+        BlackFade.FadeOff = false;
+        BlackFade.FadeOn = true;
     }
 }
