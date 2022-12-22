@@ -6,6 +6,8 @@ public class Scr_CandadoDial : MonoBehaviour
 {
 
     public bool Locked;
+    public Scr_Puerta DoorLock;
+
     public bool isInterface;
 
     public Scr_InteractiveObject UsingObject;
@@ -14,7 +16,7 @@ public class Scr_CandadoDial : MonoBehaviour
     public GameObject PlayerHead;
     public GameObject PlayerCamera;
     public GameObject HandObject;
-
+    private Scr_InteractivePlayer Interactive;
 
     public Transform DesiredTransform;
     private Vector3 SavePosition;
@@ -36,6 +38,7 @@ public class Scr_CandadoDial : MonoBehaviour
     void Start()
     {
         Rb = GetComponent<Rigidbody>();
+        Interactive = PlayerHead.transform.parent.GetComponent<Scr_InteractivePlayer>();
     }
 
     // Update is called once per frame
@@ -45,6 +48,8 @@ public class Scr_CandadoDial : MonoBehaviour
         if (UsingObject.PrimaryAction == true && Inputs.Inputs.currentActionMap == Inputs.PlayerMap)
         {
             Inputs.ActionOne = false;
+            UsingObject.PrimaryAction = false;
+
             ActiveInterface();
         }
 
@@ -59,6 +64,7 @@ public class Scr_CandadoDial : MonoBehaviour
         }
 
         if(Locked == true) ComprobarSolucion();
+        
     }
 
     void ActiveInterface()
@@ -69,6 +75,7 @@ public class Scr_CandadoDial : MonoBehaviour
         PlayerHead.GetComponentInChildren<Scr_MouseLook>().ToLock = true;
 
         PlayerHead.GetComponentInChildren<Scr_HandBobCam>().isLock = true;
+        PlayerHead.GetComponentInChildren<Scr_HandBobCam>().BobTimer = 0;
 
         Cursor.lockState = CursorLockMode.None;
 
@@ -79,6 +86,8 @@ public class Scr_CandadoDial : MonoBehaviour
         UsingObject.gameObject.SetActive(false);
 
         HandObject.SetActive(false);
+
+        Interactive.STOP = true;
 
         SavePosition = PlayerHead.transform.position;
         SaveRotation = PlayerHead.transform.rotation;
@@ -110,6 +119,8 @@ public class Scr_CandadoDial : MonoBehaviour
 
         UsingObject.gameObject.SetActive(true);
 
+        Interactive.STOP = false;
+
 
         PlayerHead.transform.rotation = SaveRotation;
         PlayerHead.transform.position = SavePosition;
@@ -131,6 +142,11 @@ public class Scr_CandadoDial : MonoBehaviour
         if(Locks == 0 && !Inputs.ActionOne)
         {
             Locked = false;
+            DoorLock.Locked = false;
+
+            DesactiveInterface();
+
+            Rb.isKinematic = false;
         }
     }
 

@@ -6,6 +6,8 @@ public class Scr_InteractivePlayer : MonoBehaviour
 {
     [Header("Variables")]
     public float InteractiveRange;
+    public bool STOP;
+
 
     [Space]
 
@@ -17,16 +19,19 @@ public class Scr_InteractivePlayer : MonoBehaviour
 
 
     void Update()
-    {
-        RaycastHit hit;
-        
-        if (Physics.Raycast(Cam.transform.position, Cam.transform.forward, out hit, InteractiveRange)) //codigo guiri Ignora LayerMask
+    {        
+        if(!STOP)
         {
-            if (hit.transform.CompareTag("Interactive")) Look(hit); 
+            RaycastHit hit;
+
+            if (Physics.Raycast(Cam.transform.position, Cam.transform.forward, out hit, InteractiveRange)) //codigo guiri Ignora LayerMask
+            {
+                if (hit.transform.CompareTag("Interactive")) Look(hit);
                 else NoLook();
+            }
+            else
+                NoLook();
         }
-        else
-            NoLook();
     }
 
 

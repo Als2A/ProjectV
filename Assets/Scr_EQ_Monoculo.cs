@@ -32,7 +32,8 @@ public class Scr_EQ_Monoculo : MonoBehaviour
     void Update()
     {
         if (Object.PrimaryAction)
-        {            
+        {    
+            if(isActive)
             StartAnimation();            
         }
         else if (!Object.PrimaryAction)
@@ -43,16 +44,15 @@ public class Scr_EQ_Monoculo : MonoBehaviour
 
     void StartAnimation()
     {
-        //Start Fade        
-        MonoculoFadeOn();
+        isActive = false;
 
         //Move Object
         gameObject.transform.parent = HandObject.transform.parent;
         gameObject.transform.localPosition = Vector3.zero + (Vector3.forward * 0.05f);
 
         //Open Vintege
-        Invoke("VinetaOn", 0.5f);
-        Invoke("MonoculoFadeOff", 1f);
+        Invoke("VinetaOn", 0.2f);
+        //Invoke("MonoculoFadeOff", 1f);
     }
 
 
@@ -70,8 +70,7 @@ public class Scr_EQ_Monoculo : MonoBehaviour
 
     void EndAnimation()
     {
-        //Start Fade        
-        MonoculoFadeOn();
+        isActive = true;
 
         //Return Object
         gameObject.transform.parent = HandObject.transform;
@@ -79,12 +78,6 @@ public class Scr_EQ_Monoculo : MonoBehaviour
 
         //Vintagge
         CancelInvoke("VinetaOn");
-        CancelInvoke("MonoculoFadeOff");
-
-        MonoculoFadeOff();
-
-
-
         VinetaOff();
     }
 
@@ -110,6 +103,7 @@ public class Scr_EQ_Monoculo : MonoBehaviour
         Vineta.active = false;        
     }
 
+    /*
     void MonoculoFadeOff()
     {
         BlackFade.Speed = 9;
@@ -125,4 +119,5 @@ public class Scr_EQ_Monoculo : MonoBehaviour
         BlackFade.FadeOff = false;
         BlackFade.FadeOn = true;
     }
+    */
 }
