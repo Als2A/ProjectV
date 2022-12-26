@@ -10,12 +10,12 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: b308441c78d87bc428dfde2c4f9e1dd0, type: 3}
-  m_Name: Dat_Llave_Nino
+  m_Name: Dat_PiedraPreciosa_2
   m_EditorClassIdentifier: 
-  id: 200
-  Name: "Llave Ni\xF1o"
-  Image: {fileID: 21300000, guid: e42ecb1a398978f4b8b3acfcc59f2f1a, type: 3}
-  Descripcion: Llave para abrir puertas
-  Object_Prefab: {fileID: 4457209138732325290, guid: ed6241527f563a14cb1682a92ed1063e,
+  id: 100
+  Name: Piedra Preciosa
+  Image: {fileID: 21300000, guid: 3168140d6f409d0448447f18568d9482, type: 3}
+  Descripcion: Piedra muy brillante
+  Object_Prefab: {fileID: 5318759344513438723, guid: a89e77f43e7543b40b7dcbf8d37ab277,
     type: 3}
   InspectorScale: 1

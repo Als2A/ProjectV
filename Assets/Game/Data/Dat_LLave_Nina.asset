@@ -10,7 +10,7 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: b308441c78d87bc428dfde2c4f9e1dd0, type: 3}
-  m_Name: Dat_LLave_Nina
+  m_Name: Dat_Llave_Nina
   m_EditorClassIdentifier: 
   id: 200
   Name: "Llave Ni\xF1a"
