@@ -14,6 +14,8 @@ public class Scr_Candado : MonoBehaviour
     public GameObject HandObject;
     public Rigidbody Rb;
 
+    public Scr_Inventory Inventory;
+
     // Start is called before the first frame update
     void Start()
     {
@@ -51,6 +53,13 @@ public class Scr_Candado : MonoBehaviour
 
                     //Se aplica la gravedad
                     Rb.isKinematic = false;
+
+
+                    //Borrar Item del Inventario
+                    var ButtonData = Inventory.Items[0].GetComponentInChildren<Scr_InventoryButtonData>();
+
+                    ButtonData.Data = ButtonData.DataNull;
+                    ButtonData.UpdateSlot();
 
                 }
             }
