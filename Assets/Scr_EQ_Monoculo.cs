@@ -20,12 +20,17 @@ public class Scr_EQ_Monoculo : MonoBehaviour
     public Volume Effects;
     public Vignette Vineta;
 
+    public GameObject MonoculoScreens;
+    
+
     // Start is called before the first frame update
     void Start()
     {
         Effects.sharedProfile.TryGet<Vignette>(out Vineta);
         HandObject = gameObject.transform.parent.gameObject;
         BlackFade = GameObject.Find("BlackFade").GetComponent<Scr_BlackFade>();
+
+        MonoculoScreens = GameObject.Find("MonoculoScreens");
     }
 
     // Update is called once per frame
@@ -96,11 +101,23 @@ public class Scr_EQ_Monoculo : MonoBehaviour
     void VinetaOn()
     {
         Vineta.active = true;
+
+        MonoculoScreens.transform.GetChild(0).gameObject.SetActive(true);
+        MonoculoScreens.transform.GetChild(1).gameObject.SetActive(true);
+
+
+        HandObject.transform.parent.parent.GetComponentInChildren<Scr_HandBobCam>().isLock = true;
+        HandObject.transform.parent.parent.GetComponentInChildren<Scr_HandBobCam>().BobTimer = 0;
     }
 
     void VinetaOff()
     {
-        Vineta.active = false;        
+        Vineta.active = false;
+
+        MonoculoScreens.transform.GetChild(0).gameObject.SetActive(false);
+        MonoculoScreens.transform.GetChild(1).gameObject.SetActive(false);
+
+        HandObject.transform.parent.parent.GetComponentInChildren<Scr_HandBobCam>().isLock = false;
     }
 
     /*
