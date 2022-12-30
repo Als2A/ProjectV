@@ -10,17 +10,17 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: b308441c78d87bc428dfde2c4f9e1dd0, type: 3}
-  m_Name: Dat_Monoculo
+  m_Name: Dat_MonoculoScreen_0
   m_EditorClassIdentifier: 
-  id: 800
-  Name: Monoculo
-  Image: {fileID: 21300000, guid: 02800fb9cff14da47a04572790384d8b, type: 3}
-  Descripcion: Palanca para hacer palanca
-  Object_Prefab: {fileID: 1677396061250088059, guid: 5dfcfc42344fd46479f85572b0ab9d88,
+  id: 801
+  Name: Pantalla Basica
+  Image: {fileID: 21300000, guid: ce75de1497ddb294891c05afd799c802, type: 3}
+  Descripcion: Pantalla Basica para colocar en el Monoculo
+  Object_Prefab: {fileID: 8425987615086134902, guid: 79c996092ff6ea24a99a9e5acceb4b0e,
     type: 3}
   InspectorScale: 1
-  CombineObjectID: -1
-  CombineResult: {fileID: 11400000, guid: 6b5f93d3f9f473142b4efa454772c06f, type: 2}
-  CombinePrimary: 1
+  CombineObjectID: 800
+  CombineResult: {fileID: 0}
+  CombinePrimary: 0
   CombineDestroy: 0
   Variant: 0

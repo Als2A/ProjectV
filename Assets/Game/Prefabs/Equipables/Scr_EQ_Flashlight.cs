@@ -9,10 +9,12 @@ public class Scr_EQ_Flashlight : MonoBehaviour
     public Scr_EquipedObject Object;
     public GameObject Light;
 
+    public Scr_ScripteableInventory Data;
+
     // Start is called before the first frame update
     void Start()
     {
-        
+        Data = GameObject.Find("Inventory_Logic").GetComponentInChildren<Scr_Inventory>().Items[0].GetComponentInChildren<Scr_InventoryButtonData>().Data;
     }
 
     // Update is called once per frame
@@ -33,6 +35,18 @@ public class Scr_EQ_Flashlight : MonoBehaviour
                 LightOn = false;
             }
         }
+
+        if(LightOn)
+        {
+            Data.Variant -= 1 * Time.deltaTime;
+        }
+
+        if(Data.Variant <= 0)
+        {
+            Light.SetActive(false);
+            LightOn = false;
+        }
+
     }
 
 }

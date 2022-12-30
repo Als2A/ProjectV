@@ -14,4 +14,12 @@ public class Scr_ScripteableInventory : ScriptableObject
     public Object Object_Prefab;
 
     public float InspectorScale = 1;
+
+    public int CombineObjectID;
+    public Scr_ScripteableInventory CombineResult;
+
+    public bool CombinePrimary;
+    public bool CombineDestroy;
+
+    [Range(0,10)]public float Variant;
 }

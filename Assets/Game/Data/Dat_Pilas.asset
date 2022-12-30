@@ -19,3 +19,8 @@ MonoBehaviour:
   Object_Prefab: {fileID: 7245268637612713744, guid: 986d130f22d73ef46b1a7718bd3a5fbb,
     type: 3}
   InspectorScale: 1
+  CombineObjectID: 101
+  CombineResult: {fileID: 0}
+  CombinePrimary: 0
+  CombineDestroy: 1
+  Variant: 10

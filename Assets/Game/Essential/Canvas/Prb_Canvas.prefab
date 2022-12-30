@@ -708,7 +708,7 @@ GameObject:
   - component: {fileID: 1456558209}
   - component: {fileID: 1456558210}
   m_Layer: 5
-  m_Name: Button (3)
+  m_Name: Inspeccionar
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -1063,7 +1063,7 @@ GameObject:
   - component: {fileID: 207337004}
   - component: {fileID: 8274443100188009018}
   m_Layer: 5
-  m_Name: Button (2)
+  m_Name: Combinar
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -1175,7 +1175,7 @@ MonoBehaviour:
       m_Calls:
       - m_Target: {fileID: 2882142967529367101}
         m_TargetAssemblyTypeName: Scr_Inventory, Assembly-CSharp
-        m_MethodName: UsesEquip
+        m_MethodName: CombineObject
         m_Mode: 1
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
@@ -1829,6 +1829,9 @@ MonoBehaviour:
   - {fileID: 2235965657536079244}
   - {fileID: 4554201919089061511}
   ObjNull: {fileID: 11400000, guid: 7ca1870079bbafc4f9485efd7110aa00, type: 2}
+  isCombining: 0
+  DataCombine: {fileID: 0}
+  CombinePos: 0
   ViewerSet: {fileID: 0}
   ViewerTexture: {fileID: 5815405419609581016}
   InspectorObject: {fileID: 0}
@@ -2715,7 +2718,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_Sprite: {fileID: 21300000, guid: ccf183ffa8002f34f97ce0b5c4d03f30, type: 3}
+  m_Sprite: {fileID: 0}
   m_Type: 0
   m_PreserveAspect: 1
   m_FillCenter: 1
@@ -8037,11 +8040,6 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 8517028764972738542}
     m_Modifications:
-    - target: {fileID: 3246096272356774767, guid: 97b6bf02d0730f540bbcefb7c408a5b8,
-        type: 3}
-      propertyPath: Data
-      value: 
-      objectReference: {fileID: 0}
     - target: {fileID: 3246096272356774767, guid: 97b6bf02d0730f540bbcefb7c408a5b8,
         type: 3}
       propertyPath: ButtonPos

@@ -62,9 +62,18 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: e4e4ab0b42e4544478b477fea0ec8fab, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  LightOn: 0
+  isActive: 0
   Object: {fileID: 7781812279955507536}
+  BlackFade: {fileID: 0}
+  HandObject: {fileID: 0}
+  DesiredPos: {x: 0, y: 0, z: 0}
   Effects: {fileID: 6507947990787411768}
+  Vineta: {fileID: 0}
+  Data: {fileID: 0}
+  MonoculoScreens: {fileID: 0}
+  MonoculoSprites:
+  - {fileID: 21300000, guid: ce75de1497ddb294891c05afd799c802, type: 3}
+  - {fileID: 21300000, guid: ccf183ffa8002f34f97ce0b5c4d03f30, type: 3}
 --- !u!1 &8858390919588331757
 GameObject:
   m_ObjectHideFlags: 0

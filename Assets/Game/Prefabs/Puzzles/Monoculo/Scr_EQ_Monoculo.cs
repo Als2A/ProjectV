@@ -3,6 +3,7 @@ using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.Rendering;
 using UnityEngine.Rendering.HighDefinition;
+using UnityEngine.UI;
 
 
 
@@ -20,7 +21,10 @@ public class Scr_EQ_Monoculo : MonoBehaviour
     public Volume Effects;
     public Vignette Vineta;
 
+    public Scr_ScripteableInventory Data;
+
     public GameObject MonoculoScreens;
+    public Sprite[] MonoculoSprites;
     
 
     // Start is called before the first frame update
@@ -31,6 +35,7 @@ public class Scr_EQ_Monoculo : MonoBehaviour
         BlackFade = GameObject.Find("BlackFade").GetComponent<Scr_BlackFade>();
 
         MonoculoScreens = GameObject.Find("MonoculoScreens");
+        Data = GameObject.Find("Inventory_Logic").GetComponentInChildren<Scr_Inventory>().Items[0].GetComponentInChildren<Scr_InventoryButtonData>().Data;
     }
 
     // Update is called once per frame
@@ -45,6 +50,8 @@ public class Scr_EQ_Monoculo : MonoBehaviour
         {
             EndAnimation();            
         }
+
+        MonoculoScreens.transform.GetChild(0).GetComponentInChildren<Image>().sprite = MonoculoSprites[((int)Data.Variant)];
     }
 
     void StartAnimation()

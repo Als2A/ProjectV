@@ -40,6 +40,12 @@ public class Scr_Inventory : MonoBehaviour
     public GameObject[] Uses;
     [Space]
     public Scr_ScripteableInventory ObjNull;
+    [Space]
+    //Combine
+    public bool isCombining;
+    public Scr_ScripteableInventory DataCombine;
+    public int CombinePos;
+
 
 
     [Header("Inspector 3D")]
@@ -97,6 +103,25 @@ public class Scr_Inventory : MonoBehaviour
                 {
                     CloseSeeMenu();
                 }
+            }
+            else if(isCombining)
+            {
+                if (Inputs.OpenInventory || Inputs.Cancel)
+                {
+                    isCombining = false;
+
+                    Inputs.OpenInventory = false;
+                    Inputs.Cancel = false;
+                }
+
+                MovementInventory();
+
+                if (Inputs.Accept)
+                {
+                    CombineAction();
+                }
+
+
             }
             else if (!isUses) // -- Inventory Update -- //
             {
@@ -164,7 +189,7 @@ public class Scr_Inventory : MonoBehaviour
                 {
                     Inputs.Accept = false;
 
-                    Debug.Log("Combine");
+                    CombineObject();
                 }
 
 
@@ -256,31 +281,38 @@ public class Scr_Inventory : MonoBehaviour
 
     public void OpenUsesMenu()
     {
-        if(Items[ItemsPos].GetComponentInChildren<Scr_InventoryButtonData>().Data != ObjNull)
+        if(!isSee && !isCombining)
         {
-            isUses = true;
-            Inputs.Accept = false;
-
-            if (ItemsPos <= 1)
+            if (Items[ItemsPos].GetComponentInChildren<Scr_InventoryButtonData>().Data != ObjNull)
             {
-                ButtonEquip.SetActive(false);
-                ButtonDesEquip.SetActive(true);
+                isUses = true;
+                Inputs.Accept = false;
 
-                Uses[2] = ButtonDesEquip;
-                ResetUsesPos();
+                if (ItemsPos <= 1)
+                {
+                    ButtonEquip.SetActive(false);
+                    ButtonDesEquip.SetActive(true);
+
+                    Uses[2] = ButtonDesEquip;
+                    ResetUsesPos();
+                }
+                else
+                {
+                    ButtonEquip.SetActive(true);
+                    ButtonDesEquip.SetActive(false);
+
+                    Uses[2] = ButtonEquip;
+                    ResetUsesPos();
+                }
+
+                UsesMenu.transform.position = ItemsSel.transform.parent.position + (Vector3.right * 50f);
+                UsesMenu.SetActive(true);
             }
-            else
-            {
-                ButtonEquip.SetActive(true);
-                ButtonDesEquip.SetActive(false);
-
-                Uses[2] = ButtonEquip;
-                ResetUsesPos();
-            }
-
-            UsesMenu.transform.position = ItemsSel.transform.parent.position + (Vector3.right * 50f);
-            UsesMenu.SetActive(true);
-        }        
+        }
+        else if (isCombining)
+        {
+            CombineAction();
+        }
     }
 
     public void CloseUsesMenu()
@@ -366,7 +398,9 @@ public class Scr_Inventory : MonoBehaviour
 
     public void OpenSeeMenu()
     {
-        if(!isSee)
+        Debug.Log("Inspector");
+
+        if (!isSee && !isCombining)
         {
             isSee = true;
             Destroy(InspectorRotatingObject.transform.GetChild(0).gameObject);
@@ -380,6 +414,8 @@ public class Scr_Inventory : MonoBehaviour
 
             CloseUsesMenu();
         }
+
+
     }
 
     void CloseSeeMenu()
@@ -395,4 +431,60 @@ public class Scr_Inventory : MonoBehaviour
         }
     }
 
+
+    public void CombineObject()
+    {
+        Debug.Log("Combine");
+
+        if (!isCombining)
+        {
+            isCombining = true;
+
+            DataCombine = Items[ItemsPos].GetComponentInChildren<Scr_InventoryButtonData>().Data;
+
+            CombinePos = ItemsPos;
+
+            CloseUsesMenu();
+        }
+    }
+
+    void CombineAction()
+    {
+        Inputs.Accept = false;
+
+        var DataItemPos = Items[CombinePos].GetComponentInChildren<Scr_InventoryButtonData>();
+        var ItemPos_Data = Items[ItemsPos].GetComponentInChildren<Scr_InventoryButtonData>();
+
+
+        if (DataCombine.CombineObjectID == ItemPos_Data.Data.id || ItemPos_Data.Data.CombineObjectID == DataCombine.id)
+        {
+            if (DataItemPos.Data.CombinePrimary)
+            {
+                DataItemPos.Data.Variant = ItemPos_Data.Data.Variant;
+
+                if(ItemPos_Data.Data.CombineDestroy)
+                { ItemPos_Data.Data = ObjNull; }
+                else
+                {
+                    var SaveDataItem = ItemPos_Data.Data;
+                    ItemPos_Data.Data = DataItemPos.Data.CombineResult;
+
+                    DataItemPos.Data.CombineResult = SaveDataItem;
+                }
+
+            }
+
+            ItemPos_Data.UpdateSlot();
+
+            isCombining = false;
+
+
+
+
+        }
+        else
+        {
+            Debug.Log("NoCombinable");
+        }
+    }
 }

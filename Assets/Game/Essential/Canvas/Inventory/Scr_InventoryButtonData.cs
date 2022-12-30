@@ -42,9 +42,17 @@ public class Scr_InventoryButtonData : MonoBehaviour
     {
         Data.id = OriginalData.id;
         Data.Name = OriginalData.Name;
+        Data.Descripcion = OriginalData.Descripcion;
         Data.Image = OriginalData.Image;
 
-        Descripcion = Data.Descripcion;
+        Data.Variant = OriginalData.Variant;
+
+        Data.CombinePrimary = OriginalData.CombinePrimary;
+        Data.CombineDestroy = OriginalData.CombineDestroy;
+        Data.CombineObjectID  = OriginalData.CombineObjectID;
+        Data.CombineResult  = OriginalData.CombineResult;
+
+        Data.InspectorScale = OriginalData.InspectorScale;
 
         Data.Object_Prefab = OriginalData.Object_Prefab;
 
