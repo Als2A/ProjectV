@@ -601,6 +601,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   FadeOn: 0
   FadeOff: 0
+  Speed: 0.4
 --- !u!1001 &270325873821237990
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -613,6 +614,11 @@ PrefabInstance:
       propertyPath: Inventory
       value: 
       objectReference: {fileID: 5975779773742974436}
+    - target: {fileID: 4592964470941411218, guid: 384b87d97df0e0043a5c71d4d7b8b6d4,
+        type: 3}
+      propertyPath: m_IsActive
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 8561679591518194727, guid: 384b87d97df0e0043a5c71d4d7b8b6d4,
         type: 3}
       propertyPath: Loop

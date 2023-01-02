@@ -30,6 +30,8 @@ public class Scr_ObjectSee : MonoBehaviour
 
     Scr_MouseLook MouseLook;
 
+    public Scr_BlurUI Blur;
+
 
     [Header("Inspector 3D")]
     public GameObject ViewerSet;
@@ -74,7 +76,8 @@ public class Scr_ObjectSee : MonoBehaviour
 
             Player.isLock = true;
 
-            
+            Blur.BlurOn(0.5f);
+
 
             Invoke("OpenInspector", 0.2f);            
         }
@@ -95,6 +98,8 @@ public class Scr_ObjectSee : MonoBehaviour
 
                 CloseInspector();
 
+                Blur.BlurOff();
+
 
                 Invoke("SleepOff", 0.5f);
             }
@@ -112,11 +117,12 @@ public class Scr_ObjectSee : MonoBehaviour
                 PrefabModel.SetActive(false);
             }
         }
-        
 
-        PrefabModel.transform.rotation = Quaternion.Lerp(PrefabModel.transform.rotation,DesiredTransform.rotation,0.5f);
-        PrefabModel.transform.position = Vector3.Lerp(PrefabModel.transform.position, DesiredTransform.position, 0.5f);
-        PrefabModel.transform.localScale = Vector3.Lerp(PrefabModel.transform.localScale, DesiredTransform.localScale, 0.5f); 
+        float lerpTime = 0.12f;
+
+        PrefabModel.transform.rotation = Quaternion.Lerp(PrefabModel.transform.rotation,DesiredTransform.rotation,lerpTime);
+        PrefabModel.transform.position = Vector3.Lerp(PrefabModel.transform.position, DesiredTransform.position, lerpTime);
+        PrefabModel.transform.localScale = Vector3.Lerp(PrefabModel.transform.localScale, DesiredTransform.localScale, lerpTime); 
 
     }
 

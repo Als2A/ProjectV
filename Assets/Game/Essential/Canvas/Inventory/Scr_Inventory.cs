@@ -74,7 +74,7 @@ public class Scr_Inventory : MonoBehaviour
             {
                 if (!ItemsMenu.activeSelf)
                 {
-                    Blur.BlurOn();
+                    Blur.BlurOn(1f);
 
                     Movement.isWalking = false;
                     Movement.isSprinting = false;
