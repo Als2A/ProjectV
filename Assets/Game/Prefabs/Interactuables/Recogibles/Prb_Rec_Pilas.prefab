@@ -68,7 +68,7 @@ PrefabInstance:
     - target: {fileID: 1434641082289562750, guid: 7d1bbe501802a5143a6f8da4e4cf0676,
         type: 3}
       propertyPath: m_Name
-      value: Prb_PilasRecogibles
+      value: Prb_Rec_Pilas
       objectReference: {fileID: 0}
     - target: {fileID: 3264562807648501477, guid: 7d1bbe501802a5143a6f8da4e4cf0676,
         type: 3}
@@ -148,8 +148,18 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 9091691031736381054, guid: 7d1bbe501802a5143a6f8da4e4cf0676,
         type: 3}
+      propertyPath: m_LocalPosition.x
+      value: -0.0195
+      objectReference: {fileID: 0}
+    - target: {fileID: 9091691031736381054, guid: 7d1bbe501802a5143a6f8da4e4cf0676,
+        type: 3}
       propertyPath: m_LocalPosition.y
-      value: 0.0351
+      value: 0.0479
+      objectReference: {fileID: 0}
+    - target: {fileID: 9091691031736381054, guid: 7d1bbe501802a5143a6f8da4e4cf0676,
+        type: 3}
+      propertyPath: m_LocalPosition.z
+      value: 0.02
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 7d1bbe501802a5143a6f8da4e4cf0676, type: 3}

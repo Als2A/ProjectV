@@ -10,7 +10,7 @@ PrefabInstance:
     - target: {fileID: 1434641082289562750, guid: 7d1bbe501802a5143a6f8da4e4cf0676,
         type: 3}
       propertyPath: m_Name
-      value: PrbO_RecogiblePalanca
+      value: Prb_Rec_Palanca
       objectReference: {fileID: 0}
     - target: {fileID: 1748849184236098735, guid: 7d1bbe501802a5143a6f8da4e4cf0676,
         type: 3}
@@ -81,17 +81,17 @@ PrefabInstance:
     - target: {fileID: 9091691031736381054, guid: 7d1bbe501802a5143a6f8da4e4cf0676,
         type: 3}
       propertyPath: m_LocalScale.x
-      value: 0.21
+      value: 0.15
       objectReference: {fileID: 0}
     - target: {fileID: 9091691031736381054, guid: 7d1bbe501802a5143a6f8da4e4cf0676,
         type: 3}
       propertyPath: m_LocalScale.y
-      value: 0.81
+      value: 0.7
       objectReference: {fileID: 0}
     - target: {fileID: 9091691031736381054, guid: 7d1bbe501802a5143a6f8da4e4cf0676,
         type: 3}
       propertyPath: m_LocalScale.z
-      value: 0.22
+      value: 0.15
       objectReference: {fileID: 0}
     - target: {fileID: 9091691031736381054, guid: 7d1bbe501802a5143a6f8da4e4cf0676,
         type: 3}

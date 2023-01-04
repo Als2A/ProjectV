@@ -619,6 +619,11 @@ PrefabInstance:
       propertyPath: m_IsActive
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 5327576610490110587, guid: 384b87d97df0e0043a5c71d4d7b8b6d4,
+        type: 3}
+      propertyPath: m_Name
+      value: Player Volume
+      objectReference: {fileID: 0}
     - target: {fileID: 8561679591518194727, guid: 384b87d97df0e0043a5c71d4d7b8b6d4,
         type: 3}
       propertyPath: Loop
@@ -918,7 +923,7 @@ PrefabInstance:
     - target: {fileID: 7223471101806851894, guid: e1073cb23ccf69149bb33460fe2f93a5,
         type: 3}
       propertyPath: m_DefaultActionMap
-      value: 9550cf16-dc30-4106-b752-6b08a07799e3
+      value: a00c7148-55e0-4111-9260-b122177418c7
       objectReference: {fileID: 0}
     - target: {fileID: 7223471101806851895, guid: e1073cb23ccf69149bb33460fe2f93a5,
         type: 3}
@@ -1611,6 +1616,16 @@ PrefabInstance:
       propertyPath: m_AnchoredPosition.y
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 3317308017176372137, guid: dac2a7931c765d64fa697d930c15803f,
+        type: 3}
+      propertyPath: m_Name
+      value: MonoculoBasic
+      objectReference: {fileID: 0}
+    - target: {fileID: 3317308017176372137, guid: dac2a7931c765d64fa697d930c15803f,
+        type: 3}
+      propertyPath: m_IsActive
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 3448733698339311172, guid: dac2a7931c765d64fa697d930c15803f,
         type: 3}
       propertyPath: m_Navigation.m_Mode
@@ -1964,6 +1979,16 @@ PrefabInstance:
     - target: {fileID: 6160008778769437276, guid: dac2a7931c765d64fa697d930c15803f,
         type: 3}
       propertyPath: m_AnchoredPosition.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 6420182052514562849, guid: dac2a7931c765d64fa697d930c15803f,
+        type: 3}
+      propertyPath: m_Name
+      value: MonoculoScreen
+      objectReference: {fileID: 0}
+    - target: {fileID: 6420182052514562849, guid: dac2a7931c765d64fa697d930c15803f,
+        type: 3}
+      propertyPath: m_IsActive
       value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 6589443510683828877, guid: dac2a7931c765d64fa697d930c15803f,
