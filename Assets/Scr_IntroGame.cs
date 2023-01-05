@@ -28,13 +28,8 @@ public class Scr_IntroGame : MonoBehaviour
         {
             Video.SetActive(true);
 
-            var ClipIsOver = false;
+            Invoke("SumaTitulo", 15f);
 
-            if (videoPlayer.time >= videoPlayer.length - 0.5f && !ClipIsOver)
-            {
-                ClipIsOver = true;
-                Invoke("SumaTitulo", 3f);
-            }
         }
         else if (Titulos == 1)
         {

@@ -2,11 +2,10 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
-public class Scr_Evt_TutoInteract : MonoBehaviour
+public class Evt_TutoEquip : MonoBehaviour
 {
     public Scr_Subtitulos Subtitulos;
-
-    public Scr_PlayerMovement Player;
+    public Scr_SubtitulosTuto SubtitulosTuto;
 
     public bool Activate = false;
 
@@ -21,26 +20,21 @@ public class Scr_Evt_TutoInteract : MonoBehaviour
     {
         if (Activate)
         {
-            Subtitulos.SaveSubtitle("La puerta está abierta", 4f);
-            Subtitulos.SaveSubtitle("No te preocupes", 3f);
-            Subtitulos.SaveSubtitle("entra y si necesitas ayuda avisame por el walkie", 5f);
+            Voices();
 
-            Subtitulos.isOn = true;
-            Subtitulos.TextDone = true;
-
-            Player.isLock = true;
-
-            Invoke("CancelLock", 10f);
+            Invoke("subtitulosTuto", 4.5f);
 
             Activate = false;
             var Collider = GetComponent<Collider>().enabled = false;
         }
-
     }
 
-    void CancelLock()
+    void Voices()
     {
-        Player.isLock = false;
+        Subtitulos.SaveSubtitle("Quizas la llave abra el candado", 4f);
+
+        Subtitulos.isOn = true;
+        Subtitulos.TextDone = true;
     }
 
     private void OnTriggerEnter(Collider other)
@@ -49,5 +43,14 @@ public class Scr_Evt_TutoInteract : MonoBehaviour
         {
             Activate = true;
         }
+    }
+
+    void subtitulosTuto()
+    {
+        SubtitulosTuto.SaveSubtitle("Pulsa [E] para abrir el inventario", 4f);
+        SubtitulosTuto.SaveSubtitle("Equipate la llave para interactuar con el candado", 4f);
+
+        SubtitulosTuto.isOn = true;
+        SubtitulosTuto.TextDone = true;
     }
 }

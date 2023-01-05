@@ -1059,11 +1059,11 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   isLock: 0
   IdleBob_Amount: 0.5
-  IdleBob_Speed: 0.04
+  IdleBob_Speed: 0.02
   WalkBob_Amount: 10
-  WalkBob_Speed: 0.02
+  WalkBob_Speed: 0.015
   SprintBob_Amount: 15
-  SprintBob_Speed: 0.02
+  SprintBob_Speed: 0.015
   BobTimer: 0
 --- !u!114 &670909868912447868
 MonoBehaviour:

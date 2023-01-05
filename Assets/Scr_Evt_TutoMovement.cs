@@ -8,6 +8,7 @@ public class Scr_Evt_TutoMovement : MonoBehaviour
     public GameObject Player;
 
     public Scr_Subtitulos Subtitulos;
+    public Scr_SubtitulosTuto SubtitulosTuto;
 
     private Vector3 StartPos;
 
@@ -53,9 +54,22 @@ public class Scr_Evt_TutoMovement : MonoBehaviour
             Subtitulos.isOn = true;
             Subtitulos.TextDone = true;
 
+            Invoke("subtitulosTuto", 9f);
+
             EventDo = true;
         }
 
+        
 
+
+    }
+
+    void subtitulosTuto()
+    {
+        SubtitulosTuto.SaveSubtitle("Usa [WASD] para caminar y [Mouse] para mirar alrededor", 4f);
+        SubtitulosTuto.SaveSubtitle("Pulsa [Shift] para correr y [Ctrl] para agacharte", 4f);
+
+        SubtitulosTuto.isOn = true;
+        SubtitulosTuto.TextDone = true;
     }
 }
