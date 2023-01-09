@@ -29,7 +29,7 @@ public class Scr_BlurUI : MonoBehaviour
             BlurMaterial.material.SetFloat("_Smoothness", Mathf.Lerp(1, 0.5f, LerpTimer));
         }
 
-        Debug.Log("BLUR =" + BlurMaterial.material.GetFloat("_Smoothness"));
+        //Debug.Log("BLUR =" + BlurMaterial.material.GetFloat("_Smoothness"));
     }
 
     public void BlurOn(float TimeBlur)

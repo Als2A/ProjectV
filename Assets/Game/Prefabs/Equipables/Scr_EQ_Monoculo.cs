@@ -22,6 +22,7 @@ public class Scr_EQ_Monoculo : MonoBehaviour
     public Vignette Vineta;
 
     public Scr_ScripteableInventory Data;
+    public Scr_Inventory Inventory;
 
     public GameObject MonoculoScreens;
     public Sprite[] MonoculoSprites;
@@ -35,13 +36,14 @@ public class Scr_EQ_Monoculo : MonoBehaviour
         BlackFade = GameObject.Find("BlackFade").GetComponent<Scr_BlackFade>();
 
         MonoculoScreens = GameObject.Find("MonoculoScreens");
+        Inventory = GameObject.Find("Inventory_Logic").GetComponent<Scr_Inventory>();
         Data = GameObject.Find("Inventory_Logic").GetComponentInChildren<Scr_Inventory>().Items[0].GetComponentInChildren<Scr_InventoryButtonData>().Data;
     }
 
     // Update is called once per frame
     void Update()
     {
-        if (Object.PrimaryAction)
+        if (Object.PrimaryAction && !Inventory.MenuInventoryIsOpen)
         {    
             if(isActive)
             StartAnimation();            

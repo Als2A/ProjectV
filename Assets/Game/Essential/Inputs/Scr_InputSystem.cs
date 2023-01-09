@@ -66,7 +66,7 @@ public class Scr_InputSystem : MonoBehaviour
 
     private void Update()
     {
-        Debug.Log(Inputs.currentActionMap);
+        //Debug.Log(Inputs.currentActionMap);
     }
 
     // -- Buttons --
