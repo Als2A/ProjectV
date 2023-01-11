@@ -18,4 +18,9 @@ MonoBehaviour:
   Descripcion: Palanca para hacer palanca
   Object_Prefab: {fileID: 5175324772869594561, guid: 21ad0058f72060140adf03b0cdf03262,
     type: 3}
-  InspectorScale: 1
+  InspectorScale: 0.8
+  CombineObjectID: 0
+  CombineResult: {fileID: 0}
+  CombinePrimary: 0
+  CombineDestroy: 0
+  Variant: 0
