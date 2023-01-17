@@ -92,9 +92,11 @@ public class Scr_Inventory : MonoBehaviour
             }
         }
 
-
+        if (Inputs.Inputs.currentActionMap == Inputs.UiMap && MenuInventoryIsOpen) // -- Chest Inventory  -- //
+        { 
         
-        if (Inputs.Inputs.currentActionMap == Inputs.UiMap && MenuInventoryIsOpen)
+        }
+        else if (Inputs.Inputs.currentActionMap == Inputs.UiMap && MenuInventoryIsOpen) // -- Player Inventory  -- //
         {
 
             if (isSee) // -- Inspector 3D Update --  //
@@ -104,7 +106,7 @@ public class Scr_Inventory : MonoBehaviour
                     CloseSeeMenu();
                 }
             }
-            else if(isCombining)
+            else if(isCombining) // -- Combine Update --  //
             {
                 if (Inputs.OpenInventory || Inputs.Cancel)
                 {
