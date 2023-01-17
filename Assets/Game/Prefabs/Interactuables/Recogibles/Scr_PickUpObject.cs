@@ -24,7 +24,7 @@ public class Scr_PickUpObject : MonoBehaviour
             //Colocar su data en la data del primer hueco vacio.
             Inputs.ActionOne = false;
 
-            for (int i = 2; i < Inventory.Items.Length; i++)
+            for (int i = 1; i < Inventory.Items.Length; i++)
             {
                 var ButtonData = Inventory.Items[i].GetComponentInChildren<Scr_InventoryButtonData>();
 

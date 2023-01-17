@@ -5,7 +5,7 @@ using UnityEngine;
 public class Scr_InventoryChest : MonoBehaviour
 {
     public Scr_InputSystem Inputs;
-
+    public Scr_Inventory Inventory;
     
 
     public Scr_Baul Baul;
@@ -32,20 +32,13 @@ public class Scr_InventoryChest : MonoBehaviour
         {
             if (ItemsMenu.activeSelf)
             {
-                Inputs.OpenInventory = false;
-                Inputs.Cancel = false;
-
-               
-
                 gameObject.SetActive(false);
 
-                Cursor.lockState = CursorLockMode.Locked;
-
-                Inputs.Inputs.SwitchCurrentActionMap("Player");
                 Baul.isOpen = false;
+
+                Inventory.CloseInventory();
             }
         }
-
 
         MovementInventory();
 

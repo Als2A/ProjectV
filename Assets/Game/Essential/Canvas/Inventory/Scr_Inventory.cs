@@ -14,6 +14,7 @@ public class Scr_Inventory : MonoBehaviour
 
     public GameObject ButtonEquip;
     public GameObject ButtonDesEquip;
+    public GameObject ButtonChange;
 
     public Scr_BlurUI Blur;
 
@@ -45,6 +46,9 @@ public class Scr_Inventory : MonoBehaviour
     public bool isCombining;
     public Scr_ScripteableInventory DataCombine;
     public int CombinePos;
+
+    [Header("Chest")]
+    public Scr_Baul Chest;
 
 
 
@@ -92,11 +96,11 @@ public class Scr_Inventory : MonoBehaviour
             }
         }
 
-        if (Inputs.Inputs.currentActionMap == Inputs.UiMap && MenuInventoryIsOpen) // -- Chest Inventory  -- //
-        { 
-        
+        if (Inputs.Inputs.currentActionMap == Inputs.UiMap && Chest.isOpen)
+        {
+
         }
-        else if (Inputs.Inputs.currentActionMap == Inputs.UiMap && MenuInventoryIsOpen) // -- Player Inventory  -- //
+        else if (Inputs.Inputs.currentActionMap == Inputs.UiMap && MenuInventoryIsOpen && !Chest.isOpen) // -- Player Inventory  -- //
         {
 
             if (isSee) // -- Inspector 3D Update --  //
@@ -131,20 +135,7 @@ public class Scr_Inventory : MonoBehaviour
                 {
                     if (ItemsMenu.activeSelf)
                     {
-                        Blur.BlurOff();
-
-                        MenuInventoryIsOpen = false;
-
-                        Inputs.OpenInventory = false;
-                        Inputs.Cancel = false;
-
-                        ItemsMenu.SetActive(false);
-                        
-                        Cursor.lockState = CursorLockMode.Locked;
-
-                        Inputs.Inputs.SwitchCurrentActionMap("Player");
-
-                        
+                        CloseInventory();                   
                     }
                 }
 
@@ -164,8 +155,6 @@ public class Scr_Inventory : MonoBehaviour
                 }
 
                 MovementUses();
-
-
 
                 if (ItemsPos <= 1 && Inputs.Accept && UsesPos == 2)  // -- DeEquip -- // 
                 {
@@ -283,37 +272,64 @@ public class Scr_Inventory : MonoBehaviour
 
     public void OpenUsesMenu()
     {
-        if(!isSee && !isCombining)
+        if(!Chest.isOpen)
+        {
+            if (!isSee && !isCombining)
+            {
+                if (Items[ItemsPos].GetComponentInChildren<Scr_InventoryButtonData>().Data != ObjNull)
+                {
+                    isUses = true;
+                    Inputs.Accept = false;
+
+                    if (ItemsPos == 0)
+                    {
+                        ButtonEquip.SetActive(false);
+                        ButtonDesEquip.SetActive(true);
+
+                        ButtonChange.SetActive(false);
+
+                        Uses[2] = ButtonDesEquip;
+                        ResetUsesPos();
+                    }
+                    else
+                    {
+                        ButtonEquip.SetActive(true);
+                        ButtonDesEquip.SetActive(false);
+
+                        ButtonChange.SetActive(false);
+
+                        Uses[2] = ButtonEquip;
+                        ResetUsesPos();
+                    }
+
+                    UsesMenu.transform.position = ItemsSel.transform.parent.position + (Vector3.right * 50f);
+                    UsesMenu.SetActive(true);
+                }
+            }
+            else if (isCombining)
+            {
+                CombineAction();
+            }
+        }
+        else
         {
             if (Items[ItemsPos].GetComponentInChildren<Scr_InventoryButtonData>().Data != ObjNull)
             {
                 isUses = true;
                 Inputs.Accept = false;
 
-                if (ItemsPos <= 1)
-                {
-                    ButtonEquip.SetActive(false);
-                    ButtonDesEquip.SetActive(true);
+                ButtonChange.SetActive(true);
 
-                    Uses[2] = ButtonDesEquip;
-                    ResetUsesPos();
-                }
-                else
-                {
-                    ButtonEquip.SetActive(true);
-                    ButtonDesEquip.SetActive(false);
+                ButtonEquip.SetActive(false);
+                ButtonDesEquip.SetActive(false);
 
-                    Uses[2] = ButtonEquip;
-                    ResetUsesPos();
-                }
+                Uses[2] = ButtonChange;
+                ResetUsesPos();
 
                 UsesMenu.transform.position = ItemsSel.transform.parent.position + (Vector3.right * 50f);
                 UsesMenu.SetActive(true);
+                
             }
-        }
-        else if (isCombining)
-        {
-            CombineAction();
         }
     }
 
@@ -372,7 +388,7 @@ public class Scr_Inventory : MonoBehaviour
         //Variables
         var Item0_Data = Items[0].GetComponentInChildren<Scr_InventoryButtonData>();
 
-        for (int i = 2; i < Items.Length; i++)
+        for (int i = 1; i < Items.Length; i++)
         {
             var ButtonData = Items[i].GetComponentInChildren<Scr_InventoryButtonData>();
 
@@ -489,4 +505,22 @@ public class Scr_Inventory : MonoBehaviour
             Debug.Log("NoCombinable");
         }
     }
+
+    public void CloseInventory()
+    {
+        Blur.BlurOff();
+
+        MenuInventoryIsOpen = false;
+
+        Inputs.OpenInventory = false;
+        Inputs.Cancel = false;
+
+        ItemsMenu.SetActive(false);
+
+        Cursor.lockState = CursorLockMode.Locked;
+
+        Inputs.Inputs.SwitchCurrentActionMap("Player");
+    }
+
+                        
 }
