@@ -28,24 +28,28 @@ public class Scr_InventoryChest : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        if (Inputs.OpenInventory || Inputs.Cancel)
+        if (!Inventory.isUses)
         {
-            if (ItemsMenu.activeSelf)
+            if (Inputs.OpenInventory || Inputs.Cancel)
             {
-                gameObject.SetActive(false);
+                if (ItemsMenu.activeSelf)
+                {
+                    gameObject.SetActive(false);
 
-                Baul.isOpen = false;
+                    Baul.isOpen = false;
 
-                Inventory.CloseInventory();
+                    Inventory.CloseInventory();
+                }
+            }
+
+            MovementInventory();
+
+            if (Inputs.Accept)
+            {
+                OpenUsesMenu();
             }
         }
 
-        MovementInventory();
-
-        if (Inputs.Accept)
-        {
-            
-        }
 
         
     }
@@ -76,12 +80,34 @@ public class Scr_InventoryChest : MonoBehaviour
         ResetInventoryPos();
     }
 
-    void ResetInventoryPos()
+    public void ResetInventoryPos()
     {
         ItemsSel.transform.parent = Items[ItemsPos].transform;
         ItemsSel.transform.position = Items[ItemsPos].transform.position;
 
         Inputs.Movement_x = 0;
         Inputs.Movement_y = 0;
+    }
+
+    public void OpenUsesMenu()
+    {
+        if (Items[ItemsPos].GetComponentInChildren<Scr_InventoryButtonData>().Data != Inventory.ObjNull)
+        {
+            Inventory.isUses = true;
+            Inputs.Accept = false;
+
+            Inventory.ButtonChange.SetActive(true);
+
+            Inventory.ButtonEquip.SetActive(false);
+            Inventory.ButtonDesEquip.SetActive(false);
+
+            Inventory.Uses[2] = Inventory.ButtonChange;
+            Inventory.ResetUsesPos();
+
+            Inventory.UsesMenu.transform.position = ItemsSel.transform.parent.position + (Vector3.right * 50f);
+            Inventory.UsesMenu.SetActive(true);
+
+        }
+        
     }
 }

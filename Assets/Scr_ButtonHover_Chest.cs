@@ -5,6 +5,8 @@ using UnityEngine;
 public class Scr_ButtonHover_Chest : MonoBehaviour
 {
     Scr_InventoryChest InventoryChest;
+    public Scr_Inventory Inventory;
+
     public int ButtonPos;
 
     // Start is called before the first frame update
@@ -22,6 +24,12 @@ public class Scr_ButtonHover_Chest : MonoBehaviour
             InventoryChest.ItemsSel.transform.position = gameObject.transform.position;
 
             InventoryChest.ItemsPos = ButtonPos;
+
+            if (Inventory.ItemsSel.activeInHierarchy)
+            {
+                InventoryChest.ItemsSel.SetActive(true);
+                Inventory.ItemsSel.SetActive(false);
+            }
         }
     }
 }

@@ -86,6 +86,7 @@ public class Scr_Inventory : MonoBehaviour
                     Inputs.OpenInventory = false;
 
                     ItemsMenu.SetActive(true);
+                    ItemsSel.SetActive(true);
 
                     MenuInventoryIsOpen = true;
                     
@@ -100,7 +101,8 @@ public class Scr_Inventory : MonoBehaviour
         {
 
         }
-        else if (Inputs.Inputs.currentActionMap == Inputs.UiMap && MenuInventoryIsOpen && !Chest.isOpen) // -- Player Inventory  -- //
+        
+        if (Inputs.Inputs.currentActionMap == Inputs.UiMap && MenuInventoryIsOpen) // -- Player Inventory  -- //
         {
 
             if (isSee) // -- Inspector 3D Update --  //
@@ -129,7 +131,7 @@ public class Scr_Inventory : MonoBehaviour
 
 
             }
-            else if (!isUses) // -- Inventory Update -- //
+            else if (!isUses && !Chest.isOpen) // -- Inventory Update -- //
             {
                 if (Inputs.OpenInventory || Inputs.Cancel)
                 {
@@ -261,7 +263,7 @@ public class Scr_Inventory : MonoBehaviour
         ResetUsesPos();
     }
 
-    void ResetUsesPos()
+    public void ResetUsesPos()
     {
         UsesSel.transform.parent = Uses[UsesPos].transform;
         UsesSel.transform.position = Uses[UsesPos].transform.position;
@@ -311,7 +313,7 @@ public class Scr_Inventory : MonoBehaviour
                 CombineAction();
             }
         }
-        else
+        else if(Chest.isOpen && ItemsSel.activeInHierarchy)
         {
             if (Items[ItemsPos].GetComponentInChildren<Scr_InventoryButtonData>().Data != ObjNull)
             {
