@@ -1397,7 +1397,7 @@ PrefabInstance:
     - target: {fileID: 2164117136779700285, guid: f1793de1088375a4cb760c2d52791a28,
         type: 3}
       propertyPath: m_RootOrder
-      value: 5
+      value: 4
       objectReference: {fileID: 0}
     - target: {fileID: 2164117136779700285, guid: f1793de1088375a4cb760c2d52791a28,
         type: 3}
@@ -2984,7 +2984,7 @@ PrefabInstance:
     - target: {fileID: 7377332126273710109, guid: d62ef260a2edddc45b80afd302d2469d,
         type: 3}
       propertyPath: m_RootOrder
-      value: 4
+      value: 3
       objectReference: {fileID: 0}
     - target: {fileID: 7377332126273710109, guid: d62ef260a2edddc45b80afd302d2469d,
         type: 3}
@@ -3268,7 +3268,7 @@ PrefabInstance:
     - target: {fileID: 7213408713783351791, guid: 6a59ea51d01129749b94b9436c0e0bc6,
         type: 3}
       propertyPath: m_RootOrder
-      value: 7
+      value: 6
       objectReference: {fileID: 0}
     - target: {fileID: 7213408713783351791, guid: 6a59ea51d01129749b94b9436c0e0bc6,
         type: 3}
@@ -6088,12 +6088,6 @@ MonoBehaviour:
     - EdgeIndices: 07000000060000000500000004000000
       TexGenIndex: 5
     Generation: 3
---- !u!1 &549924945 stripped
-GameObject:
-  m_CorrespondingSourceObject: {fileID: 6770689768499763174, guid: e5fb65c96e1d2734d96d3b4cc1de97e9,
-    type: 3}
-  m_PrefabInstance: {fileID: 2361052962210785928}
-  m_PrefabAsset: {fileID: 0}
 --- !u!1001 &568457553
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -9025,7 +9019,7 @@ MonoBehaviour:
     meshQuery:
       layers: 16777223
       maskAndChannels: 234881031
-    surfaceParameter: 35084
+    surfaceParameter: 38110
     meshQueryIndex: 0
     subMeshQueryIndex: 0
     geometryHashValue: 8752924517962489004
@@ -9869,7 +9863,7 @@ PrefabInstance:
     - target: {fileID: 1678742428611341680, guid: ce44c6640ba1abe4190a18b3d145692c,
         type: 3}
       propertyPath: m_RootOrder
-      value: 6
+      value: 5
       objectReference: {fileID: 0}
     - target: {fileID: 1678742428611341680, guid: ce44c6640ba1abe4190a18b3d145692c,
         type: 3}
@@ -10178,7 +10172,7 @@ MonoBehaviour:
     meshQuery:
       layers: 33554440
       maskAndChannels: 8
-    surfaceParameter: 35140
+    surfaceParameter: 34274
     meshQueryIndex: 1
     subMeshQueryIndex: 0
     geometryHashValue: 1551927583917004265
@@ -11136,7 +11130,7 @@ MonoBehaviour:
     meshQuery:
       layers: 16777223
       maskAndChannels: 234881031
-    surfaceParameter: 35086
+    surfaceParameter: 39102
     meshQueryIndex: 5
     subMeshQueryIndex: 0
     geometryHashValue: -8369208719946829987
@@ -13473,7 +13467,7 @@ PrefabInstance:
     - target: {fileID: 6134940093194334210, guid: 2754cbde006471d469d4fb2d93ecf9d9,
         type: 3}
       propertyPath: m_RootOrder
-      value: 2
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 6134940093194334210, guid: 2754cbde006471d469d4fb2d93ecf9d9,
         type: 3}
@@ -18092,7 +18086,7 @@ MonoBehaviour:
     meshQuery:
       layers: 33554440
       maskAndChannels: 8
-    surfaceParameter: 35140
+    surfaceParameter: 34274
     meshQueryIndex: 1
     subMeshQueryIndex: 0
     geometryHashValue: 1551927583917004265
@@ -20333,7 +20327,7 @@ PrefabInstance:
     - target: {fileID: 2167498364112676380, guid: cb5e2ca553874e34b94df7a6a88ca066,
         type: 3}
       propertyPath: m_RootOrder
-      value: 3
+      value: 2
       objectReference: {fileID: 0}
     - target: {fileID: 2167498364112676380, guid: cb5e2ca553874e34b94df7a6a88ca066,
         type: 3}
@@ -20938,12 +20932,6 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 0}
     m_Modifications:
-    - target: {fileID: 993138777619847554, guid: e5fb65c96e1d2734d96d3b4cc1de97e9,
-        type: 3}
-      propertyPath: OriginalData
-      value: 
-      objectReference: {fileID: 11400000, guid: 2403684bde1c10546bf863a43990b832,
-        type: 2}
     - target: {fileID: 2361052960594672667, guid: e5fb65c96e1d2734d96d3b4cc1de97e9,
         type: 3}
       propertyPath: Inventory
@@ -21061,11 +21049,6 @@ PrefabInstance:
       objectReference: {fileID: 1796483438}
     - target: {fileID: 2361052962577479385, guid: e5fb65c96e1d2734d96d3b4cc1de97e9,
         type: 3}
-      propertyPath: ItemsSel
-      value: 
-      objectReference: {fileID: 549924945}
-    - target: {fileID: 2361052962577479385, guid: e5fb65c96e1d2734d96d3b4cc1de97e9,
-        type: 3}
       propertyPath: Inventory
       value: 
       objectReference: {fileID: 1256748741}
@@ -21082,7 +21065,7 @@ PrefabInstance:
     - target: {fileID: 2361052962577479389, guid: e5fb65c96e1d2734d96d3b4cc1de97e9,
         type: 3}
       propertyPath: m_RootOrder
-      value: 1
+      value: 7
       objectReference: {fileID: 0}
     - target: {fileID: 2361052962577479389, guid: e5fb65c96e1d2734d96d3b4cc1de97e9,
         type: 3}
@@ -21778,371 +21761,6 @@ PrefabInstance:
         type: 3}
       propertyPath: m_AnchoredPosition.y
       value: -440
-      objectReference: {fileID: 0}
-    - target: {fileID: 7288026743493385598, guid: e5fb65c96e1d2734d96d3b4cc1de97e9,
-        type: 3}
-      propertyPath: m_AnchorMax.x
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 7288026743493385598, guid: e5fb65c96e1d2734d96d3b4cc1de97e9,
-        type: 3}
-      propertyPath: m_AnchorMax.y
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 7288026743493385598, guid: e5fb65c96e1d2734d96d3b4cc1de97e9,
-        type: 3}
-      propertyPath: m_AnchorMin.x
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 7288026743493385598, guid: e5fb65c96e1d2734d96d3b4cc1de97e9,
-        type: 3}
-      propertyPath: m_AnchorMin.y
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 7288026743493385598, guid: e5fb65c96e1d2734d96d3b4cc1de97e9,
-        type: 3}
-      propertyPath: m_SizeDelta.x
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 7288026743493385598, guid: e5fb65c96e1d2734d96d3b4cc1de97e9,
-        type: 3}
-      propertyPath: m_SizeDelta.y
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 7288026743493385598, guid: e5fb65c96e1d2734d96d3b4cc1de97e9,
-        type: 3}
-      propertyPath: m_AnchoredPosition.x
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 7288026743493385598, guid: e5fb65c96e1d2734d96d3b4cc1de97e9,
-        type: 3}
-      propertyPath: m_AnchoredPosition.y
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 8156052533634033188, guid: e5fb65c96e1d2734d96d3b4cc1de97e9,
-        type: 3}
-      propertyPath: m_AnchoredPosition.x
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 8156052533634033188, guid: e5fb65c96e1d2734d96d3b4cc1de97e9,
-        type: 3}
-      propertyPath: m_AnchoredPosition.y
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 8530406798691848295, guid: e5fb65c96e1d2734d96d3b4cc1de97e9,
-        type: 3}
-      propertyPath: m_Color.b
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 8530406798691848295, guid: e5fb65c96e1d2734d96d3b4cc1de97e9,
-        type: 3}
-      propertyPath: m_Color.g
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 8530406798691848295, guid: e5fb65c96e1d2734d96d3b4cc1de97e9,
-        type: 3}
-      propertyPath: m_Color.r
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 9118786009822059152, guid: e5fb65c96e1d2734d96d3b4cc1de97e9,
-        type: 3}
-      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_Target
-      value: 
-      objectReference: {fileID: 505764945}
-    - target: {fileID: 9118786009822059152, guid: e5fb65c96e1d2734d96d3b4cc1de97e9,
-        type: 3}
-      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_MethodName
-      value: OpenUsesMenu
-      objectReference: {fileID: 0}
-    - target: {fileID: 9118786009822059152, guid: e5fb65c96e1d2734d96d3b4cc1de97e9,
-        type: 3}
-      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_TargetAssemblyTypeName
-      value: Scr_InventoryChest, Assembly-CSharp
-      objectReference: {fileID: 0}
-    - target: {fileID: 9118786009951517526, guid: e5fb65c96e1d2734d96d3b4cc1de97e9,
-        type: 3}
-      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_Target
-      value: 
-      objectReference: {fileID: 505764945}
-    - target: {fileID: 9118786009951517526, guid: e5fb65c96e1d2734d96d3b4cc1de97e9,
-        type: 3}
-      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_MethodName
-      value: OpenUsesMenu
-      objectReference: {fileID: 0}
-    - target: {fileID: 9118786009951517526, guid: e5fb65c96e1d2734d96d3b4cc1de97e9,
-        type: 3}
-      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_TargetAssemblyTypeName
-      value: Scr_InventoryChest, Assembly-CSharp
-      objectReference: {fileID: 0}
-    - target: {fileID: 9118786010164780627, guid: e5fb65c96e1d2734d96d3b4cc1de97e9,
-        type: 3}
-      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_Target
-      value: 
-      objectReference: {fileID: 505764945}
-    - target: {fileID: 9118786010164780627, guid: e5fb65c96e1d2734d96d3b4cc1de97e9,
-        type: 3}
-      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_MethodName
-      value: OpenUsesMenu
-      objectReference: {fileID: 0}
-    - target: {fileID: 9118786010164780627, guid: e5fb65c96e1d2734d96d3b4cc1de97e9,
-        type: 3}
-      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_TargetAssemblyTypeName
-      value: Scr_InventoryChest, Assembly-CSharp
-      objectReference: {fileID: 0}
-    - target: {fileID: 9118786010413564383, guid: e5fb65c96e1d2734d96d3b4cc1de97e9,
-        type: 3}
-      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_Target
-      value: 
-      objectReference: {fileID: 505764945}
-    - target: {fileID: 9118786010413564383, guid: e5fb65c96e1d2734d96d3b4cc1de97e9,
-        type: 3}
-      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_MethodName
-      value: OpenUsesMenu
-      objectReference: {fileID: 0}
-    - target: {fileID: 9118786010413564383, guid: e5fb65c96e1d2734d96d3b4cc1de97e9,
-        type: 3}
-      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_TargetAssemblyTypeName
-      value: Scr_InventoryChest, Assembly-CSharp
-      objectReference: {fileID: 0}
-    - target: {fileID: 9118786010541486351, guid: e5fb65c96e1d2734d96d3b4cc1de97e9,
-        type: 3}
-      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_Target
-      value: 
-      objectReference: {fileID: 505764945}
-    - target: {fileID: 9118786010541486351, guid: e5fb65c96e1d2734d96d3b4cc1de97e9,
-        type: 3}
-      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_MethodName
-      value: OpenUsesMenu
-      objectReference: {fileID: 0}
-    - target: {fileID: 9118786010541486351, guid: e5fb65c96e1d2734d96d3b4cc1de97e9,
-        type: 3}
-      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_TargetAssemblyTypeName
-      value: Scr_InventoryChest, Assembly-CSharp
-      objectReference: {fileID: 0}
-    - target: {fileID: 9118786010547709781, guid: e5fb65c96e1d2734d96d3b4cc1de97e9,
-        type: 3}
-      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_Target
-      value: 
-      objectReference: {fileID: 505764945}
-    - target: {fileID: 9118786010547709781, guid: e5fb65c96e1d2734d96d3b4cc1de97e9,
-        type: 3}
-      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_MethodName
-      value: OpenUsesMenu
-      objectReference: {fileID: 0}
-    - target: {fileID: 9118786010547709781, guid: e5fb65c96e1d2734d96d3b4cc1de97e9,
-        type: 3}
-      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_TargetAssemblyTypeName
-      value: Scr_InventoryChest, Assembly-CSharp
-      objectReference: {fileID: 0}
-    - target: {fileID: 9118786010576797302, guid: e5fb65c96e1d2734d96d3b4cc1de97e9,
-        type: 3}
-      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_Target
-      value: 
-      objectReference: {fileID: 505764945}
-    - target: {fileID: 9118786010576797302, guid: e5fb65c96e1d2734d96d3b4cc1de97e9,
-        type: 3}
-      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_MethodName
-      value: OpenUsesMenu
-      objectReference: {fileID: 0}
-    - target: {fileID: 9118786010576797302, guid: e5fb65c96e1d2734d96d3b4cc1de97e9,
-        type: 3}
-      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_TargetAssemblyTypeName
-      value: Scr_InventoryChest, Assembly-CSharp
-      objectReference: {fileID: 0}
-    - target: {fileID: 9118786010784041705, guid: e5fb65c96e1d2734d96d3b4cc1de97e9,
-        type: 3}
-      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_Target
-      value: 
-      objectReference: {fileID: 505764945}
-    - target: {fileID: 9118786010784041705, guid: e5fb65c96e1d2734d96d3b4cc1de97e9,
-        type: 3}
-      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_MethodName
-      value: OpenUsesMenu
-      objectReference: {fileID: 0}
-    - target: {fileID: 9118786010784041705, guid: e5fb65c96e1d2734d96d3b4cc1de97e9,
-        type: 3}
-      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_TargetAssemblyTypeName
-      value: Scr_InventoryChest, Assembly-CSharp
-      objectReference: {fileID: 0}
-    - target: {fileID: 9118786010887353329, guid: e5fb65c96e1d2734d96d3b4cc1de97e9,
-        type: 3}
-      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_Target
-      value: 
-      objectReference: {fileID: 505764945}
-    - target: {fileID: 9118786010887353329, guid: e5fb65c96e1d2734d96d3b4cc1de97e9,
-        type: 3}
-      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_MethodName
-      value: OpenUsesMenu
-      objectReference: {fileID: 0}
-    - target: {fileID: 9118786010887353329, guid: e5fb65c96e1d2734d96d3b4cc1de97e9,
-        type: 3}
-      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_TargetAssemblyTypeName
-      value: Scr_InventoryChest, Assembly-CSharp
-      objectReference: {fileID: 0}
-    - target: {fileID: 9118786010994911682, guid: e5fb65c96e1d2734d96d3b4cc1de97e9,
-        type: 3}
-      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_Target
-      value: 
-      objectReference: {fileID: 505764945}
-    - target: {fileID: 9118786010994911682, guid: e5fb65c96e1d2734d96d3b4cc1de97e9,
-        type: 3}
-      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_MethodName
-      value: OpenUsesMenu
-      objectReference: {fileID: 0}
-    - target: {fileID: 9118786010994911682, guid: e5fb65c96e1d2734d96d3b4cc1de97e9,
-        type: 3}
-      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_TargetAssemblyTypeName
-      value: Scr_InventoryChest, Assembly-CSharp
-      objectReference: {fileID: 0}
-    - target: {fileID: 9118786011085552229, guid: e5fb65c96e1d2734d96d3b4cc1de97e9,
-        type: 3}
-      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_Target
-      value: 
-      objectReference: {fileID: 505764945}
-    - target: {fileID: 9118786011085552229, guid: e5fb65c96e1d2734d96d3b4cc1de97e9,
-        type: 3}
-      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_MethodName
-      value: OpenUsesMenu
-      objectReference: {fileID: 0}
-    - target: {fileID: 9118786011085552229, guid: e5fb65c96e1d2734d96d3b4cc1de97e9,
-        type: 3}
-      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_TargetAssemblyTypeName
-      value: Scr_InventoryChest, Assembly-CSharp
-      objectReference: {fileID: 0}
-    - target: {fileID: 9118786011187569828, guid: e5fb65c96e1d2734d96d3b4cc1de97e9,
-        type: 3}
-      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_Target
-      value: 
-      objectReference: {fileID: 505764945}
-    - target: {fileID: 9118786011187569828, guid: e5fb65c96e1d2734d96d3b4cc1de97e9,
-        type: 3}
-      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_MethodName
-      value: OpenUsesMenu
-      objectReference: {fileID: 0}
-    - target: {fileID: 9118786011187569828, guid: e5fb65c96e1d2734d96d3b4cc1de97e9,
-        type: 3}
-      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_TargetAssemblyTypeName
-      value: Scr_InventoryChest, Assembly-CSharp
-      objectReference: {fileID: 0}
-    - target: {fileID: 9118786011224875741, guid: e5fb65c96e1d2734d96d3b4cc1de97e9,
-        type: 3}
-      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_Target
-      value: 
-      objectReference: {fileID: 505764945}
-    - target: {fileID: 9118786011224875741, guid: e5fb65c96e1d2734d96d3b4cc1de97e9,
-        type: 3}
-      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_MethodName
-      value: OpenUsesMenu
-      objectReference: {fileID: 0}
-    - target: {fileID: 9118786011224875741, guid: e5fb65c96e1d2734d96d3b4cc1de97e9,
-        type: 3}
-      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_TargetAssemblyTypeName
-      value: Scr_InventoryChest, Assembly-CSharp
-      objectReference: {fileID: 0}
-    - target: {fileID: 9118786011344302055, guid: e5fb65c96e1d2734d96d3b4cc1de97e9,
-        type: 3}
-      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_Target
-      value: 
-      objectReference: {fileID: 505764945}
-    - target: {fileID: 9118786011344302055, guid: e5fb65c96e1d2734d96d3b4cc1de97e9,
-        type: 3}
-      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_MethodName
-      value: OpenUsesMenu
-      objectReference: {fileID: 0}
-    - target: {fileID: 9118786011344302055, guid: e5fb65c96e1d2734d96d3b4cc1de97e9,
-        type: 3}
-      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_TargetAssemblyTypeName
-      value: Scr_InventoryChest, Assembly-CSharp
-      objectReference: {fileID: 0}
-    - target: {fileID: 9118786011379751652, guid: e5fb65c96e1d2734d96d3b4cc1de97e9,
-        type: 3}
-      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_Target
-      value: 
-      objectReference: {fileID: 505764945}
-    - target: {fileID: 9118786011379751652, guid: e5fb65c96e1d2734d96d3b4cc1de97e9,
-        type: 3}
-      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_MethodName
-      value: OpenUsesMenu
-      objectReference: {fileID: 0}
-    - target: {fileID: 9118786011379751652, guid: e5fb65c96e1d2734d96d3b4cc1de97e9,
-        type: 3}
-      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_TargetAssemblyTypeName
-      value: Scr_InventoryChest, Assembly-CSharp
-      objectReference: {fileID: 0}
-    - target: {fileID: 9118786011579265053, guid: e5fb65c96e1d2734d96d3b4cc1de97e9,
-        type: 3}
-      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_Target
-      value: 
-      objectReference: {fileID: 505764945}
-    - target: {fileID: 9118786011579265053, guid: e5fb65c96e1d2734d96d3b4cc1de97e9,
-        type: 3}
-      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_MethodName
-      value: OpenUsesMenu
-      objectReference: {fileID: 0}
-    - target: {fileID: 9118786011579265053, guid: e5fb65c96e1d2734d96d3b4cc1de97e9,
-        type: 3}
-      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_TargetAssemblyTypeName
-      value: Scr_InventoryChest, Assembly-CSharp
-      objectReference: {fileID: 0}
-    - target: {fileID: 9118786011596424811, guid: e5fb65c96e1d2734d96d3b4cc1de97e9,
-        type: 3}
-      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_Target
-      value: 
-      objectReference: {fileID: 505764945}
-    - target: {fileID: 9118786011596424811, guid: e5fb65c96e1d2734d96d3b4cc1de97e9,
-        type: 3}
-      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_MethodName
-      value: OpenUsesMenu
-      objectReference: {fileID: 0}
-    - target: {fileID: 9118786011596424811, guid: e5fb65c96e1d2734d96d3b4cc1de97e9,
-        type: 3}
-      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_TargetAssemblyTypeName
-      value: Scr_InventoryChest, Assembly-CSharp
-      objectReference: {fileID: 0}
-    - target: {fileID: 9118786011641281258, guid: e5fb65c96e1d2734d96d3b4cc1de97e9,
-        type: 3}
-      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_Target
-      value: 
-      objectReference: {fileID: 505764945}
-    - target: {fileID: 9118786011641281258, guid: e5fb65c96e1d2734d96d3b4cc1de97e9,
-        type: 3}
-      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_MethodName
-      value: OpenUsesMenu
-      objectReference: {fileID: 0}
-    - target: {fileID: 9118786011641281258, guid: e5fb65c96e1d2734d96d3b4cc1de97e9,
-        type: 3}
-      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_TargetAssemblyTypeName
-      value: Scr_InventoryChest, Assembly-CSharp
-      objectReference: {fileID: 0}
-    - target: {fileID: 9118786011685098872, guid: e5fb65c96e1d2734d96d3b4cc1de97e9,
-        type: 3}
-      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_Target
-      value: 
-      objectReference: {fileID: 505764945}
-    - target: {fileID: 9118786011685098872, guid: e5fb65c96e1d2734d96d3b4cc1de97e9,
-        type: 3}
-      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_MethodName
-      value: OpenUsesMenu
-      objectReference: {fileID: 0}
-    - target: {fileID: 9118786011685098872, guid: e5fb65c96e1d2734d96d3b4cc1de97e9,
-        type: 3}
-      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_TargetAssemblyTypeName
-      value: Scr_InventoryChest, Assembly-CSharp
-      objectReference: {fileID: 0}
-    - target: {fileID: 9118786011770221946, guid: e5fb65c96e1d2734d96d3b4cc1de97e9,
-        type: 3}
-      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_Target
-      value: 
-      objectReference: {fileID: 505764945}
-    - target: {fileID: 9118786011770221946, guid: e5fb65c96e1d2734d96d3b4cc1de97e9,
-        type: 3}
-      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_MethodName
-      value: OpenUsesMenu
-      objectReference: {fileID: 0}
-    - target: {fileID: 9118786011770221946, guid: e5fb65c96e1d2734d96d3b4cc1de97e9,
-        type: 3}
-      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_TargetAssemblyTypeName
-      value: Scr_InventoryChest, Assembly-CSharp
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: e5fb65c96e1d2734d96d3b4cc1de97e9, type: 3}
