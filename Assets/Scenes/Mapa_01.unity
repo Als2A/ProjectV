@@ -3165,6 +3165,11 @@ PrefabInstance:
       propertyPath: m_AnchoredPosition.y
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 794996966708378430, guid: 6a59ea51d01129749b94b9436c0e0bc6,
+        type: 3}
+      propertyPath: Chest
+      value: 
+      objectReference: {fileID: 505764945}
     - target: {fileID: 1322364287641061121, guid: 6a59ea51d01129749b94b9436c0e0bc6,
         type: 3}
       propertyPath: m_IsActive
@@ -3218,8 +3223,13 @@ PrefabInstance:
     - target: {fileID: 4686607511746509853, guid: 6a59ea51d01129749b94b9436c0e0bc6,
         type: 3}
       propertyPath: m_IsActive
-      value: 1
+      value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 4890276293117714371, guid: 6a59ea51d01129749b94b9436c0e0bc6,
+        type: 3}
+      propertyPath: Chest
+      value: 
+      objectReference: {fileID: 505764945}
     - target: {fileID: 5161875069808146561, guid: 6a59ea51d01129749b94b9436c0e0bc6,
         type: 3}
       propertyPath: m_IsActive
@@ -3230,6 +3240,11 @@ PrefabInstance:
       propertyPath: Chest
       value: 
       objectReference: {fileID: 1863982897}
+    - target: {fileID: 5975779773742974436, guid: 6a59ea51d01129749b94b9436c0e0bc6,
+        type: 3}
+      propertyPath: InventoryChest
+      value: 
+      objectReference: {fileID: 505764945}
     - target: {fileID: 6429840802852078723, guid: 6a59ea51d01129749b94b9436c0e0bc6,
         type: 3}
       propertyPath: m_AnchorMax.y
@@ -3350,6 +3365,21 @@ PrefabInstance:
       propertyPath: m_AnchoredPosition.y
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 8435613501758363125, guid: 6a59ea51d01129749b94b9436c0e0bc6,
+        type: 3}
+      propertyPath: Chest
+      value: 
+      objectReference: {fileID: 505764945}
+    - target: {fileID: 8435613502365071444, guid: 6a59ea51d01129749b94b9436c0e0bc6,
+        type: 3}
+      propertyPath: Chest
+      value: 
+      objectReference: {fileID: 505764945}
+    - target: {fileID: 8435613502386811739, guid: 6a59ea51d01129749b94b9436c0e0bc6,
+        type: 3}
+      propertyPath: Chest
+      value: 
+      objectReference: {fileID: 505764945}
     - target: {fileID: 8435613502394722322, guid: 6a59ea51d01129749b94b9436c0e0bc6,
         type: 3}
       propertyPath: Chest
@@ -9019,7 +9049,7 @@ MonoBehaviour:
     meshQuery:
       layers: 16777223
       maskAndChannels: 234881031
-    surfaceParameter: 38110
+    surfaceParameter: 34806
     meshQueryIndex: 0
     subMeshQueryIndex: 0
     geometryHashValue: 8752924517962489004
@@ -10172,7 +10202,7 @@ MonoBehaviour:
     meshQuery:
       layers: 33554440
       maskAndChannels: 8
-    surfaceParameter: 34274
+    surfaceParameter: 34958
     meshQueryIndex: 1
     subMeshQueryIndex: 0
     geometryHashValue: 1551927583917004265
@@ -11130,7 +11160,7 @@ MonoBehaviour:
     meshQuery:
       layers: 16777223
       maskAndChannels: 234881031
-    surfaceParameter: 39102
+    surfaceParameter: 34808
     meshQueryIndex: 5
     subMeshQueryIndex: 0
     geometryHashValue: -8369208719946829987
@@ -18086,7 +18116,7 @@ MonoBehaviour:
     meshQuery:
       layers: 33554440
       maskAndChannels: 8
-    surfaceParameter: 34274
+    surfaceParameter: 34958
     meshQueryIndex: 1
     subMeshQueryIndex: 0
     geometryHashValue: 1551927583917004265
@@ -20932,6 +20962,101 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 0}
     m_Modifications:
+    - target: {fileID: 993138776237881392, guid: e5fb65c96e1d2734d96d3b4cc1de97e9,
+        type: 3}
+      propertyPath: ButtonPos
+      value: 11
+      objectReference: {fileID: 0}
+    - target: {fileID: 993138776360081910, guid: e5fb65c96e1d2734d96d3b4cc1de97e9,
+        type: 3}
+      propertyPath: ButtonPos
+      value: 9
+      objectReference: {fileID: 0}
+    - target: {fileID: 993138776686026037, guid: e5fb65c96e1d2734d96d3b4cc1de97e9,
+        type: 3}
+      propertyPath: ButtonPos
+      value: 15
+      objectReference: {fileID: 0}
+    - target: {fileID: 993138776813223184, guid: e5fb65c96e1d2734d96d3b4cc1de97e9,
+        type: 3}
+      propertyPath: ButtonPos
+      value: 17
+      objectReference: {fileID: 0}
+    - target: {fileID: 993138776845152873, guid: e5fb65c96e1d2734d96d3b4cc1de97e9,
+        type: 3}
+      propertyPath: ButtonPos
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 993138776850719795, guid: e5fb65c96e1d2734d96d3b4cc1de97e9,
+        type: 3}
+      propertyPath: ButtonPos
+      value: 7
+      objectReference: {fileID: 0}
+    - target: {fileID: 993138776973083321, guid: e5fb65c96e1d2734d96d3b4cc1de97e9,
+        type: 3}
+      propertyPath: ButtonPos
+      value: 18
+      objectReference: {fileID: 0}
+    - target: {fileID: 993138777007360399, guid: e5fb65c96e1d2734d96d3b4cc1de97e9,
+        type: 3}
+      propertyPath: ButtonPos
+      value: 12
+      objectReference: {fileID: 0}
+    - target: {fileID: 993138777331477156, guid: e5fb65c96e1d2734d96d3b4cc1de97e9,
+        type: 3}
+      propertyPath: ButtonPos
+      value: 3
+      objectReference: {fileID: 0}
+    - target: {fileID: 993138777376110851, guid: e5fb65c96e1d2734d96d3b4cc1de97e9,
+        type: 3}
+      propertyPath: ButtonPos
+      value: 16
+      objectReference: {fileID: 0}
+    - target: {fileID: 993138777442021527, guid: e5fb65c96e1d2734d96d3b4cc1de97e9,
+        type: 3}
+      propertyPath: ButtonPos
+      value: 13
+      objectReference: {fileID: 0}
+    - target: {fileID: 993138777664744577, guid: e5fb65c96e1d2734d96d3b4cc1de97e9,
+        type: 3}
+      propertyPath: ButtonPos
+      value: 6
+      objectReference: {fileID: 0}
+    - target: {fileID: 993138777675786178, guid: e5fb65c96e1d2734d96d3b4cc1de97e9,
+        type: 3}
+      propertyPath: ButtonPos
+      value: 8
+      objectReference: {fileID: 0}
+    - target: {fileID: 993138777783869883, guid: e5fb65c96e1d2734d96d3b4cc1de97e9,
+        type: 3}
+      propertyPath: ButtonPos
+      value: 4
+      objectReference: {fileID: 0}
+    - target: {fileID: 993138777832469371, guid: e5fb65c96e1d2734d96d3b4cc1de97e9,
+        type: 3}
+      propertyPath: ButtonPos
+      value: 10
+      objectReference: {fileID: 0}
+    - target: {fileID: 993138777893960076, guid: e5fb65c96e1d2734d96d3b4cc1de97e9,
+        type: 3}
+      propertyPath: ButtonPos
+      value: 5
+      objectReference: {fileID: 0}
+    - target: {fileID: 993138777937708301, guid: e5fb65c96e1d2734d96d3b4cc1de97e9,
+        type: 3}
+      propertyPath: ButtonPos
+      value: 2
+      objectReference: {fileID: 0}
+    - target: {fileID: 993138778261394974, guid: e5fb65c96e1d2734d96d3b4cc1de97e9,
+        type: 3}
+      propertyPath: ButtonPos
+      value: 14
+      objectReference: {fileID: 0}
+    - target: {fileID: 993138778312308252, guid: e5fb65c96e1d2734d96d3b4cc1de97e9,
+        type: 3}
+      propertyPath: ButtonPos
+      value: 19
+      objectReference: {fileID: 0}
     - target: {fileID: 2361052960594672667, guid: e5fb65c96e1d2734d96d3b4cc1de97e9,
         type: 3}
       propertyPath: Inventory

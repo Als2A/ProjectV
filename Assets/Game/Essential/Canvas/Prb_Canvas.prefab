@@ -870,6 +870,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 5240b076bb43143428024a2b123887ab, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  Chest: {fileID: 0}
   ButtonUsesPos: 0
 --- !u!1 &2247533432845652948
 GameObject:
@@ -1197,6 +1198,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 5240b076bb43143428024a2b123887ab, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  Chest: {fileID: 0}
   ButtonUsesPos: 0
 --- !u!114 &8274443100188009018
 MonoBehaviour:
@@ -1830,6 +1832,7 @@ MonoBehaviour:
   DataCombine: {fileID: 0}
   CombinePos: 0
   Chest: {fileID: 0}
+  InventoryChest: {fileID: 0}
   ViewerSet: {fileID: 0}
   ViewerTexture: {fileID: 5815405419609581016}
   InspectorObject: {fileID: 0}
@@ -2087,6 +2090,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 5240b076bb43143428024a2b123887ab, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  Chest: {fileID: 0}
   ButtonUsesPos: 0
 --- !u!1 &4637830429353858998
 GameObject:
@@ -2265,6 +2269,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 5240b076bb43143428024a2b123887ab, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  Chest: {fileID: 0}
   ButtonUsesPos: 0
 --- !u!1 &4855818586772182260
 GameObject:
@@ -5020,7 +5025,7 @@ MonoBehaviour:
       m_Calls:
       - m_Target: {fileID: 2882142967529367101}
         m_TargetAssemblyTypeName: Scr_Inventory, Assembly-CSharp
-        m_MethodName: UsesEquip
+        m_MethodName: ChangeItem
         m_Mode: 1
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
@@ -5071,6 +5076,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 5240b076bb43143428024a2b123887ab, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  Chest: {fileID: 0}
   ButtonUsesPos: 2
 --- !u!1001 &34441612591839145
 PrefabInstance:

@@ -49,6 +49,7 @@ public class Scr_Inventory : MonoBehaviour
 
     [Header("Chest")]
     public Scr_Baul Chest;
+    public Scr_InventoryChest InventoryChest;
 
 
 
@@ -346,6 +347,81 @@ public class Scr_Inventory : MonoBehaviour
 
             UsesMenu.SetActive(false);
         }
+    }
+
+    public void ChangeItem()
+    {
+        if(ItemsSel.activeInHierarchy)
+        {
+            for (int i = 0; i < InventoryChest.Items.Length; i++)
+            {
+                var ButtonData = InventoryChest.Items[i].GetComponentInChildren<Scr_InventoryButtonData>();
+
+                if (ButtonData.Data.id == 0)
+                {
+
+                    Debug.Log("Change");
+
+                    var ItemA_Data = Items[ItemsPos].GetComponentInChildren<Scr_InventoryButtonData>();
+                    var ItemB_Data = InventoryChest.Items[i].GetComponentInChildren<Scr_InventoryButtonData>();
+                    
+                    var ItemS_Data = ItemA_Data.Data;
+
+                    ItemA_Data.Data = ItemB_Data.Data;
+                    ItemB_Data.Data = ItemS_Data;
+
+                    ItemA_Data.UpdateSlot();
+                    ItemB_Data.UpdateSlot();        
+                    
+
+                    break;
+                }
+
+                if (i == InventoryChest.Items.Length - 1 && ButtonData.Data.id != 0)
+                {
+                    Debug.Log("Estas lleno my G");
+                }
+            }
+
+            CloseUsesMenu();
+
+        }
+        
+        if (InventoryChest.ItemsSel.activeInHierarchy)
+        {
+            for (int i = 1; i < Items.Length; i++)
+            {
+                var ButtonData = Items[i].GetComponentInChildren<Scr_InventoryButtonData>();
+
+                if (ButtonData.Data.id == 0)
+                {
+
+                    Debug.Log("Change");
+
+                    var ItemA_Data = InventoryChest.Items[InventoryChest.ItemsPos].GetComponentInChildren<Scr_InventoryButtonData>();
+                    var ItemB_Data = Items[i].GetComponentInChildren<Scr_InventoryButtonData>();
+
+                    var ItemS_Data = ItemA_Data.Data;
+
+                    ItemA_Data.Data = ItemB_Data.Data;
+                    ItemB_Data.Data = ItemS_Data;
+
+                    ItemA_Data.UpdateSlot();
+                    ItemB_Data.UpdateSlot();
+
+
+                    break;
+                }
+
+                Debug.Log("Estas lleno my G");
+
+            }
+
+            CloseUsesMenu();
+
+        }
+
+
     }
 
     public void UsesEquip()

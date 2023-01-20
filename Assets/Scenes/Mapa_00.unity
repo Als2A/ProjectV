@@ -889,7 +889,7 @@ MonoBehaviour:
     meshQuery:
       layers: 16777223
       maskAndChannels: 234881031
-    surfaceParameter: 30870
+    surfaceParameter: 43666
     meshQueryIndex: 0
     subMeshQueryIndex: 0
     geometryHashValue: 1774036442214313857
@@ -1800,7 +1800,7 @@ MonoBehaviour:
     meshQuery:
       layers: 33554440
       maskAndChannels: 8
-    surfaceParameter: 30904
+    surfaceParameter: 34958
     meshQueryIndex: 1
     subMeshQueryIndex: 0
     geometryHashValue: 1774036442214313857
@@ -2675,9 +2675,24 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 1895641461791729357, guid: 6a59ea51d01129749b94b9436c0e0bc6,
         type: 3}
+      propertyPath: Chest
+      value: 
+      objectReference: {fileID: 1548836836}
+    - target: {fileID: 1895641461791729357, guid: 6a59ea51d01129749b94b9436c0e0bc6,
+        type: 3}
       propertyPath: ButtonUsesPos
       value: 2
       objectReference: {fileID: 0}
+    - target: {fileID: 2141400564022759229, guid: 6a59ea51d01129749b94b9436c0e0bc6,
+        type: 3}
+      propertyPath: Chest
+      value: 
+      objectReference: {fileID: 1548836836}
+    - target: {fileID: 2698442545738613411, guid: 6a59ea51d01129749b94b9436c0e0bc6,
+        type: 3}
+      propertyPath: Chest
+      value: 
+      objectReference: {fileID: 1548836836}
     - target: {fileID: 2698442545738613411, guid: 6a59ea51d01129749b94b9436c0e0bc6,
         type: 3}
       propertyPath: ButtonUsesPos
@@ -2830,6 +2845,11 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 6760319858558992252, guid: 6a59ea51d01129749b94b9436c0e0bc6,
         type: 3}
+      propertyPath: Chest
+      value: 
+      objectReference: {fileID: 1548836836}
+    - target: {fileID: 6760319858558992252, guid: 6a59ea51d01129749b94b9436c0e0bc6,
+        type: 3}
       propertyPath: ButtonUsesPos
       value: 4
       objectReference: {fileID: 0}
@@ -2978,6 +2998,11 @@ PrefabInstance:
       propertyPath: m_AnchoredPosition.y
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 8435613502394722322, guid: 6a59ea51d01129749b94b9436c0e0bc6,
+        type: 3}
+      propertyPath: Chest
+      value: 
+      objectReference: {fileID: 1548836836}
     - target: {fileID: 8435613502394722322, guid: 6a59ea51d01129749b94b9436c0e0bc6,
         type: 3}
       propertyPath: ButtonUsesPos
@@ -6027,6 +6052,18 @@ GameObject:
     type: 3}
   m_PrefabInstance: {fileID: 1378899615}
   m_PrefabAsset: {fileID: 0}
+--- !u!114 &1548836836 stripped
+MonoBehaviour:
+  m_CorrespondingSourceObject: {fileID: 2361052962577479385, guid: e5fb65c96e1d2734d96d3b4cc1de97e9,
+    type: 3}
+  m_PrefabInstance: {fileID: 1378899615}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1548836835}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 0789145678dd502439e93bcbda33afa3, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1 &1552930107
 GameObject:
   m_ObjectHideFlags: 0
@@ -6696,7 +6733,7 @@ MonoBehaviour:
     meshQuery:
       layers: 33554440
       maskAndChannels: 8
-    surfaceParameter: 30904
+    surfaceParameter: 34958
     meshQueryIndex: 1
     subMeshQueryIndex: 0
     geometryHashValue: 1774036442214313857
