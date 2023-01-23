@@ -74,7 +74,7 @@ GameObject:
   - component: {fileID: 2197349175959338111}
   - component: {fileID: 2197349175959338083}
   m_Layer: 0
-  m_Name: Chest
+  m_Name: Prb_Chest
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -174,4 +174,5 @@ MonoBehaviour:
   isOpen: 0
   ChestCanvas: {fileID: 0}
   Player_Inventory: {fileID: 0}
+  Chest_Inventory: {fileID: 0}
   Inputs: {fileID: 0}
