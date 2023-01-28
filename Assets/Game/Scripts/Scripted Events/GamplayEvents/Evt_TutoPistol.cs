@@ -8,6 +8,8 @@ public class Evt_TutoPistol : MonoBehaviour
 
     public Scr_Inventory Inventory;
 
+    public Scr_Puerta Puerta;
+
     public bool Activate = false;
 
     // Start is called before the first frame update
@@ -21,13 +23,33 @@ public class Evt_TutoPistol : MonoBehaviour
     {
         if (Activate)
         {
-            Voices();
-
-            Invoke("EquipGun", 4f);
-
             Activate = false;
-            var Collider = GetComponent<Collider>().enabled = false;
+
+            Part_00();
+
+            Invoke("Part_01", 1f);
         }
+    }
+
+    void Part_00()
+    {
+        
+        Puerta.Abertura = 0;
+
+        Invoke("PuertaClose", 0.5f);
+
+    }
+
+    void PuertaClose()
+    {
+        Puerta.Locked = true;
+    }
+
+    void Part_01()
+    {
+        Voices();
+
+        Invoke("EquipGun", 4f);        
     }
 
     void Voices()
@@ -58,7 +80,9 @@ public class Evt_TutoPistol : MonoBehaviour
     {
         if (other.transform.CompareTag("Player"))
         {
-            Activate = true;
+            var Collider = GetComponent<Collider>().enabled = false;
+
+            Activate = true;            
         }
     }
 }
