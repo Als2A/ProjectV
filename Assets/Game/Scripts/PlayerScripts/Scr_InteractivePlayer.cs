@@ -15,6 +15,7 @@ public class Scr_InteractivePlayer : MonoBehaviour
     public Scr_InputSystem Inputs;
     public Camera Cam;
     public GameObject Mira;
+    public GameObject Mira_00;
     public Scr_InteractiveObject InteractiveObject;
 
 
@@ -44,6 +45,7 @@ public class Scr_InteractivePlayer : MonoBehaviour
     void Look(RaycastHit hit)
     {
         Mira.SetActive(true);
+        Mira_00.SetActive(false);
 
         if (hit.transform.gameObject.GetComponent<Scr_InteractiveObject>() != null)
         { InteractiveObject = hit.transform.gameObject.GetComponent<Scr_InteractiveObject>(); }
@@ -71,6 +73,7 @@ public class Scr_InteractivePlayer : MonoBehaviour
     void NoLook()
     {
         Mira.SetActive(false);
+        Mira_00.SetActive(true);
 
         if (InteractiveObject != null)
         if (InteractiveObject.PrimaryAction && !Inputs.ActionOne)

@@ -11,6 +11,8 @@ public class Scr_DynamicDepthOfField : MonoBehaviour
     bool isHit;
     float hitDistance;
 
+    float Radius = 0.3f;
+
     public Volume Effects;
 
     DepthOfField depthOfField;
@@ -40,7 +42,7 @@ public class Scr_DynamicDepthOfField : MonoBehaviour
             ray = new Ray(transform.position, transform.forward * 100f);
             isHit = false;
 
-            if (Physics.SphereCast(ray, 0.3f, out hit, 100f))
+            if (Physics.SphereCast(ray, Radius, out hit, 100f))
             {
                 isHit = true;
                 hitDistance = Vector3.Distance(transform.position, hit.point);
@@ -62,5 +64,19 @@ public class Scr_DynamicDepthOfField : MonoBehaviour
         depthOfField.farFocusEnd.value = hitDistance + 10f;
 
         //depthOfField.focusDistance.value = hitDistance;
+    }
+
+    void OnDrawGizmos()
+    {
+        Gizmos.color = Color.red;
+
+        if(Physics.SphereCast(ray, Radius, out hit, 100f)) //codigo guiri Ignora LayerMask
+        {
+            // Draw a yellow sphere at the transform's position
+
+            Gizmos.DrawSphere(hit.point, Radius);
+
+        }
+
     }
 }

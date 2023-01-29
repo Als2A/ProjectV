@@ -13,6 +13,7 @@ public class Scr_Cajon : MonoBehaviour
 
     [Header("Referencias")]
     public Scr_InteractiveObject UsingObject;
+    public Scr_InputSystem Input;
     public Scr_MouseLook MouseCam;
     public GameObject FollowPos;
 
@@ -22,9 +23,11 @@ public class Scr_Cajon : MonoBehaviour
         if(UsingObject.PrimaryAction == true)
         {
             MouseCam.CameraLock = true;
-            
+
+            float mouseY = Input.Look_y * (Input.Sens / 100) * Time.deltaTime;
+
             //float mouseY = Input.GetAxis("Mouse Y") * MouseCam.mouseSens/4 * Time.deltaTime;
-            //Abertura -= mouseY;
+            Abertura -= mouseY;
         }
 
         if(UsingObject.SecondaryAction == true)
