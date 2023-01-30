@@ -38,7 +38,7 @@ public class Scr_InventoryButtonData : MonoBehaviour
 
     }
 
-    void GetData()
+    public void GetData()
     {
         Data.id = OriginalData.id;
         Data.Name = OriginalData.Name;

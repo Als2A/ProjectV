@@ -20,7 +20,7 @@ MonoBehaviour:
     type: 3}
   InspectorScale: 1
   CombineObjectID: -1
-  CombineResult: {fileID: 11400000, guid: 6b5f93d3f9f473142b4efa454772c06f, type: 2}
+  CombineResult: {fileID: 11400000, guid: 22f181b7d42c2574f941479a60121360, type: 2}
   CombinePrimary: 1
   CombineDestroy: 0
   Variant: 0

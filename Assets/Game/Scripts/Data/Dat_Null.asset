@@ -10,12 +10,16 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: b308441c78d87bc428dfde2c4f9e1dd0, type: 3}
-  m_Name: Dat_Null
+  m_Name: DataPlayer_
   m_EditorClassIdentifier: 
   id: 0
   Name: 
   Image: {fileID: 0}
   Descripcion: 
-  Object_Prefab: {fileID: 8617495525905764127, guid: 0905becccee778b419dd7d4957b77e51,
-    type: 3}
+  Object_Prefab: {fileID: 0}
   InspectorScale: 1
+  CombineObjectID: 0
+  CombineResult: {fileID: 0}
+  CombinePrimary: 0
+  CombineDestroy: 0
+  Variant: 0

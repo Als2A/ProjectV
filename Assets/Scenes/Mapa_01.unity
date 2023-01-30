@@ -2030,7 +2030,7 @@ MonoBehaviour:
     meshQuery:
       layers: 33554440
       maskAndChannels: 8
-    surfaceParameter: 31408
+    surfaceParameter: 36388
     meshQueryIndex: 1
     subMeshQueryIndex: 0
     geometryHashValue: -8472649619949515741
@@ -2336,7 +2336,7 @@ PrefabInstance:
     - target: {fileID: 5161875069808146561, guid: 6a59ea51d01129749b94b9436c0e0bc6,
         type: 3}
       propertyPath: m_IsActive
-      value: 0
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 6429840802852078723, guid: 6a59ea51d01129749b94b9436c0e0bc6,
         type: 3}
@@ -2371,7 +2371,7 @@ PrefabInstance:
     - target: {fileID: 7213408713783351791, guid: 6a59ea51d01129749b94b9436c0e0bc6,
         type: 3}
       propertyPath: m_RootOrder
-      value: 1
+      value: 2
       objectReference: {fileID: 0}
     - target: {fileID: 7213408713783351791, guid: 6a59ea51d01129749b94b9436c0e0bc6,
         type: 3}
@@ -2541,7 +2541,7 @@ PrefabInstance:
     - target: {fileID: 8880507515393977025, guid: 80ee2c941012fba499ad6e089002b151,
         type: 3}
       propertyPath: m_LocalPosition.x
-      value: 8.037
+      value: -13.47
       objectReference: {fileID: 0}
     - target: {fileID: 8880507515393977025, guid: 80ee2c941012fba499ad6e089002b151,
         type: 3}
@@ -2551,7 +2551,7 @@ PrefabInstance:
     - target: {fileID: 8880507515393977025, guid: 80ee2c941012fba499ad6e089002b151,
         type: 3}
       propertyPath: m_LocalPosition.z
-      value: 10.09
+      value: 8.31
       objectReference: {fileID: 0}
     - target: {fileID: 8880507515393977025, guid: 80ee2c941012fba499ad6e089002b151,
         type: 3}
@@ -7063,7 +7063,7 @@ Transform:
   - {fileID: 980861548}
   - {fileID: 190241120}
   m_Father: {fileID: 0}
-  m_RootOrder: 3
+  m_RootOrder: 4
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1001 &846065608
 PrefabInstance:
@@ -10224,6 +10224,85 @@ PrefabInstance:
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: a98d43430ae93b9418f16c4d45258d1f, type: 3}
+--- !u!1001 &1195061915
+PrefabInstance:
+  m_ObjectHideFlags: 0
+  serializedVersion: 2
+  m_Modification:
+    m_TransformParent: {fileID: 0}
+    m_Modifications:
+    - target: {fileID: 629887364942738641, guid: 422960bb4669ee346b8aae93ea4c2f0e,
+        type: 3}
+      propertyPath: m_RootOrder
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 629887364942738641, guid: 422960bb4669ee346b8aae93ea4c2f0e,
+        type: 3}
+      propertyPath: m_LocalPosition.x
+      value: -13.926595
+      objectReference: {fileID: 0}
+    - target: {fileID: 629887364942738641, guid: 422960bb4669ee346b8aae93ea4c2f0e,
+        type: 3}
+      propertyPath: m_LocalPosition.y
+      value: 1.48
+      objectReference: {fileID: 0}
+    - target: {fileID: 629887364942738641, guid: 422960bb4669ee346b8aae93ea4c2f0e,
+        type: 3}
+      propertyPath: m_LocalPosition.z
+      value: 7.03109
+      objectReference: {fileID: 0}
+    - target: {fileID: 629887364942738641, guid: 422960bb4669ee346b8aae93ea4c2f0e,
+        type: 3}
+      propertyPath: m_LocalRotation.w
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 629887364942738641, guid: 422960bb4669ee346b8aae93ea4c2f0e,
+        type: 3}
+      propertyPath: m_LocalRotation.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 629887364942738641, guid: 422960bb4669ee346b8aae93ea4c2f0e,
+        type: 3}
+      propertyPath: m_LocalRotation.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 629887364942738641, guid: 422960bb4669ee346b8aae93ea4c2f0e,
+        type: 3}
+      propertyPath: m_LocalRotation.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 629887364942738641, guid: 422960bb4669ee346b8aae93ea4c2f0e,
+        type: 3}
+      propertyPath: m_LocalEulerAnglesHint.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 629887364942738641, guid: 422960bb4669ee346b8aae93ea4c2f0e,
+        type: 3}
+      propertyPath: m_LocalEulerAnglesHint.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 629887364942738641, guid: 422960bb4669ee346b8aae93ea4c2f0e,
+        type: 3}
+      propertyPath: m_LocalEulerAnglesHint.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 1157378029330397773, guid: 422960bb4669ee346b8aae93ea4c2f0e,
+        type: 3}
+      propertyPath: Inputs
+      value: 
+      objectReference: {fileID: 1796483438}
+    - target: {fileID: 1157378029330397773, guid: 422960bb4669ee346b8aae93ea4c2f0e,
+        type: 3}
+      propertyPath: Inventory
+      value: 
+      objectReference: {fileID: 1256748741}
+    - target: {fileID: 3362224965705162966, guid: 422960bb4669ee346b8aae93ea4c2f0e,
+        type: 3}
+      propertyPath: m_Name
+      value: Prb_Rec_Pilas
+      objectReference: {fileID: 0}
+    m_RemovedComponents: []
+  m_SourcePrefab: {fileID: 100100000, guid: 422960bb4669ee346b8aae93ea4c2f0e, type: 3}
 --- !u!1 &1214662170 stripped
 GameObject:
   m_CorrespondingSourceObject: {fileID: 5566868599779289307, guid: 6a59ea51d01129749b94b9436c0e0bc6,
@@ -13196,7 +13275,7 @@ MonoBehaviour:
     meshQuery:
       layers: 16777223
       maskAndChannels: 234881031
-    surfaceParameter: 31380
+    surfaceParameter: 36360
     meshQueryIndex: 0
     subMeshQueryIndex: 0
     geometryHashValue: -8472649619949515741
@@ -16694,7 +16773,7 @@ Transform:
   m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 0}
-  m_RootOrder: 2
+  m_RootOrder: 3
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1001 &1952783689
 PrefabInstance:
@@ -17070,7 +17149,7 @@ Transform:
   m_Children:
   - {fileID: 805546850}
   m_Father: {fileID: 0}
-  m_RootOrder: 4
+  m_RootOrder: 5
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1001 &1999382663
 PrefabInstance:
@@ -18038,7 +18117,7 @@ Transform:
   m_Children:
   - {fileID: 1893956132}
   m_Father: {fileID: 0}
-  m_RootOrder: 5
+  m_RootOrder: 6
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!4 &2116757655 stripped
 Transform:

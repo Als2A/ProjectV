@@ -548,29 +548,44 @@ public class Scr_Inventory : MonoBehaviour
     {
         Inputs.Accept = false;
 
-        var DataItemPos = Items[CombinePos].GetComponentInChildren<Scr_InventoryButtonData>();
-        var ItemPos_Data = Items[ItemsPos].GetComponentInChildren<Scr_InventoryButtonData>();
+        var Item_A = Items[CombinePos].GetComponentInChildren<Scr_InventoryButtonData>();
+        var Item_B = Items[ItemsPos].GetComponentInChildren<Scr_InventoryButtonData>();
 
 
-        if (DataCombine.CombineObjectID == ItemPos_Data.Data.id || ItemPos_Data.Data.CombineObjectID == DataCombine.id)
+        if (DataCombine.CombineObjectID == Item_B.Data.id || Item_B.Data.CombineObjectID == DataCombine.id)
         {
-            if (DataItemPos.Data.CombinePrimary)
+            if (Item_A.Data.CombinePrimary)
             {
-                DataItemPos.Data.Variant = ItemPos_Data.Data.Variant;
+                Item_A.Data.Variant = Item_B.Data.Variant;
 
-                if(ItemPos_Data.Data.CombineDestroy)
-                { ItemPos_Data.Data = ObjNull; }
+                if(Item_B.Data.CombineDestroy)
+                { Item_B.Data = ObjNull; }
                 else
                 {
-                    var SaveDataItem = ItemPos_Data.Data;
-                    ItemPos_Data.Data = DataItemPos.Data.CombineResult;
+                    var SaveDataItem = Item_B.Data;
+                    Item_B.Data = Item_A.Data.CombineResult;
 
-                    DataItemPos.Data.CombineResult = SaveDataItem;
+                    Item_A.Data.CombineResult = SaveDataItem;
                 }
 
             }
+            else if (!Item_A.Data.CombinePrimary)
+            {
+                Item_B.Data.Variant = Item_A.Data.Variant;
 
-            ItemPos_Data.UpdateSlot();
+                if (Item_A.Data.CombineDestroy)
+                { Item_A.Data = ObjNull; }
+                else
+                {
+                    var SaveDataItem = Item_A.Data;
+                    Item_A.Data = Item_B.Data.CombineResult;
+
+                    Item_B.Data.CombineResult = SaveDataItem;
+                }
+            }
+
+            Item_A.UpdateSlot();
+            Item_B.UpdateSlot();
 
             isCombining = false;
 
