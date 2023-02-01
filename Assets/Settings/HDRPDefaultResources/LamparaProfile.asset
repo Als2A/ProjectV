@@ -13,11 +13,11 @@ MonoBehaviour:
   m_Name: LamparaProfile
   m_EditorClassIdentifier: 
   profile:
-    scatteringDistance: {r: 0.14150941, g: 0.12649073, b: 0.11147204, a: 1}
-    transmissionTint: {r: 1, g: 1, b: 1, a: 1}
+    scatteringDistance: {r: 0.5, g: 0.5, b: 0.5, a: 1}
+    transmissionTint: {r: 0.6509434, g: 0.42575854, b: 0.16887684, a: 1}
     texturingMode: 0
     transmissionMode: 1
-    thicknessRemap: {x: 0, y: 46.12546}
+    thicknessRemap: {x: 0, y: 4.5071464}
     worldScale: 1
     ior: 1.4
     hash: 1081170640
