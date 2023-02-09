@@ -51,12 +51,12 @@ public class Scr_DialSolo : MonoBehaviour
 
         if (isPos && isUsing)
         {
-            float mouseX = Inputs.Look_x * (Inputs.Sens / 100) * Time.deltaTime;
+            float mouseX = Inputs.Look_y * (Inputs.Sens / 100) * Time.deltaTime;
 
-            Vuelta -= mouseX;
+            Vuelta += mouseX;
         }
 
-        transform.localRotation = Quaternion.Euler(0, Vuelta * 360, 0);
+        transform.localRotation = Quaternion.Euler(-Vuelta * 360, 0, 0);
 
         GradosNumeros();
 

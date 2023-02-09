@@ -28,32 +28,35 @@ public class Scr_Puerta : MonoBehaviour
 
     void Update()
     {
-        if (UsingObject.PrimaryAction == true)
+        if (!Locked)
         {
-            MouseCam.CameraLock = true;
-
-            float mouseY = Input.Look_y * (Input.Sens / 100) * Time.deltaTime;
-
-            if (!inverted)
-            {                
-                Abertura -= mouseY;
-            }
-            else
+            if (UsingObject.PrimaryAction == true)
             {
-                Abertura += mouseY;
+                MouseCam.CameraLock = true;
+
+                float mouseY = Input.Look_y * (Input.Sens / 100) * Time.deltaTime;
+
+                if (!inverted)
+                {
+                    Abertura -= mouseY;
+                }
+                else
+                {
+                    Abertura += mouseY;
+                }
+                
             }
-            //float mouseX = Input.GetAxis("Mouse X") * MouseCam.mouseSens * Time.deltaTime;
 
+            if (UsingObject.SecondaryAction == true)
+            {
+                if (Abertura < 0.5) Abertura = 1;
+                else if (Abertura >= 0.5) Abertura = 0;
+
+
+                UsingObject.SecondaryAction = false;
+            }
         }
 
-        if (UsingObject.SecondaryAction == true)
-        {
-            if (Abertura < 0.5) Abertura = 1;
-            else if (Abertura >= 0.5) Abertura = 0;
-
-
-            UsingObject.SecondaryAction = false;
-        }
 
 
         if (Abertura > 1) Abertura = 1;
