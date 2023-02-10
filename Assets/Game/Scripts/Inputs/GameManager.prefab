@@ -26,7 +26,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 7223471101806851895}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 2.0759757, y: 0.14376062, z: 0.04492459}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
@@ -89,21 +89,29 @@ MonoBehaviour:
     m_Asset: {fileID: 0}
     m_Actions: []
     m_Bindings: []
-  ObjViewerMap:
-    m_Name: Obj Viewer Map
-    m_Id: cf950e7c-7cc0-4555-babd-65ba743ddf8a
-    m_Asset: {fileID: 0}
-    m_Actions: []
-    m_Bindings: []
-  Movement: {x: 0, y: 0}
   Movement_x: 0
   Movement_y: 0
+  Movement: {x: 0, y: 0}
+  Sprint: 0
+  ValueSprint: 0
+  Crouch: 0
   Look_x: 0
   Look_y: 0
   ActionOne: 0
   ActionTwo: 0
   OpenInventory: 0
-  Sprint: 0
-  ValueSprint: 0
+  Pause: 0
   Accept: 0
   Cancel: 0
+  GodMode: 0
+  Sens: 0
+  InvertX: 0
+  InvertY: 0
+  Audio_Master: 0
+  Audio_Sound: 0
+  Audio_Music: 0
+  Audio_Voice: 0
+  Brightness: 0
+  Quality: 0
+  Resolution: 0
+  Fullscreen: 0

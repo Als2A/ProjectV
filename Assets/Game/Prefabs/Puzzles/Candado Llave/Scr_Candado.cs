@@ -41,8 +41,8 @@ public class Scr_Candado : MonoBehaviour
                     //Animacion de llave
                     ObjectInHand.transform.parent = gameObject.transform;
 
-                    ObjectInHand.transform.localPosition = Vector3.forward * -0.05f;
-                    ObjectInHand.transform.localRotation = Quaternion.Euler(Vector3.right * 90f);
+                    ObjectInHand.transform.localPosition = Vector3.forward * 0.05f;
+                    ObjectInHand.transform.localRotation = Quaternion.Euler(0,90,-90f);
 
 
                     //Puerta Abierta
