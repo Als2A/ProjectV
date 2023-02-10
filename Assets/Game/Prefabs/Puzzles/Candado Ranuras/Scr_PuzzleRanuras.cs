@@ -41,6 +41,7 @@ public class Scr_PuzzleRanuras : MonoBehaviour
 
                     ObjectInHand.transform.parent = gameObject.transform;
                     ObjectInHand.transform.localPosition = Vector3.zero + (Vector3.forward * Distancia);
+                    ObjectInHand.transform.localRotation = Quaternion.Euler(Vector3.zero);
 
 
                     //Borrar Item del Inventario
