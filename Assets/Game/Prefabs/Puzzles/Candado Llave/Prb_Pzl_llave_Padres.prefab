@@ -11,7 +11,7 @@ PrefabInstance:
         type: 3}
       propertyPath: m_Materials.Array.data[0]
       value: 
-      objectReference: {fileID: 2100000, guid: 0cfd70044bb1ad9498a654a66b648e80, type: 2}
+      objectReference: {fileID: 2100000, guid: 090cd980d825e8b458efcb18ddf4d23f, type: 2}
     - target: {fileID: 2570053454603205660, guid: 8ab592d5f084df94e9d5ec7ade1965d7,
         type: 3}
       propertyPath: m_RootOrder
@@ -70,17 +70,17 @@ PrefabInstance:
     - target: {fileID: 2769817866067679881, guid: 8ab592d5f084df94e9d5ec7ade1965d7,
         type: 3}
       propertyPath: m_text
-      value: Hugo
+      value: Matrimonio
       objectReference: {fileID: 0}
     - target: {fileID: 4827559028100146920, guid: 8ab592d5f084df94e9d5ec7ade1965d7,
         type: 3}
       propertyPath: m_Name
-      value: Prb_Pzl_llave_Nino
+      value: Prb_Pzl_llave_Padres
       objectReference: {fileID: 0}
     - target: {fileID: 5833928741488801434, guid: 8ab592d5f084df94e9d5ec7ade1965d7,
         type: 3}
       propertyPath: DoorToOpen
-      value: 20
+      value: 12
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 8ab592d5f084df94e9d5ec7ade1965d7, type: 3}
