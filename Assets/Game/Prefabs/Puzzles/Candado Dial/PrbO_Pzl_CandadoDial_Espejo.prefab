@@ -15,7 +15,12 @@ PrefabInstance:
     - target: {fileID: 4828930229632510509, guid: 55179ddd9010d2e4d93ed84193b13426,
         type: 3}
       propertyPath: GoodNumber
-      value: 3
+      value: 4
+      objectReference: {fileID: 0}
+    - target: {fileID: 5410021065268197552, guid: 55179ddd9010d2e4d93ed84193b13426,
+        type: 3}
+      propertyPath: GoodNumber
+      value: 9
       objectReference: {fileID: 0}
     - target: {fileID: 7152006832146986967, guid: 55179ddd9010d2e4d93ed84193b13426,
         type: 3}

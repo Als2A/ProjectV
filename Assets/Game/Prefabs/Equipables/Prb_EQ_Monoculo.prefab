@@ -70,10 +70,12 @@ MonoBehaviour:
   Effects: {fileID: 6507947990787411768}
   Vineta: {fileID: 0}
   Data: {fileID: 0}
+  Inventory: {fileID: 0}
   MonoculoScreens: {fileID: 0}
   MonoculoSprites:
   - {fileID: 21300000, guid: ce75de1497ddb294891c05afd799c802, type: 3}
   - {fileID: 21300000, guid: ccf183ffa8002f34f97ce0b5c4d03f30, type: 3}
+  - {fileID: 21300000, guid: 3a722c62885fd174b8f5ef9d175fefe6, type: 3}
 --- !u!1 &8858390919588331757
 GameObject:
   m_ObjectHideFlags: 0

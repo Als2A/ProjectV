@@ -1,6 +1,6 @@
 %YAML 1.1
 %TAG !u! tag:unity3d.com,2011:
---- !u!1 &470601612397440239
+--- !u!1 &8230946196684726306
 GameObject:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -8,43 +8,43 @@ GameObject:
   m_PrefabAsset: {fileID: 0}
   serializedVersion: 6
   m_Component:
-  - component: {fileID: 6211208058623908526}
-  - component: {fileID: 1270327910931907022}
+  - component: {fileID: 3033688516017372531}
+  - component: {fileID: 8607368011808096934}
   m_Layer: 0
-  m_Name: Decal Projector
+  m_Name: Decal Projector (1)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
   m_IsActive: 1
---- !u!4 &6211208058623908526
+--- !u!4 &3033688516017372531
 Transform:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 470601612397440239}
+  m_GameObject: {fileID: 8230946196684726306}
   m_LocalRotation: {x: -0, y: 1, z: -0, w: 0}
-  m_LocalPosition: {x: 0.006111198, y: 0.022222202, z: 0.011111366}
+  m_LocalPosition: {x: -0.41222233, y: 0.0064508785, z: 0.0108}
   m_LocalScale: {x: 0.5555556, y: 0.5555556, z: 0.5555556}
   m_ConstrainProportionsScale: 0
   m_Children: []
-  m_Father: {fileID: 4451887238794048794}
-  m_RootOrder: 1
+  m_Father: {fileID: 2652736166035356157}
+  m_RootOrder: 4
   m_LocalEulerAnglesHint: {x: 0, y: 180, z: 0}
---- !u!114 &1270327910931907022
+--- !u!114 &8607368011808096934
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 470601612397440239}
+  m_GameObject: {fileID: 8230946196684726306}
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: f19d9143a39eb3b46bc4563e9889cfbd, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  m_Material: {fileID: 2100000, guid: f1da0393f28c9ac4b81915b0d0bef3ad, type: 2}
+  m_Material: {fileID: 0}
   m_DrawDistance: 1000
   m_FadeScale: 0.9
   m_StartAngleFade: 180
@@ -53,9 +53,9 @@ MonoBehaviour:
   m_UVBias: {x: 0, y: 0}
   m_AffectsTransparency: 0
   m_DecalLayerMask: 1
-  m_ScaleMode: 0
+  m_ScaleMode: 1
   m_Offset: {x: 0, y: 0, z: 0}
-  m_Size: {x: 0.4, y: 0.4, z: 0.001}
+  m_Size: {x: 0.3, y: 0.3, z: 0.005}
   m_FadeFactor: 1
   m_Version: 2
 --- !u!1001 &5419853202152183326
@@ -180,6 +180,11 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 6134940093669264179}
     m_Modifications:
+    - target: {fileID: 1163525235351693752, guid: a29f03990902b354ea579d67213d9e9b,
+        type: 3}
+      propertyPath: m_Materials.Array.data[0]
+      value: 
+      objectReference: {fileID: 2100000, guid: 5b8f948042afb524eb52e5c06340b54b, type: 2}
     - target: {fileID: 1423377991327111502, guid: a29f03990902b354ea579d67213d9e9b,
         type: 3}
       propertyPath: m_Name
@@ -262,9 +267,9 @@ PrefabInstance:
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: a29f03990902b354ea579d67213d9e9b, type: 3}
---- !u!4 &4451887238794048794 stripped
+--- !u!4 &2652736166035356157 stripped
 Transform:
-  m_CorrespondingSourceObject: {fileID: 7166625579248770995, guid: a29f03990902b354ea579d67213d9e9b,
+  m_CorrespondingSourceObject: {fileID: 8821664749649285972, guid: a29f03990902b354ea579d67213d9e9b,
     type: 3}
   m_PrefabInstance: {fileID: 6826524809106565801}
   m_PrefabAsset: {fileID: 0}
