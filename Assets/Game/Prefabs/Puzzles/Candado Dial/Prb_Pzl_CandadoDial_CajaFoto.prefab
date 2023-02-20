@@ -7,6 +7,11 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 0}
     m_Modifications:
+    - target: {fileID: 1225966471316445938, guid: 55179ddd9010d2e4d93ed84193b13426,
+        type: 3}
+      propertyPath: m_RootOrder
+      value: 3
+      objectReference: {fileID: 0}
     - target: {fileID: 2057308460213940415, guid: 55179ddd9010d2e4d93ed84193b13426,
         type: 3}
       propertyPath: m_RootOrder
@@ -15,7 +20,7 @@ PrefabInstance:
     - target: {fileID: 2993228616975227210, guid: 55179ddd9010d2e4d93ed84193b13426,
         type: 3}
       propertyPath: GoodNumber
-      value: 9
+      value: 7
       objectReference: {fileID: 0}
     - target: {fileID: 3122494305114979576, guid: 55179ddd9010d2e4d93ed84193b13426,
         type: 3}

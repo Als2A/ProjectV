@@ -18,6 +18,10 @@ public class Scr_PuzzleRanuras_Munieca : MonoBehaviour
     public float Distancia;
 
     private Animator llaveAnimator;
+    public Animator MuniecaAnimator;
+
+    public AudioSource Aud_Music;
+    
 
     public bool StartAnim;
 
@@ -57,7 +61,10 @@ public class Scr_PuzzleRanuras_Munieca : MonoBehaviour
                     //Empieza Animacion de Cargar
                     llaveAnimator = ObjectInHand.GetComponent<Animator>();
 
+                    
+
                     llaveAnimator.SetBool("Loading", true);
+                    ObjectInHand.GetComponentInChildren<AudioSource>().Play();
                 }
             }
         }
@@ -68,7 +75,12 @@ public class Scr_PuzzleRanuras_Munieca : MonoBehaviour
         {
             StartAnim = false;
 
+            MuniecaAnimator.SetBool("Active", true);
+            Aud_Music.Play();
             //EMPEZAR ANIMACION
         }
     }
+
+
+        
 }
