@@ -665,6 +665,7 @@ MonoBehaviour:
   TimeSubstract: 0
   GoScream: 0
   TimeScream: 0
+  SpawnerRoom: {fileID: 0}
 --- !u!1001 &270325873821237990
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -677,6 +678,11 @@ PrefabInstance:
       propertyPath: Inventory
       value: 
       objectReference: {fileID: 5975779773742974436}
+    - target: {fileID: 2751299771814509387, guid: 384b87d97df0e0043a5c71d4d7b8b6d4,
+        type: 3}
+      propertyPath: Cordura
+      value: 
+      objectReference: {fileID: 8488152238537214185}
     - target: {fileID: 4592964470941411218, guid: 384b87d97df0e0043a5c71d4d7b8b6d4,
         type: 3}
       propertyPath: m_IsActive
@@ -902,6 +908,19 @@ MonoBehaviour:
   Object: {fileID: 0}
   InteractivePlayer: {fileID: 8435613501908707977}
   Mira: {fileID: 2712620133849026059}
+--- !u!114 &557214176039848324
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 8435613501908707989}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 6a40673fde1abd7438e55671c3c4d100, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  Cordura: {fileID: 8488152238537214185}
 --- !u!4 &8435613501908707990 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: 8561679593201182832, guid: 384b87d97df0e0043a5c71d4d7b8b6d4,

@@ -8,8 +8,13 @@ public class Scr_Cordura : MonoBehaviour
 
     public bool TimeSubstract = false;
     public bool GoScream = false;
+    public bool ActivateGoScream = false;
+
+    public bool isDemonActive = false;
 
     public float TimeScream;
+
+    public Scr_Demon_Spawner_Room SpawnerRoom;
 
     // Start is called before the first frame update
     void Start()
@@ -30,6 +35,17 @@ public class Scr_Cordura : MonoBehaviour
             TimeSubstract = false;
         }
 
+        if (TimeScream <= 0 && !isDemonActive)
+        {
+            ActivateGoScream = true;
+        }        
+
+        if (GoScream && ActivateGoScream)
+        {            
+            SpawnerRoom.CorduraActives = true;
+            isDemonActive = true;
+        }
+
         Debug.Log("TimeScream: " + TimeScream);
     }
 
@@ -38,5 +54,7 @@ public class Scr_Cordura : MonoBehaviour
         TimeScream = Cordura;
         TimeSubstract = true;
         GoScream = false;
+
+        isDemonActive = false;
     }
 }

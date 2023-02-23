@@ -33,8 +33,10 @@ public class Scr_Demon_Camera : MonoBehaviour
             {
                 Cordura.RestartTimeScream();
 
-                hit_M.transform.gameObject.SetActive(false);
+                // -- Animacion --//
 
+                //hit_M.transform.gameObject.SetActive(false);
+                hit_M.transform.GetComponentInChildren<Animator>().SetBool("Hide", true);
             }
             
         }
@@ -45,7 +47,7 @@ public class Scr_Demon_Camera : MonoBehaviour
             {
                 Cordura.RestartTimeScream();
 
-                hit_R.transform.gameObject.SetActive(false);
+                hit_R.transform.GetComponentInChildren<Animator>().SetBool("Hide", true);
 
             }
 
@@ -57,7 +59,7 @@ public class Scr_Demon_Camera : MonoBehaviour
             {
                 Cordura.RestartTimeScream();
 
-                hit_L.transform.gameObject.SetActive(false);
+                hit_L.transform.GetComponentInChildren<Animator>().SetBool("Hide", true);
 
             }
 
