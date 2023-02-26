@@ -257,7 +257,6 @@ GameObject:
   - component: {fileID: 2576442192974770528}
   - component: {fileID: 2576442192974770535}
   - component: {fileID: 2576442192974770533}
-  - component: {fileID: 2576442192974770534}
   m_Layer: 0
   m_Name: Logica
   m_TagString: Interactive
@@ -305,25 +304,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 360af7028d9fd0a4b99a86839603bb6b, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  isUsing: 0
+  PrimaryAction: 0
   SecondaryAction: 0
---- !u!114 &2576442192974770534
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 2576442192974770529}
-  m_Enabled: 0
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: be009655c09885642911947c3ea4d475, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  Distancia: 0.2
-  Abertura: 0
-  UsingObject: {fileID: 0}
-  MouseCam: {fileID: 0}
-  FollowPos: {fileID: 2576442192431260053}
 --- !u!1 &2576442193770606348
 GameObject:
   m_ObjectHideFlags: 0
@@ -457,6 +439,7 @@ MonoBehaviour:
   Distancia: 0.2
   Abertura: 0
   UsingObject: {fileID: 2576442192974770533}
+  Input: {fileID: 0}
   MouseCam: {fileID: 0}
   FollowPos: {fileID: 2576442192431260053}
 --- !u!65 &670246026780260912

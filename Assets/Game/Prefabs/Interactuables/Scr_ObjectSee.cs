@@ -118,7 +118,7 @@ public class Scr_ObjectSee : MonoBehaviour
             }
         }
 
-        float lerpTime = 10 * Time.deltaTime;
+        float lerpTime = 5*Time.deltaTime;
 
         PrefabModel.transform.rotation = Quaternion.Lerp(PrefabModel.transform.rotation,DesiredTransform.rotation,lerpTime);
         PrefabModel.transform.position = Vector3.Lerp(PrefabModel.transform.position, DesiredTransform.position, lerpTime);
