@@ -664,6 +664,8 @@ MonoBehaviour:
   Cordura: 30
   TimeSubstract: 0
   GoScream: 0
+  ActivateGoScream: 0
+  isDemonActive: 0
   TimeScream: 0
   SpawnerRoom: {fileID: 0}
 --- !u!1001 &270325873821237990
@@ -2369,6 +2371,11 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 2589493194345101051, guid: dac2a7931c765d64fa697d930c15803f,
         type: 3}
+      propertyPath: m_SizeDelta.x
+      value: 500
+      objectReference: {fileID: 0}
+    - target: {fileID: 2589493194345101051, guid: dac2a7931c765d64fa697d930c15803f,
+        type: 3}
       propertyPath: m_AnchoredPosition.x
       value: 0
       objectReference: {fileID: 0}
@@ -2749,6 +2756,11 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 3571991286049411186, guid: dac2a7931c765d64fa697d930c15803f,
         type: 3}
+      propertyPath: m_SizeDelta.x
+      value: 500
+      objectReference: {fileID: 0}
+    - target: {fileID: 3571991286049411186, guid: dac2a7931c765d64fa697d930c15803f,
+        type: 3}
       propertyPath: m_AnchoredPosition.x
       value: 0
       objectReference: {fileID: 0}
@@ -3111,11 +3123,6 @@ PrefabInstance:
     - target: {fileID: 7705722905081173958, guid: dac2a7931c765d64fa697d930c15803f,
         type: 3}
       propertyPath: m_AnchorMin.y
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 7705722905081173958, guid: dac2a7931c765d64fa697d930c15803f,
-        type: 3}
-      propertyPath: m_AnchoredPosition.x
       value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 7705722905081173958, guid: dac2a7931c765d64fa697d930c15803f,
