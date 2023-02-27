@@ -40,14 +40,14 @@ public class Evt_InicioGame : MonoBehaviour
             if (Subtitulos.Sub_Text.Count == 0 && SubTuto.Sub_Text.Count == 0)
             {
                 LastTextOff = true;
-                Subtitulos.SaveSubtitle("La puerta está abierta", 4f);
-                Subtitulos.SaveSubtitle("No te preocupes", 3f);
-                Subtitulos.SaveSubtitle("entra y si necesitas ayuda avisame por el walkie", 5f);
+                Subtitulos.SaveSubtitle("David!", 4f);
+                Subtitulos.SaveSubtitle("Calmate Raul estoy bien", 3f);
+                Subtitulos.SaveSubtitle("Joder, te oí gritar por el walkie y he subido corriendo, aunque la puerta ahora está bloqueada.", 5f);
+                Subtitulos.SaveSubtitle("De acuerdo, ves rápido.", 5f);
+                Subtitulos.SaveSubtitle("Sobre todo no te metas en problemas.", 5f);
 
                 Subtitulos.isOn = true;
                 Subtitulos.TextDone = true;
-
-
 
                 //Invoke("CancelLock", 10f);
 
