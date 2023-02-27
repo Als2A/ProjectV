@@ -81,6 +81,11 @@ PrefabInstance:
       propertyPath: m_Name
       value: Prb_Rec_PiedraPreciosa_3
       objectReference: {fileID: 0}
+    - target: {fileID: 1748849184236098735, guid: 7d1bbe501802a5143a6f8da4e4cf0676,
+        type: 3}
+      propertyPath: m_Radius
+      value: 0.2
+      objectReference: {fileID: 0}
     - target: {fileID: 3264562807648501477, guid: 7d1bbe501802a5143a6f8da4e4cf0676,
         type: 3}
       propertyPath: ObjectData
