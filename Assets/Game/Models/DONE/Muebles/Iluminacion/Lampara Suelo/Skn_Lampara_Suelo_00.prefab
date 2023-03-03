@@ -45,7 +45,7 @@ GameObject:
   - component: {fileID: 349127587770230838}
   - component: {fileID: 3029034848560948629}
   m_Layer: 0
-  m_Name: Point Light (10)
+  m_Name: LuzBombilla
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -79,7 +79,7 @@ Light:
   m_Shape: 0
   m_Color: {r: 0.5660378, g: 0.5355999, b: 0.44588825, a: 1}
   m_Intensity: 0.23714128
-  m_Range: 119.83
+  m_Range: 0.3
   m_SpotAngle: 30
   m_InnerSpotAngle: 21.80208
   m_CookieSize: 10
