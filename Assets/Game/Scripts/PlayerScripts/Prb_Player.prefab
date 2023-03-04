@@ -810,6 +810,7 @@ MonoBehaviour:
   Inputs: {fileID: 0}
   Cam: {fileID: 8561679593306392646}
   Mira: {fileID: 0}
+  Mira_00: {fileID: 0}
   InteractiveObject: {fileID: 2275843269766638717, guid: dca26119337b25446a4913baf8970c3a,
     type: 3}
 --- !u!1 &8561679593306392648
@@ -844,7 +845,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 8561679593306392648}
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: 0, y: 0, z: 0.040000115}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children:
@@ -1108,6 +1109,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: deef43b8b77fa7c4abc2ccaba421ef86, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  Cordura: {fileID: 0}
 --- !u!1001 &4392618662061020953
 PrefabInstance:
   m_ObjectHideFlags: 0
