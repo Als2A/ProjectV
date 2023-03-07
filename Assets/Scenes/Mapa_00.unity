@@ -889,7 +889,7 @@ MonoBehaviour:
     meshQuery:
       layers: 16777223
       maskAndChannels: 234881031
-    surfaceParameter: 30896
+    surfaceParameter: 37228
     meshQueryIndex: 0
     subMeshQueryIndex: 0
     geometryHashValue: 1774036442214313857
@@ -1803,7 +1803,7 @@ MonoBehaviour:
     meshQuery:
       layers: 33554440
       maskAndChannels: 8
-    surfaceParameter: 30930
+    surfaceParameter: 37260
     meshQueryIndex: 1
     subMeshQueryIndex: 0
     geometryHashValue: 1774036442214313857
@@ -3200,6 +3200,30 @@ PrefabInstance:
       propertyPath: m_AnchoredPosition.y
       value: -500
       objectReference: {fileID: 0}
+    - target: {fileID: 6344094131088611143, guid: 6a59ea51d01129749b94b9436c0e0bc6,
+        type: 3}
+      propertyPath: m_fontAsset
+      value: 
+      objectReference: {fileID: 11400000, guid: 0a23cc9bbdd0bbf459c365663e712415,
+        type: 2}
+    - target: {fileID: 6344094131088611143, guid: 6a59ea51d01129749b94b9436c0e0bc6,
+        type: 3}
+      propertyPath: m_sharedMaterial
+      value: 
+      objectReference: {fileID: 2722303838127053745, guid: 0a23cc9bbdd0bbf459c365663e712415,
+        type: 2}
+    - target: {fileID: 6392266968147106241, guid: 6a59ea51d01129749b94b9436c0e0bc6,
+        type: 3}
+      propertyPath: m_fontAsset
+      value: 
+      objectReference: {fileID: 11400000, guid: 5f0224374d80e6b4f80f5d4b1b45c57f,
+        type: 2}
+    - target: {fileID: 6392266968147106241, guid: 6a59ea51d01129749b94b9436c0e0bc6,
+        type: 3}
+      propertyPath: m_sharedMaterial
+      value: 
+      objectReference: {fileID: -3514400680130118223, guid: 5f0224374d80e6b4f80f5d4b1b45c57f,
+        type: 2}
     - target: {fileID: 6429840802852078723, guid: 6a59ea51d01129749b94b9436c0e0bc6,
         type: 3}
       propertyPath: m_AnchorMax.y
@@ -6251,7 +6275,7 @@ MonoBehaviour:
     meshQuery:
       layers: 33554440
       maskAndChannels: 8
-    surfaceParameter: 30930
+    surfaceParameter: 37260
     meshQueryIndex: 1
     subMeshQueryIndex: 0
     geometryHashValue: 1774036442214313857
