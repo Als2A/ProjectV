@@ -19,8 +19,9 @@ public class Scr_SliderAudio : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        
-        Text.text = Mathf.Clamp((slider.value), 0f, 10f).ToString();
+
+        Text.text = ((int)(slider.normalizedValue*10)).ToString();
+            
     }
 
 

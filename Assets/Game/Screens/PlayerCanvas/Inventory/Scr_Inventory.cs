@@ -1,6 +1,7 @@
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using TMPro;
 
 public class Scr_Inventory : MonoBehaviour
 {
@@ -17,6 +18,10 @@ public class Scr_Inventory : MonoBehaviour
     public GameObject ButtonChange;
 
     public Scr_BlurUI Blur;
+
+    [Header("Text Inventory")]
+    public TextMeshProUGUI Title;
+    public TextMeshProUGUI Body;
 
     [Header("Estados")]
     public bool MenuInventoryIsOpen;
@@ -193,6 +198,8 @@ public class Scr_Inventory : MonoBehaviour
 
 
         }
+
+        DrawObjectInfo();
     }
 
 
@@ -204,7 +211,16 @@ public class Scr_Inventory : MonoBehaviour
 
 
 
+    void DrawObjectInfo()
+    {        
+        
+            var ButtonData = Items[ItemsPos].GetComponentInChildren<Scr_InventoryButtonData>();
 
+            Title.text = ButtonData.Data.Name;
+            Body.text = ButtonData.Data.Descripcion;
+        
+
+    }
 
 
     void MovementInventory()
