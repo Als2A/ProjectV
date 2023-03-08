@@ -1,5 +1,38 @@
 %YAML 1.1
 %TAG !u! tag:unity3d.com,2011:
+--- !u!1 &100527383224729846
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 3820254205573998487}
+  m_Layer: 0
+  m_Name: Lights
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &3820254205573998487
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 100527383224729846}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children:
+  - {fileID: 5948928739594146799}
+  - {fileID: 8512347395514667030}
+  m_Father: {fileID: 2061512925492784832}
+  m_RootOrder: 1
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &772977990668084515
 GameObject:
   m_ObjectHideFlags: 0
@@ -30,8 +63,8 @@ Transform:
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
-  m_Father: {fileID: 2061512925492784832}
-  m_RootOrder: 1
+  m_Father: {fileID: 3820254205573998487}
+  m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!108 &2748829700751649174
 Light:
@@ -45,7 +78,7 @@ Light:
   m_Type: 2
   m_Shape: 0
   m_Color: {r: 0.5660378, g: 0.5355999, b: 0.44588825, a: 1}
-  m_Intensity: 0.39788735
+  m_Intensity: 0.23873241
   m_Range: 1
   m_SpotAngle: 30
   m_InnerSpotAngle: 21.80208
@@ -247,8 +280,8 @@ Transform:
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
-  m_Father: {fileID: 2061512925492784832}
-  m_RootOrder: 2
+  m_Father: {fileID: 3820254205573998487}
+  m_RootOrder: 1
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!108 &7026985879031343929
 Light:
@@ -262,7 +295,7 @@ Light:
   m_Type: 2
   m_Shape: 0
   m_Color: {r: 1, g: 1, b: 1, a: 1}
-  m_Intensity: 1.5915494
+  m_Intensity: 3.1830988
   m_Range: 3
   m_SpotAngle: 30
   m_InnerSpotAngle: 21.80208
@@ -463,8 +496,7 @@ Transform:
   m_ConstrainProportionsScale: 0
   m_Children:
   - {fileID: 83773297864289426}
-  - {fileID: 5948928739594146799}
-  - {fileID: 8512347395514667030}
+  - {fileID: 3820254205573998487}
   m_Father: {fileID: 0}
   m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
