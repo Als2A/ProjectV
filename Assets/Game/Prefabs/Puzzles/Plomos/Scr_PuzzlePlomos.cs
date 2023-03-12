@@ -7,10 +7,11 @@ public class Scr_PuzzlePlomos : MonoBehaviour
     public Scr_PlomoSolo[] Plomo;
 
     public bool PuzzleDone;
+    public bool RecentDone;
 
     public bool PuzzleDesactivate;
 
-    public GameObject Lights;
+    public GameObject[] Lights;
 
 
 
@@ -43,10 +44,26 @@ public class Scr_PuzzlePlomos : MonoBehaviour
             PlomosDesactive();
         }
 
-        if (PuzzleDone)
-        { Lights.SetActive(true); }
+        if (PuzzleDone && RecentDone)
+        {
+            RecentDone = false;
+
+            for (int i = 0; i < Lights.Length; i++)
+            {
+                Lights[i].SetActive(true);
+            }
+            
+        }
+
         else if (!PuzzleDone)
-        { Lights.SetActive(false); }
+        {
+            RecentDone = true;
+
+            for (int i = 0; i < Lights.Length; i++)
+            {
+                Lights[i].SetActive(false);
+            }
+        }
     }
 
     void PlomosDesactive()
