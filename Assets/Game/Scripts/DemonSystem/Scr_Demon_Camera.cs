@@ -38,7 +38,18 @@ public class Scr_Demon_Camera : MonoBehaviour
                 //hit_M.transform.gameObject.SetActive(false);
                 hit_M.transform.GetComponentInChildren<Animator>().SetBool("Hide", true);
             }
-            
+
+            else if (hit_M.transform.CompareTag("DemonAngry"))
+            {
+                //Cordura.RestartTimeScream();
+
+                // -- Animacion --//
+
+                //hit_M.transform.gameObject.SetActive(false);
+                hit_M.transform.GetComponentInChildren<Animator>().SetBool("Alert", true);
+                hit_M.transform.GetComponentInChildren<Scr_demon_Scream_High>().TimeScream += 1 * Time.deltaTime;
+            }
+
         }
 
         if (Physics.Raycast(transform.position, transform.forward + (transform.right/2), out hit_R)) //codigo guiri Ignora LayerMask
@@ -51,6 +62,17 @@ public class Scr_Demon_Camera : MonoBehaviour
 
             }
 
+            else if (hit_M.transform.CompareTag("DemonAngry"))
+            {
+                //Cordura.RestartTimeScream();
+
+                // -- Animacion --//
+
+                //hit_M.transform.gameObject.SetActive(false);
+                hit_M.transform.GetComponentInChildren<Animator>().SetBool("Alert", true);
+                hit_M.transform.GetComponentInChildren<Scr_demon_Scream_High>().TimeScream += 1 * Time.deltaTime;
+            }
+
         }
 
         if (Physics.Raycast(transform.position, transform.forward + (-transform.right/2), out hit_L)) //codigo guiri Ignora LayerMask
@@ -61,6 +83,17 @@ public class Scr_Demon_Camera : MonoBehaviour
 
                 hit_L.transform.GetComponentInChildren<Animator>().SetBool("Hide", true);
 
+            }
+
+            else if (hit_M.transform.CompareTag("DemonAngry"))
+            {
+                //Cordura.RestartTimeScream();
+
+                // -- Animacion --//
+
+                //hit_M.transform.gameObject.SetActive(false);
+                hit_M.transform.GetComponentInChildren<Animator>().SetBool("Alert", true);
+                hit_M.transform.GetComponentInChildren<Scr_demon_Scream_High>().TimeScream += 1 * Time.deltaTime;
             }
 
         }

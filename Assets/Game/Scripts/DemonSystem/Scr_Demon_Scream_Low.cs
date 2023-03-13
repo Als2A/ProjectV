@@ -10,6 +10,9 @@ public class Scr_Demon_Scream_Low : MonoBehaviour
     public Scr_Cordura Cordura;
 
     public GameObject Parent;
+
+    public GameObject AngryDemon;
+
     // Start is called before the first frame update
     void Awake()
     {
@@ -34,5 +37,10 @@ public class Scr_Demon_Scream_Low : MonoBehaviour
         Parent.SetActive(false);
         DemonCollider.enabled = false;
         CancelInvoke("DemonHide");
+
+        if(AngryDemon != null)
+        {
+            AngryDemon.SetActive(true);
+        }
     }
 }
