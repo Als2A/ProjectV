@@ -41,6 +41,7 @@ public class Scr_MaderasPalanca : MonoBehaviour
                     ObjectInHand.transform.localPosition = Vector3.forward * -0.50f;
                     ObjectInHand.transform.localRotation = Quaternion.Euler(Vector3.right * 90f);
 
+                    UsingObject.gameObject.GetComponent<Collider>().enabled = false;
 
                     Invoke("Abrir", 1f);
 
