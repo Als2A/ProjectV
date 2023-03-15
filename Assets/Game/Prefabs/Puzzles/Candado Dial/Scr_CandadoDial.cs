@@ -24,7 +24,7 @@ public class Scr_CandadoDial : MonoBehaviour
 
     public GameObject[] Diales;
     public GameObject Arrow;
-    public GameObject light;
+    public GameObject TheLight;
     public int DialPos;
 
 
@@ -83,7 +83,7 @@ public class Scr_CandadoDial : MonoBehaviour
         isInterface = true;
 
         Arrow.SetActive(true);
-        light.SetActive(true);
+        TheLight.SetActive(true);
 
         UsingObject.gameObject.SetActive(false);
 
@@ -116,7 +116,7 @@ public class Scr_CandadoDial : MonoBehaviour
         isInterface = false;
 
         Arrow.SetActive(false);
-        light.SetActive(false);
+        TheLight.SetActive(false);
 
         HandObject.SetActive(true);
 

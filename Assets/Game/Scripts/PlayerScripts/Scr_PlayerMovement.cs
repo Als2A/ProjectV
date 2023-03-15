@@ -218,4 +218,14 @@ public class Scr_PlayerMovement : MonoBehaviour
         }
     }
 
+    public void MoveLock()
+    {
+        isLock = true;
+    }
+
+    public void MoveUnlock()
+    {
+        isLock = false;
+    }
+
 }

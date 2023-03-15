@@ -61,7 +61,6 @@ public class Scr_Demon_Camera : MonoBehaviour
                 hit_R.transform.GetComponentInChildren<Animator>().SetBool("Hide", true);
 
             }
-
             else if (hit_M.transform.CompareTag("DemonAngry"))
             {
                 //Cordura.RestartTimeScream();

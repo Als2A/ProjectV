@@ -25,7 +25,7 @@ public class Scr_MouseLook : MonoBehaviour
     // Start is called before the first frame update
     void Start()
     {
-        playerBody = transform.parent.parent.GetComponent<Transform>();
+        playerBody = transform.parent.parent.parent.GetComponent<Transform>();
 
         if (Inputs.Inputs.currentActionMap == Inputs.PlayerMap)
         { Cursor.lockState = CursorLockMode.Locked; }
@@ -65,5 +65,17 @@ public class Scr_MouseLook : MonoBehaviour
             }
         }
            
+    }
+
+    public void CancelLock()
+    {
+        CameraLock = false;
+        ToLock = false;
+    }
+
+    public void Lock()
+    {
+        CameraLock = true;
+        ToLock = true;
     }
 }

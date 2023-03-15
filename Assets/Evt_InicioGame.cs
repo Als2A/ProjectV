@@ -25,7 +25,7 @@ public class Evt_InicioGame : MonoBehaviour
     // Start is called before the first frame update
     void Start()
     {
-        Invoke("PlayGolpes",7);
+        Invoke("PlayGolpes",65f);
     }
 
     // Update is called once per frame

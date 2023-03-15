@@ -26,7 +26,10 @@ public class Scr_Demon_Spawner_Room : MonoBehaviour
             CorduraActives = false;
             Cordura.ActivateGoScream = false;
 
-            Demon[Random.Range(0,Demon.Length)].SetActive(true);            
+            if (Demon.Length != 0)
+                Demon[Random.Range(0, Demon.Length)].SetActive(true);
+            else
+                Cordura.RestartTimeScream();
         }
 
         if(!Cordura.GoScream && DemonActive)

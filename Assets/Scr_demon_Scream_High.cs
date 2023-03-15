@@ -11,7 +11,10 @@ public class Scr_demon_Scream_High : MonoBehaviour
     public Scr_Cordura Cordura;
 
     public GameObject Parent;
-    GameObject PlayerCam;
+
+    [Header("Player")]
+    public GameObject PlayerCam;
+    public Scr_Animation_Jumpscare Head;
 
     public bool jump;
     public float TimeScream;
@@ -19,7 +22,7 @@ public class Scr_demon_Scream_High : MonoBehaviour
     // Start is called before the first frame update
     void Awake()
     {
-        PlayerCam = GameObject.Find("PlayerCamera");
+        
     }
 
     private void Update()
@@ -35,6 +38,12 @@ public class Scr_demon_Scream_High : MonoBehaviour
             
             float Distance = Vector3.Distance(Parent.transform.position, PlayerCam.transform.position);
             Parent.transform.DOMove(PlayerCam.transform.position + (Vector3.down * 0.8f) + (Parent.transform.forward * -1 * 1.5f), Distance * 0.05f).SetEase(Ease.InSine);
+        }
+
+        if(Head.JumpScare_Finish)
+        {
+            Head.JumpScare_Finish = false;
+            Parent.SetActive(false);
         }
     }
 
@@ -56,5 +65,16 @@ public class Scr_demon_Scream_High : MonoBehaviour
         Parent.SetActive(false);
         DemonCollider.enabled = false;
         CancelInvoke("DemonHide");
+    }
+
+    public void MoveCam()
+    {
+        Invoke("RestartAnimator", 5f);
+        PlayerCam.transform.parent.GetComponent<Animator>().SetBool("JumpScare",true);        
+    }
+
+    void RestartAnimator()
+    {
+        PlayerCam.transform.parent.GetComponent<Animator>().SetBool("JumpScare", false);
     }
 }
