@@ -2,6 +2,7 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 using TMPro;
+using DG.Tweening;
 
 public class Scr_Inventory : MonoBehaviour
 {
@@ -10,6 +11,10 @@ public class Scr_Inventory : MonoBehaviour
     public Scr_PlayerMovement Movement;
     [Space]
     public GameObject Hand;
+
+    public CanvasGroup InventoryAlpha;
+
+    public Scr_InteractivePlayer InteractivePlayer;
 
     public Scr_EquipedPlayer EquipPlayer;
 
@@ -86,8 +91,12 @@ public class Scr_Inventory : MonoBehaviour
                 {
                     Blur.BlurOn(1f);
 
+                    InventoryAlpha.DOFade(1f, 0.5f);
+
                     Movement.isWalking = false;
                     Movement.isSprinting = false;
+
+                    InteractivePlayer.STOP = true;
 
                     Inputs.OpenInventory = false;
 
@@ -619,16 +628,25 @@ public class Scr_Inventory : MonoBehaviour
     {
         Blur.BlurOff();
 
+        InventoryAlpha.DOFade(0f, 0.5f);
+
         MenuInventoryIsOpen = false;
 
         Inputs.OpenInventory = false;
         Inputs.Cancel = false;
 
-        ItemsMenu.SetActive(false);
+        InteractivePlayer.STOP = false;        
 
         Cursor.lockState = CursorLockMode.Locked;
 
         Inputs.Inputs.SwitchCurrentActionMap("Player");
+
+        Invoke("DesactiveInventory", 0.5f);
+    }
+
+    void DesactiveInventory()
+    {
+        ItemsMenu.SetActive(false);
     }
 
                         

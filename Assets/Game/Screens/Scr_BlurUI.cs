@@ -1,6 +1,7 @@
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using DG.Tweening;
 
 public class Scr_BlurUI : MonoBehaviour
 {
@@ -35,8 +36,10 @@ public class Scr_BlurUI : MonoBehaviour
     public void BlurOn(float TimeBlur)
     {
         Blur.SetActive(true);
-        BlurMaterial.material.SetFloat("_Smoothness", 0.5f);
-              
+        //BlurMaterial.material.SetFloat("_Smoothness", 0.5f);
+
+        BlurMaterial.material.DOFloat(0.5f,"_Smoothness", 0.5f);
+
         /*
         TimeBlur = TimeLerp;
         LerpTimer = 0;
@@ -46,7 +49,9 @@ public class Scr_BlurUI : MonoBehaviour
 
     public void BlurOff()
     {        
-        BlurMaterial.material.SetFloat("_Smoothness", 1);
+        //BlurMaterial.material.SetFloat("_Smoothness", 1);
+
+        BlurMaterial.material.DOFloat(1f, "_Smoothness", 0.5f);
 
         Invoke("BlurDesactivate", 0.2f);
     }

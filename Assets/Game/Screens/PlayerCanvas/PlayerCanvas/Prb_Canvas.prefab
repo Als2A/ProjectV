@@ -760,6 +760,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   Inputs: {fileID: 0}
   Movement: {fileID: 0}
+  InteractivePlayer: {fileID: 0}
   isPause: 0
   PausePos: 0
   PauseMenu: {fileID: 7166065805285626755}
@@ -1980,6 +1981,7 @@ GameObject:
   m_Component:
   - component: {fileID: 6422664480088534662}
   - component: {fileID: 2882142967529367101}
+  - component: {fileID: 4083313656892816849}
   m_Layer: 5
   m_Name: Inventory_Logic
   m_TagString: Untagged
@@ -2023,6 +2025,8 @@ MonoBehaviour:
   Inputs: {fileID: 0}
   Movement: {fileID: 0}
   Hand: {fileID: 0}
+  InventoryAlpha: {fileID: 4083313656892816849}
+  InteractivePlayer: {fileID: 0}
   EquipPlayer: {fileID: 0}
   ButtonEquip: {fileID: 4554201919089061511}
   ButtonDesEquip: {fileID: 4637830429353858998}
@@ -2060,6 +2064,18 @@ MonoBehaviour:
   ViewerTexture: {fileID: 5815405419609581016}
   InspectorObject: {fileID: 0}
   InspectorRotatingObject: {fileID: 0}
+--- !u!225 &4083313656892816849
+CanvasGroup:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 4174153418620035881}
+  m_Enabled: 1
+  m_Alpha: 0
+  m_Interactable: 1
+  m_BlocksRaycasts: 1
+  m_IgnoreParentGroups: 0
 --- !u!1 &4389616712101652211
 GameObject:
   m_ObjectHideFlags: 0

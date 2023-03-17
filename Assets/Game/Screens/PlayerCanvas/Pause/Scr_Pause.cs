@@ -9,6 +9,8 @@ public class Scr_Pause : MonoBehaviour
     public Scr_InputSystem Inputs;
     public Scr_PlayerMovement Movement;
 
+    public Scr_InteractivePlayer InteractivePlayer;
+
     [Header("Estados")]
     public bool isPause;
 
@@ -45,6 +47,8 @@ public class Scr_Pause : MonoBehaviour
                 {
                     Movement.isWalking = false;
                     Movement.isSprinting = false;
+
+                    InteractivePlayer.STOP = true ;
 
                     Inputs.Pause = false;
 
@@ -118,6 +122,9 @@ public class Scr_Pause : MonoBehaviour
         {
             Inputs.Pause = false;
             Inputs.Accept = false;
+            Inputs.Cancel = false;
+
+            InteractivePlayer.STOP = false;
 
             PauseMenu.SetActive(false);
 

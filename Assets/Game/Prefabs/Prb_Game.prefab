@@ -2546,6 +2546,11 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 2882142967529367101, guid: dac2a7931c765d64fa697d930c15803f,
         type: 3}
+      propertyPath: InteractivePlayer
+      value: 
+      objectReference: {fileID: 8435613501908707977}
+    - target: {fileID: 2882142967529367101, guid: dac2a7931c765d64fa697d930c15803f,
+        type: 3}
       propertyPath: InspectorRotatingObject
       value: 
       objectReference: {fileID: 5347525623809439979}
