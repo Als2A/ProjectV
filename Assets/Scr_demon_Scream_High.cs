@@ -19,15 +19,16 @@ public class Scr_demon_Scream_High : MonoBehaviour
     public bool jump;
     public float TimeScream;
 
+    Vector3 StartPosition;
+
     // Start is called before the first frame update
-    void Awake()
+    void Start()
     {
-        
+        StartPosition = Parent.transform.position;
     }
 
     private void Update()
-    {
-        
+    {       
 
         if(TimeScream > 5f && !jump)
         {
@@ -45,7 +46,10 @@ public class Scr_demon_Scream_High : MonoBehaviour
         if(Head.JumpScare_Finish)
         {
             Head.JumpScare_Finish = false;
+
             Parent.SetActive(false);
+
+            Parent.transform.position = StartPosition;
         }
     }
 
@@ -71,7 +75,7 @@ public class Scr_demon_Scream_High : MonoBehaviour
 
     public void MoveCam()
     {
-        Invoke("RestartAnimator", 5f);
+        //Invoke("RestartAnimator", 5f);
         PlayerCam.transform.parent.GetComponent<Animator>().SetBool("JumpScare",true);        
     }
 

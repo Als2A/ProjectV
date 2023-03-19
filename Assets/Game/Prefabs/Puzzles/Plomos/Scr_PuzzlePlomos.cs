@@ -19,7 +19,7 @@ public class Scr_PuzzlePlomos : MonoBehaviour
     // Start is called before the first frame update
     void Start()
     {
-        
+        Invoke("RandomOff", 300f);
     }
 
     // Update is called once per frame
@@ -48,6 +48,8 @@ public class Scr_PuzzlePlomos : MonoBehaviour
         {
             RecentDone = false;
 
+            Invoke("RandomOff", Random.Range(90, 120));
+
             for (int i = 0; i < Lights.Length; i++)
             {
                 Lights[i].SetActive(true);
@@ -73,8 +75,11 @@ public class Scr_PuzzlePlomos : MonoBehaviour
         for (int i = 0; i < PlomosCambiar; i++)
         {
             Plomo[Random.Range(0, 5)].Abertura = 0;
-        }
+        }        
+    }
 
-        
+    void RandomOff()
+    {
+        PlomosDesactive();
     }
 }
