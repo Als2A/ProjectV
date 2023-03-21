@@ -14,7 +14,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   id: 0
   Name: 
-  Image: {fileID: 0}
+  Image: {fileID: 21300000, guid: 3769e2ac37a649947ad55c7141436c39, type: 3}
   Descripcion: 
   Object_Prefab: {fileID: 0}
   InspectorScale: 1

@@ -533,6 +533,8 @@ public class Scr_Inventory : MonoBehaviour
             ViewerTexture.SetActive(true);
             ViewerSet.SetActive(true);
 
+            ViewerTexture.GetComponent<CanvasGroup>().DOFade(1, 0.2f).SetEase(Ease.InOutSine);
+
             CloseUsesMenu();
         }
 
@@ -547,9 +549,17 @@ public class Scr_Inventory : MonoBehaviour
             Inputs.Cancel = false;
 
             isSee = false;
-            ViewerTexture.SetActive(false);
-            ViewerSet.SetActive(false);
+            
+
+            ViewerTexture.GetComponent<CanvasGroup>().DOFade(0,0.2f).SetEase(Ease.InOutSine);
+            Invoke("DesactivateInspector3D", 0.2f);
         }
+    }
+
+    void DesactivateInspector3D()
+    {
+        ViewerTexture.SetActive(false);
+        ViewerSet.SetActive(false);
     }
 
 

@@ -11622,6 +11622,12 @@ PrefabInstance:
       propertyPath: m_IsActive
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 4392098337397657605, guid: 6a59ea51d01129749b94b9436c0e0bc6,
+        type: 3}
+      propertyPath: OriginalData
+      value: 
+      objectReference: {fileID: 11400000, guid: 7ca1870079bbafc4f9485efd7110aa00,
+        type: 2}
     - target: {fileID: 4538925926037303216, guid: 6a59ea51d01129749b94b9436c0e0bc6,
         type: 3}
       propertyPath: m_AnchorMax.y
@@ -11687,6 +11693,12 @@ PrefabInstance:
       propertyPath: Chest
       value: 
       objectReference: {fileID: 0}
+    - target: {fileID: 4922555406972857818, guid: 6a59ea51d01129749b94b9436c0e0bc6,
+        type: 3}
+      propertyPath: OriginalData
+      value: 
+      objectReference: {fileID: 11400000, guid: 7ca1870079bbafc4f9485efd7110aa00,
+        type: 2}
     - target: {fileID: 5161875069808146561, guid: 6a59ea51d01129749b94b9436c0e0bc6,
         type: 3}
       propertyPath: m_IsActive
@@ -12112,6 +12124,12 @@ PrefabInstance:
       propertyPath: m_AnchorMin.x
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 8977201600017948740, guid: 6a59ea51d01129749b94b9436c0e0bc6,
+        type: 3}
+      propertyPath: OriginalData
+      value: 
+      objectReference: {fileID: 11400000, guid: 7ca1870079bbafc4f9485efd7110aa00,
+        type: 2}
     - target: {fileID: 9068182648952441314, guid: 6a59ea51d01129749b94b9436c0e0bc6,
         type: 3}
       propertyPath: m_text
@@ -25186,7 +25204,7 @@ MonoBehaviour:
     meshQuery:
       layers: 16777223
       maskAndChannels: 234881031
-    surfaceParameter: 42224
+    surfaceParameter: 34840
     meshQueryIndex: 5
     subMeshQueryIndex: 0
     geometryHashValue: -9126681396822807714
@@ -26540,7 +26558,7 @@ MonoBehaviour:
     meshQuery:
       layers: 16777223
       maskAndChannels: 234881031
-    surfaceParameter: 42356
+    surfaceParameter: 34984
     meshQueryIndex: 6
     subMeshQueryIndex: 0
     geometryHashValue: 4817804029230781524
@@ -40053,7 +40071,7 @@ MonoBehaviour:
     meshQuery:
       layers: 33554440
       maskAndChannels: 8
-    surfaceParameter: 42586
+    surfaceParameter: 35214
     meshQueryIndex: 1
     subMeshQueryIndex: 0
     geometryHashValue: -6736074722264404348
@@ -55019,7 +55037,7 @@ MonoBehaviour:
     meshQuery:
       layers: 33554440
       maskAndChannels: 8
-    surfaceParameter: 42586
+    surfaceParameter: 35214
     meshQueryIndex: 1
     subMeshQueryIndex: 0
     geometryHashValue: -6736074722264404348
@@ -59873,7 +59891,7 @@ MonoBehaviour:
     meshQuery:
       layers: 16777223
       maskAndChannels: 234881031
-    surfaceParameter: 43506
+    surfaceParameter: 36146
     meshQueryIndex: 7
     subMeshQueryIndex: 0
     geometryHashValue: 8749714984990191289
@@ -82968,7 +82986,7 @@ MonoBehaviour:
     meshQuery:
       layers: 16777223
       maskAndChannels: 234881031
-    surfaceParameter: 40490
+    surfaceParameter: 33106
     meshQueryIndex: 0
     subMeshQueryIndex: 0
     geometryHashValue: -2678879169670430236
