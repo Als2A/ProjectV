@@ -34,6 +34,7 @@ public class Scr_Baul : MonoBehaviour
 
             Player_Inventory.MenuInventoryIsOpen = true;
 
+            Player_Inventory.GetComponent<CanvasGroup>().alpha = 1;
             ChestCanvas.SetActive(true);
 
             Player_Inventory.ItemsSel.SetActive(false);

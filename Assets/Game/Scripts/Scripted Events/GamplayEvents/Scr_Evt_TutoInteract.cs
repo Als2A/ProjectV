@@ -31,16 +31,18 @@ public class Scr_Evt_TutoInteract : MonoBehaviour
             if (Subtitulos.Sub_Text.Count == 0 && SubTuto.Sub_Text.Count == 0)
             {
                 LastTextOff = true;
-                Subtitulos.SaveSubtitle("La puerta está abierta", 4f);
-                Subtitulos.SaveSubtitle("No te preocupes", 3f);
-                Subtitulos.SaveSubtitle("entra y si necesitas ayuda avisame por el walkie", 5f);
+                Subtitulos.SaveSubtitle("La puerta está abierta", 3f);
+                Subtitulos.SaveSubtitle("No te preocupes", 2f);
+                Subtitulos.SaveSubtitle("entra y si necesitas ayuda avisame por el walkie", 3f);
 
                 Subtitulos.isOn = true;
                 Subtitulos.TextDone = true;
 
 
 
-                Invoke("CancelLock", 10f);
+                Invoke("CancelLock", 6f);
+
+                Invoke("subtitulosTuto", 8f);
 
                 Activate = false;
                 var Collider = GetComponent<Collider>().enabled = false;
@@ -53,6 +55,15 @@ public class Scr_Evt_TutoInteract : MonoBehaviour
     void CancelLock()
     {
         Player.isLock = false;
+    }
+
+    void subtitulosTuto()
+    {
+        SubTuto.SaveSubtitle("Pulsa [Right Click] para interactuar rapido", 3f);
+        SubTuto.SaveSubtitle("Pulsa [Left Click] y mueve el [Mouse] para interactuar poco a poco", 3f);
+
+        SubTuto.isOn = true;
+        SubTuto.TextDone = true;
     }
 
     private void OnTriggerEnter(Collider other)
