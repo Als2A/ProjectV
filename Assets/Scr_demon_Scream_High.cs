@@ -50,6 +50,9 @@ public class Scr_demon_Scream_High : MonoBehaviour
             Parent.SetActive(false);
 
             Parent.transform.position = StartPosition;
+
+            jump = false;
+            TimeScream = 0;
         }
     }
 

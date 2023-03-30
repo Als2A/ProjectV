@@ -20,15 +20,15 @@ public class Scr_Cajon : MonoBehaviour
     
     void Update()
     {
-        if(UsingObject.PrimaryAction == true)
-        {
-            MouseCam.CameraLock = true;
+        //if(UsingObject.PrimaryAction == true)
+        //{
+        //    MouseCam.CameraLock = true;
 
-            float mouseY = Input.Look_y * (Input.Sens / 100) * Time.deltaTime;
+        //    float mouseY = Input.Look_y * (Input.Sens / 100) * Time.deltaTime;
 
-            //float mouseY = Input.GetAxis("Mouse Y") * MouseCam.mouseSens/4 * Time.deltaTime;
-            Abertura -= mouseY;
-        }
+        //    //float mouseY = Input.GetAxis("Mouse Y") * MouseCam.mouseSens/4 * Time.deltaTime;
+        //    Abertura -= mouseY;
+        //}
 
         if(UsingObject.SecondaryAction == true)
         {

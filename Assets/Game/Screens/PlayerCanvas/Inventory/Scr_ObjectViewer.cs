@@ -47,7 +47,7 @@ public class Scr_ObjectViewer : MonoBehaviour
                 Movimiento();
             }
 
-            Zoom();
+            //Zoom();
 
         }
     }

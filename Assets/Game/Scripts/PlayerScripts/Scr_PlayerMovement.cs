@@ -1,6 +1,7 @@
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using DG.Tweening;
 
 public class Scr_PlayerMovement : MonoBehaviour
 {
@@ -42,6 +43,7 @@ public class Scr_PlayerMovement : MonoBehaviour
     public bool isGrounded;
     public bool isWalking;
     public bool isSprinting;
+    public bool isCrouch;
 
     public bool isLock;
 
@@ -178,11 +180,19 @@ public class Scr_PlayerMovement : MonoBehaviour
     {
         if (Inputs.Crouch)
         {
-            Cam.transform.localPosition = CamStartPos + (Vector3.down * 0.75f);
+            Vector3 CrouchCamPosition = CamStartPos + (Vector3.down * 0.75f);
+
+            Cam.transform.DOLocalMoveY(CrouchCamPosition.y,0.5f);
+            isCrouch = true;
+
+
         }
         else if (!Inputs.Crouch)
         {
-            Cam.transform.localPosition = CamStartPos;
+            Cam.transform.DOLocalMoveY(CamStartPos.y, 0.5f);
+
+
+            isCrouch = false;
         }
     }
 

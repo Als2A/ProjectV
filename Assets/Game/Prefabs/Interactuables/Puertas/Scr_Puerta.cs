@@ -30,22 +30,22 @@ public class Scr_Puerta : MonoBehaviour
     {
         if (!Locked)
         {
-            if (UsingObject.PrimaryAction == true)
-            {
-                MouseCam.CameraLock = true;
+            //if (UsingObject.PrimaryAction == true)
+            //{
+            //    MouseCam.CameraLock = true;
 
-                float mouseY = Input.Look_y * (Input.Sens / 100) * Time.deltaTime;
+            //    float mouseY = Input.Look_y * (Input.Sens / 100) * Time.deltaTime;
 
-                if (!inverted)
-                {
-                    Abertura -= mouseY;
-                }
-                else
-                {
-                    Abertura += mouseY;
-                }
+            //    if (!inverted)
+            //    {
+            //        Abertura -= mouseY;
+            //    }
+            //    else
+            //    {
+            //        Abertura += mouseY;
+            //    }
                 
-            }
+            //}
 
             if (UsingObject.SecondaryAction == true)
             {
