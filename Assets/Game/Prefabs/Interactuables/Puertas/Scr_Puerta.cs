@@ -1,6 +1,7 @@
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using DG.Tweening;
 
 public class Scr_Puerta : MonoBehaviour
 {
@@ -30,23 +31,6 @@ public class Scr_Puerta : MonoBehaviour
     {
         if (!Locked)
         {
-            //if (UsingObject.PrimaryAction == true)
-            //{
-            //    MouseCam.CameraLock = true;
-
-            //    float mouseY = Input.Look_y * (Input.Sens / 100) * Time.deltaTime;
-
-            //    if (!inverted)
-            //    {
-            //        Abertura -= mouseY;
-            //    }
-            //    else
-            //    {
-            //        Abertura += mouseY;
-            //    }
-                
-            //}
-
             if (UsingObject.SecondaryAction == true)
             {
                 if (Abertura < 0.5) Abertura = 1;
@@ -66,10 +50,10 @@ public class Scr_Puerta : MonoBehaviour
 
         if (Locked && Grados >= 0)
             Invoke("ResetFollowPos", 1f * Time.deltaTime);
-            
 
 
-        transform.rotation = Quaternion.Lerp(transform.rotation,FollowPos.transform.rotation,Grados == 110f ? smoothSpeed : 1f);
+
+        transform.DORotate(FollowPos.transform.rotation.eulerAngles, 0.5f);
     }
 
     public void ResetFollowPos()
