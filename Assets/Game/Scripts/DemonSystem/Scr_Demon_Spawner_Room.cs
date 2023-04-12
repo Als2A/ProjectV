@@ -20,7 +20,7 @@ public class Scr_Demon_Spawner_Room : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        if(Cordura.GoScream && Cordura.ActivateGoScream && !DemonActive && CorduraActives)
+        if (Cordura.GoScream && Cordura.ActivateGoScream && !DemonActive && CorduraActives && Cordura.SpawnerRoom != null)
         {
             DemonActive = true;
             CorduraActives = false;

@@ -38,7 +38,7 @@ public class Scr_Demon_Scream_Low : MonoBehaviour
         DemonCollider.enabled = false;
         CancelInvoke("DemonHide");
 
-        if(AngryDemon != null)
+        if(AngryDemon != null && Cordura.Cordura > 100f)
         {
             AngryDemon.SetActive(true);
         }

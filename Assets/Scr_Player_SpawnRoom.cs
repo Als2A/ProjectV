@@ -25,4 +25,12 @@ public class Scr_Player_SpawnRoom : MonoBehaviour
             Cordura.SpawnerRoom = other.GetComponent<Scr_Demon_Spawner_Room>();
         }
     }
+
+    private void OnTriggerExit(Collider other)
+    {
+        if (other.CompareTag("Room"))
+        {
+            Cordura.SpawnerRoom = null;
+        }
+    }
 }

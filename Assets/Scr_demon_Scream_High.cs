@@ -28,9 +28,11 @@ public class Scr_demon_Scream_High : MonoBehaviour
     }
 
     private void Update()
-    {       
+    {
+        if(TimeScream == 0)
+        Parent.transform.LookAt(PlayerCam.transform, Vector3.up);
 
-        if(TimeScream > 5f && !jump)
+        if (TimeScream > 5f && !jump)
         {
             float Distance = Vector3.Distance(Parent.transform.position, PlayerCam.transform.position);
             float DotweenDuration = Distance * 0.05f;

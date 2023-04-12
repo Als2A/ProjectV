@@ -13,6 +13,7 @@ public class Scr_Cordura : MonoBehaviour
     public bool isDemonActive = false;
 
     public float TimeScream;
+    public float TimeToJumpscream = 10;
 
     public Scr_Demon_Spawner_Room SpawnerRoom;
 
@@ -25,6 +26,8 @@ public class Scr_Cordura : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
+        Cordura += Time.deltaTime;
+
         if(TimeSubstract)
         { TimeScream -= Time.deltaTime; }
         
@@ -38,9 +41,9 @@ public class Scr_Cordura : MonoBehaviour
         if (TimeScream <= 0 && !isDemonActive)
         {
             ActivateGoScream = true;
-        }        
+        }
 
-        if (GoScream && ActivateGoScream)
+        if (GoScream && ActivateGoScream && SpawnerRoom != null)
         {            
             SpawnerRoom.CorduraActives = true;
             isDemonActive = true;
@@ -51,7 +54,7 @@ public class Scr_Cordura : MonoBehaviour
 
     public void RestartTimeScream()
     {
-        TimeScream = Cordura;
+        TimeScream = TimeToJumpscream;
         TimeSubstract = true;
         GoScream = false;
 
