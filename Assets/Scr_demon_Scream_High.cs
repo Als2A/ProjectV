@@ -29,8 +29,8 @@ public class Scr_demon_Scream_High : MonoBehaviour
 
     private void Update()
     {
-        if(TimeScream == 0)
-        Parent.transform.LookAt(PlayerCam.transform, Vector3.up);
+
+        Parent.transform.DOLookAt(PlayerCam.transform.position, 0.2f, AxisConstraint.Y);
 
         if (TimeScream > 5f && !jump)
         {
@@ -41,11 +41,11 @@ public class Scr_demon_Scream_High : MonoBehaviour
 
             Animatorr.SetBool("Jump", true);
 
-            Parent.transform.DOLookAt(PlayerCam.transform.position, 0.2f, AxisConstraint.Y);            
+            //Parent.transform.DOLookAt(PlayerCam.transform.position, 0.2f, AxisConstraint.Y);            
             Parent.transform.DOMove(PlayerCam.transform.position + (Vector3.down * 0.8f) + (Parent.transform.forward * -1 * 1.5f), DotweenDuration).SetEase(Ease.InSine);
         }
 
-        if(Head.JumpScare_Finish)
+        if(Head.JumpScare_Finish == true)
         {
             Head.JumpScare_Finish = false;
 
@@ -81,7 +81,8 @@ public class Scr_demon_Scream_High : MonoBehaviour
     public void MoveCam()
     {
         //Invoke("RestartAnimator", 5f);
-        PlayerCam.transform.parent.GetComponent<Animator>().SetBool("JumpScare",true);        
+        PlayerCam.transform.parent.GetComponent<Animator>().SetBool("JumpScare",true);
+        //Head.JumpScare_Finish = true;
     }
 
     void RestartAnimator()
