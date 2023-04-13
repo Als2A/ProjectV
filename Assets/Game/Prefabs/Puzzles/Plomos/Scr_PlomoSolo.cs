@@ -36,7 +36,7 @@ public class Scr_PlomoSolo : MonoBehaviour
             Invoke("SleepOff", 0.5f);
         }
 
-        FollowPos.transform.localRotation = Quaternion.Euler(Abertura * Grados - 90f, 0, 0);
+        FollowPos.transform.localRotation = Quaternion.Euler(Abertura * Grados - 90f, 180, 0);
 
         transform.localRotation = Quaternion.Lerp(transform.localRotation, FollowPos.transform.localRotation, 0.12f);
 
