@@ -38,22 +38,16 @@ public class Scr_Puerta : MonoBehaviour
 
 
                 UsingObject.SecondaryAction = false;
+
+                transform.DOLocalRotate(new Vector3(0, Abertura * (Locked == true ? Grados = 2f : Grados = 110f), 0), 0.5f).SetEase(Ease.OutSine);
             }
         }
-
-
 
         if (Abertura > 1) Abertura = 1;
         if (Abertura < 0) Abertura = 0;
 
-        FollowPos.transform.localRotation = Quaternion.Euler(0,Abertura * (Locked == true ? Grados = 2f : Grados = 110f) ,0);
-
         if (Locked && Grados >= 0)
             Invoke("ResetFollowPos", 1f * Time.deltaTime);
-
-
-
-        transform.DORotate(FollowPos.transform.rotation.eulerAngles, 0.5f);
     }
 
     public void ResetFollowPos()
