@@ -114,11 +114,41 @@ PrefabInstance:
       propertyPath: m_ConstrainProportionsScale
       value: 1
       objectReference: {fileID: 0}
+    - target: {fileID: -8576065918058213810, guid: 61d29734557932343b1690e0b0bd7d3d,
+        type: 3}
+      propertyPath: m_Materials.Array.data[0]
+      value: 
+      objectReference: {fileID: 2100000, guid: 3387d18c98ccac4459cb84942ac9751f, type: 2}
+    - target: {fileID: -1278463579215644573, guid: 61d29734557932343b1690e0b0bd7d3d,
+        type: 3}
+      propertyPath: m_Materials.Array.data[0]
+      value: 
+      objectReference: {fileID: 2100000, guid: 3387d18c98ccac4459cb84942ac9751f, type: 2}
     - target: {fileID: 919132149155446097, guid: 61d29734557932343b1690e0b0bd7d3d,
         type: 3}
       propertyPath: m_Name
       value: AzazelAngry_AngryIdle
       objectReference: {fileID: 0}
+    - target: {fileID: 7153110617434019073, guid: 61d29734557932343b1690e0b0bd7d3d,
+        type: 3}
+      propertyPath: m_Materials.Array.size
+      value: 3
+      objectReference: {fileID: 0}
+    - target: {fileID: 7153110617434019073, guid: 61d29734557932343b1690e0b0bd7d3d,
+        type: 3}
+      propertyPath: m_Materials.Array.data[0]
+      value: 
+      objectReference: {fileID: 2100000, guid: 86de8850c9763e042a47b1d78c11c628, type: 2}
+    - target: {fileID: 7153110617434019073, guid: 61d29734557932343b1690e0b0bd7d3d,
+        type: 3}
+      propertyPath: m_Materials.Array.data[1]
+      value: 
+      objectReference: {fileID: 2100000, guid: afcb1db7d7df8fd4f9d598e700148bdd, type: 2}
+    - target: {fileID: 7153110617434019073, guid: 61d29734557932343b1690e0b0bd7d3d,
+        type: 3}
+      propertyPath: m_Materials.Array.data[2]
+      value: 
+      objectReference: {fileID: 2100000, guid: 1a57945396017294d84d927e51e72e1e, type: 2}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 61d29734557932343b1690e0b0bd7d3d, type: 3}
 --- !u!1 &4865131762722144467 stripped
