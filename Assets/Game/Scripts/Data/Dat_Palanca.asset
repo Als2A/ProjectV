@@ -15,7 +15,12 @@ MonoBehaviour:
   id: 103
   Name: Palanca
   Image: {fileID: 21300000, guid: 120bf54dff785a0429b068b814e9c12a, type: 3}
-  Descripcion: Palanca para hacer palanca
+  Descripcion: Herramienta de Hierro para forzar objetos.
   Object_Prefab: {fileID: 5175324772869594561, guid: 21ad0058f72060140adf03b0cdf03262,
     type: 3}
   InspectorScale: 1
+  CombineObjectID: 0
+  CombineResult: {fileID: 0}
+  CombinePrimary: 0
+  CombineDestroy: 0
+  Variant: 0

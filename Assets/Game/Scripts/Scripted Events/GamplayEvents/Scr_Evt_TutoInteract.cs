@@ -59,8 +59,7 @@ public class Scr_Evt_TutoInteract : MonoBehaviour
 
     void subtitulosTuto()
     {
-        SubTuto.SaveSubtitle("Pulsa [Right Click] para interactuar rapido", 3f);
-        SubTuto.SaveSubtitle("Pulsa [Left Click] y mueve el [Mouse] para interactuar poco a poco", 3f);
+        SubTuto.SaveSubtitle("Pulsa [Left Click] para interactuar con objetos", 3f);
 
         SubTuto.isOn = true;
         SubTuto.TextDone = true;
