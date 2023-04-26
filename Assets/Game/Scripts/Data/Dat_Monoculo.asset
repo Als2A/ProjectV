@@ -14,7 +14,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   id: 800
   Name: Monoculo
-  Image: {fileID: 21300000, guid: 02800fb9cff14da47a04572790384d8b, type: 3}
+  Image: {fileID: 21300000, guid: efb6f650d543b6743a1997b2d63fe518, type: 3}
   Descripcion: 'Instrumento para mirar a traves de el. '
   Object_Prefab: {fileID: 1677396061250088059, guid: 5dfcfc42344fd46479f85572b0ab9d88,
     type: 3}

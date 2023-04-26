@@ -14,7 +14,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   id: 103
   Name: Palanca
-  Image: {fileID: 21300000, guid: 120bf54dff785a0429b068b814e9c12a, type: 3}
+  Image: {fileID: 21300000, guid: 7ea087d3eab10a646b60d1e39bc34db6, type: 3}
   Descripcion: Herramienta de Hierro para forzar objetos.
   Object_Prefab: {fileID: 5175324772869594561, guid: 21ad0058f72060140adf03b0cdf03262,
     type: 3}

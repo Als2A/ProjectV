@@ -13,9 +13,14 @@ MonoBehaviour:
   m_Name: Dat_PiedraPreciosa_3
   m_EditorClassIdentifier: 
   id: 100
-  Name: Piedra Preciosa
-  Image: {fileID: 21300000, guid: 3168140d6f409d0448447f18568d9482, type: 3}
-  Descripcion: Piedra muy brillante
+  Name: Amatista
+  Image: {fileID: 21300000, guid: c4958c49e4a938244834905f51a0052e, type: 3}
+  Descripcion: Piedra preciosa muy brillante. Tiene tonos morados
   Object_Prefab: {fileID: 5318759344513438723, guid: 78622344c8edde64cbd55a09f38abcd1,
     type: 3}
   InspectorScale: 1
+  CombineObjectID: 0
+  CombineResult: {fileID: 0}
+  CombinePrimary: 0
+  CombineDestroy: 0
+  Variant: 0

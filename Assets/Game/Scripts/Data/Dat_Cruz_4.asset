@@ -14,8 +14,13 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   id: 100
   Name: Cruz
-  Image: {fileID: 21300000, guid: 40685941c1361aa4a957b61174bce3f6, type: 3}
+  Image: {fileID: 21300000, guid: 96bf0696784f76346a5f7138480e8398, type: 3}
   Descripcion: Cruz Religiosa
   Object_Prefab: {fileID: 1336116249624990632, guid: c346ec05e5f0feb4eac1e787484d3fcb,
     type: 3}
   InspectorScale: 1
+  CombineObjectID: 0
+  CombineResult: {fileID: 0}
+  CombinePrimary: 0
+  CombineDestroy: 0
+  Variant: 0

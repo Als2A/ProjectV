@@ -47,15 +47,20 @@ public class Scr_demon_Scream_High : MonoBehaviour
 
         if(Head.JumpScare_Finish == true)
         {
-            Head.JumpScare_Finish = false;
-
             Parent.SetActive(false);
 
             Parent.transform.position = StartPosition;
 
             jump = false;
             TimeScream = 0;
+
+            Invoke("CompJumpScare", 0.2f);
         }
+    }
+
+    void CompJumpScare()
+    {
+        Head.JumpScare_Finish = false;
     }
 
     public void DemonHide()

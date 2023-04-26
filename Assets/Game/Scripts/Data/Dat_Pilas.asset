@@ -14,7 +14,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   id: 102
   Name: Pilas
-  Image: {fileID: 21300000, guid: 4ddbd82d4c8230848a1504f39c185773, type: 3}
+  Image: {fileID: 21300000, guid: 713000c92c472c945871cec41cff177f, type: 3}
   Descripcion: "Pilas de tama\xF1o mediano"
   Object_Prefab: {fileID: 7245268637612713744, guid: 986d130f22d73ef46b1a7718bd3a5fbb,
     type: 3}

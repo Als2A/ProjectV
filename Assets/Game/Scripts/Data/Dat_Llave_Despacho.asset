@@ -14,7 +14,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   id: 200
   Name: Llave Verde
-  Image: {fileID: 21300000, guid: e42ecb1a398978f4b8b3acfcc59f2f1a, type: 3}
+  Image: {fileID: 21300000, guid: 2ae8b1532f1628e4b97fae9089e621e9, type: 3}
   Descripcion: Llave para abrir un candado
   Object_Prefab: {fileID: 4457209138732325290, guid: 111c3f3a09715fb4b82d5ca9bbe765da,
     type: 3}

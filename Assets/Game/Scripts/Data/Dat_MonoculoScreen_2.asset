@@ -14,7 +14,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   id: 803
   Name: Pantalla Verde
-  Image: {fileID: 21300000, guid: 3a722c62885fd174b8f5ef9d175fefe6, type: 3}
+  Image: {fileID: 21300000, guid: 92d20fa107dd90543aca148d31970328, type: 3}
   Descripcion: Pantalla Verde para colocar en el Monoculo
   Object_Prefab: {fileID: 8425987615086134902, guid: 79c996092ff6ea24a99a9e5acceb4b0e,
     type: 3}

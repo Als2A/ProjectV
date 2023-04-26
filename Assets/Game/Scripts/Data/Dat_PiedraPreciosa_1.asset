@@ -13,9 +13,14 @@ MonoBehaviour:
   m_Name: Dat_PiedraPreciosa_1
   m_EditorClassIdentifier: 
   id: 100
-  Name: Piedra Preciosa
-  Image: {fileID: 21300000, guid: 3168140d6f409d0448447f18568d9482, type: 3}
-  Descripcion: Piedra muy brillante
+  Name: Citrino
+  Image: {fileID: 21300000, guid: 854ca23914e9332419f8daa236337675, type: 3}
+  Descripcion: Piedra Preciosa muy brillante con colores anaranjados
   Object_Prefab: {fileID: 5318759344513438723, guid: e4245fe6f06d27749a9387f160966990,
     type: 3}
   InspectorScale: 1
+  CombineObjectID: 0
+  CombineResult: {fileID: 0}
+  CombinePrimary: 0
+  CombineDestroy: 0
+  Variant: 0
