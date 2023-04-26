@@ -39,7 +39,7 @@ public class Scr_Demon_Camera : MonoBehaviour
                 hit_M.transform.GetComponentInChildren<Animator>().SetBool("Hide", true);
             }
 
-            else if (hit_M.transform.CompareTag("DemonAngry"))
+            if (hit_M.transform.CompareTag("DemonAngry"))
             {
                 //Cordura.RestartTimeScream();
 
@@ -61,7 +61,8 @@ public class Scr_Demon_Camera : MonoBehaviour
                 hit_R.transform.GetComponentInChildren<Animator>().SetBool("Hide", true);
 
             }
-            else if (hit_M.transform.CompareTag("DemonAngry"))
+            
+            if (hit_M.transform.CompareTag("DemonAngry"))
             {
                 //Cordura.RestartTimeScream();
 
@@ -84,7 +85,7 @@ public class Scr_Demon_Camera : MonoBehaviour
 
             }
 
-            else if (hit_M.transform.CompareTag("DemonAngry"))
+            if (hit_M.transform.CompareTag("DemonAngry"))
             {
                 //Cordura.RestartTimeScream();
 

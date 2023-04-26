@@ -48,7 +48,7 @@ public class Scr_PuzzlePlomos : MonoBehaviour
         {
             RecentDone = false;
 
-            Invoke("RandomOff", Random.Range(90, 120));
+            Invoke("RandomOff", Random.Range(250, 500));
 
             for (int i = 0; i < Lights.Length; i++)
             {

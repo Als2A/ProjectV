@@ -685,7 +685,7 @@ PrefabInstance:
     - target: {fileID: 4575669939091466527, guid: feb8a45a95ef7a945a4d15419f6bf6a3,
         type: 3}
       propertyPath: m_text
-      value: New Game
+      value: Comenzar
       objectReference: {fileID: 0}
     - target: {fileID: 4575669939091466527, guid: feb8a45a95ef7a945a4d15419f6bf6a3,
         type: 3}
@@ -862,7 +862,7 @@ PrefabInstance:
     - target: {fileID: 4575669939091466527, guid: feb8a45a95ef7a945a4d15419f6bf6a3,
         type: 3}
       propertyPath: m_text
-      value: Options
+      value: Opciones
       objectReference: {fileID: 0}
     - target: {fileID: 4575669939091466527, guid: feb8a45a95ef7a945a4d15419f6bf6a3,
         type: 3}
@@ -1046,6 +1046,11 @@ PrefabInstance:
       propertyPath: m_Name
       value: ButtonMainMenu
       objectReference: {fileID: 0}
+    - target: {fileID: 6895296292245798564, guid: feb8a45a95ef7a945a4d15419f6bf6a3,
+        type: 3}
+      propertyPath: m_IsActive
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 7861841344389812251, guid: feb8a45a95ef7a945a4d15419f6bf6a3,
         type: 3}
       propertyPath: MainMenu
@@ -1170,7 +1175,7 @@ PrefabInstance:
     - target: {fileID: 4575669939091466527, guid: feb8a45a95ef7a945a4d15419f6bf6a3,
         type: 3}
       propertyPath: m_text
-      value: Exit
+      value: Salir
       objectReference: {fileID: 0}
     - target: {fileID: 4575669939091466527, guid: feb8a45a95ef7a945a4d15419f6bf6a3,
         type: 3}

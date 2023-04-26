@@ -49,7 +49,7 @@ public class Evt_TutoPistol : MonoBehaviour
     {
         Voices();
 
-        Invoke("EquipGun", 4f);        
+        //Invoke("EquipGun", 4f);        
     }
 
     void Voices()
@@ -60,21 +60,21 @@ public class Evt_TutoPistol : MonoBehaviour
         Subtitulos.TextDone = true;
     }
 
-    void EquipGun()
-    {
-        for (int i = 0; i < Inventory.Items.Length; i++)
-        {
-            var Data = Inventory.Items[i].GetComponentInChildren<Scr_InventoryButtonData>();
+    //void EquipGun()
+    //{
+    //    for (int i = 0; i < Inventory.Items.Length; i++)
+    //    {
+    //        var Data = Inventory.Items[i].GetComponentInChildren<Scr_InventoryButtonData>();
 
-            if(Data.Data.id == 100)
-            { 
-                Inventory.ItemsPos = i;
-                break;
-            }
-        }
+    //        if(Data.Data.id == 100)
+    //        { 
+    //            Inventory.ItemsPos = i;
+    //            break;
+    //        }
+    //    }
 
-        Inventory.UsesEquip();
-    }
+    //    Inventory.UsesEquip();
+    //}
 
     private void OnTriggerEnter(Collider other)
     {

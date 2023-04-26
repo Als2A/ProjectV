@@ -2,6 +2,7 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.SceneManagement;
+using DG.Tweening;
 
 public class Evt_SustoStart : MonoBehaviour
 {
@@ -14,13 +15,17 @@ public class Evt_SustoStart : MonoBehaviour
     bool DemonMove;
 
     public GameObject Pack;
-    public GameObject Demon;
+    //public GameObject Demon;
 
     public GameObject ImgScreen;
 
     public Scr_BlackFade BlackFade;
 
     public AudioSource SustoSound;
+
+    public Scr_PaymonWalk_Angry Paymon;
+
+    public GameObject PlayerCam;
 
     // Start is called before the first frame update
     void Start()
@@ -42,10 +47,10 @@ public class Evt_SustoStart : MonoBehaviour
             var Collider = GetComponent<Collider>().enabled = false;
         }
 
-        if(DemonMove)
-        {
-            Demon.transform.position += (Demon.transform.forward * Speed * Time.deltaTime);
-        }
+        //if(DemonMove)
+        //{
+        //    Demon.transform.position += (Demon.transform.forward * Speed * Time.deltaTime);
+        //}
     }
 
     void Voices()
@@ -60,12 +65,20 @@ public class Evt_SustoStart : MonoBehaviour
     {
         DemonMove = true;
 
+        Paymon.isActive = true;
+
+        Paymon.transform.DOScale(new Vector3(25f,33f,25f),4f);
+
         Invoke("DemonScream",5f);
     }
 
     void DemonScream()
     {
         Speed = 30;
+
+        Paymon.GetComponent<Animator>().SetBool("JumpScare", true);
+        Paymon.transform.DOMove(PlayerCam.transform.position + (Vector3.down * 0.8f) + (Paymon.transform.forward * -1 * 1.5f), 0.5f).SetEase(Ease.InSine);
+       
 
         SustoSound.Play();
 

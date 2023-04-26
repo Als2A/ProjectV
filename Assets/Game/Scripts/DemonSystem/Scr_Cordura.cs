@@ -13,7 +13,7 @@ public class Scr_Cordura : MonoBehaviour
     public bool isDemonActive = false;
 
     public float TimeScream;
-    public float TimeToJumpscream = 10;
+    //public float TimeToJumpscream = 10;
 
     public Scr_Demon_Spawner_Room SpawnerRoom;
 
@@ -54,6 +54,7 @@ public class Scr_Cordura : MonoBehaviour
 
     public void RestartTimeScream()
     {
+        float TimeToJumpscream = Random.Range(150, 500);
         TimeScream = TimeToJumpscream;
         TimeSubstract = true;
         GoScream = false;
