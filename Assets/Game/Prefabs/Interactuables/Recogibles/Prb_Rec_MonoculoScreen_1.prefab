@@ -67,8 +67,82 @@ PrefabInstance:
       propertyPath: m_Name
       value: MonoculoScreen
       objectReference: {fileID: 0}
+    - target: {fileID: 8425987615086134902, guid: 79c996092ff6ea24a99a9e5acceb4b0e,
+        type: 3}
+      propertyPath: m_IsActive
+      value: 0
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 79c996092ff6ea24a99a9e5acceb4b0e, type: 3}
+--- !u!1001 &5205258534448019867
+PrefabInstance:
+  m_ObjectHideFlags: 0
+  serializedVersion: 2
+  m_Modification:
+    m_TransformParent: {fileID: 6630104902789787594}
+    m_Modifications:
+    - target: {fileID: 455625537037696781, guid: b08e42f57508e0b40918211e9939dd9e,
+        type: 3}
+      propertyPath: m_RootOrder
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 455625537037696781, guid: b08e42f57508e0b40918211e9939dd9e,
+        type: 3}
+      propertyPath: m_LocalPosition.x
+      value: -0.085
+      objectReference: {fileID: 0}
+    - target: {fileID: 455625537037696781, guid: b08e42f57508e0b40918211e9939dd9e,
+        type: 3}
+      propertyPath: m_LocalPosition.y
+      value: -0.1223
+      objectReference: {fileID: 0}
+    - target: {fileID: 455625537037696781, guid: b08e42f57508e0b40918211e9939dd9e,
+        type: 3}
+      propertyPath: m_LocalPosition.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 455625537037696781, guid: b08e42f57508e0b40918211e9939dd9e,
+        type: 3}
+      propertyPath: m_LocalRotation.w
+      value: 0.7071068
+      objectReference: {fileID: 0}
+    - target: {fileID: 455625537037696781, guid: b08e42f57508e0b40918211e9939dd9e,
+        type: 3}
+      propertyPath: m_LocalRotation.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 455625537037696781, guid: b08e42f57508e0b40918211e9939dd9e,
+        type: 3}
+      propertyPath: m_LocalRotation.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 455625537037696781, guid: b08e42f57508e0b40918211e9939dd9e,
+        type: 3}
+      propertyPath: m_LocalRotation.z
+      value: -0.7071068
+      objectReference: {fileID: 0}
+    - target: {fileID: 455625537037696781, guid: b08e42f57508e0b40918211e9939dd9e,
+        type: 3}
+      propertyPath: m_LocalEulerAnglesHint.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 455625537037696781, guid: b08e42f57508e0b40918211e9939dd9e,
+        type: 3}
+      propertyPath: m_LocalEulerAnglesHint.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 455625537037696781, guid: b08e42f57508e0b40918211e9939dd9e,
+        type: 3}
+      propertyPath: m_LocalEulerAnglesHint.z
+      value: -90
+      objectReference: {fileID: 0}
+    - target: {fileID: 943897401738536375, guid: b08e42f57508e0b40918211e9939dd9e,
+        type: 3}
+      propertyPath: m_Name
+      value: PantallaMonoculoRoja_Low
+      objectReference: {fileID: 0}
+    m_RemovedComponents: []
+  m_SourcePrefab: {fileID: 100100000, guid: b08e42f57508e0b40918211e9939dd9e, type: 3}
 --- !u!1001 &5675083139187661496
 PrefabInstance:
   m_ObjectHideFlags: 0

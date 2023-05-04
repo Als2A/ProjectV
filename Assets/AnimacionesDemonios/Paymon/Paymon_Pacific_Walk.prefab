@@ -1018,6 +1018,8 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   Speed: 2
+  Cordura: {fileID: 0}
+  AngryDemon: {fileID: 0}
 --- !u!95 &3794412095441673260
 Animator:
   serializedVersion: 4
@@ -1920,7 +1922,7 @@ SkinnedMeshRenderer:
   m_RenderingLayerMask: 257
   m_RendererPriority: 0
   m_Materials:
-  - {fileID: 1362570969132626037, guid: 7b0db9be49d6b7c408a9fbb79191d728, type: 3}
+  - {fileID: 2100000, guid: a199e9b1845a6e54c8cc1faa56ddfd1f, type: 2}
   m_StaticBatchInfo:
     firstSubMesh: 0
     subMeshCount: 0
@@ -9006,7 +9008,7 @@ SkinnedMeshRenderer:
   m_RenderingLayerMask: 257
   m_RendererPriority: 0
   m_Materials:
-  - {fileID: 3179452356518207712, guid: 7b0db9be49d6b7c408a9fbb79191d728, type: 3}
+  - {fileID: 2100000, guid: db2e16e013cf1ca4d8454f8235bdc0fd, type: 2}
   m_StaticBatchInfo:
     firstSubMesh: 0
     subMeshCount: 0
