@@ -1,0 +1,2 @@
+Cura_Test11.abc filter=lfs diff=lfs merge=lfs -text
+Violeta_Alembic12.abc filter=lfs diff=lfs merge=lfs -text

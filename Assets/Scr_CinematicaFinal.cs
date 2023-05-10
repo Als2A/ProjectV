@@ -53,10 +53,10 @@ public class Scr_CinematicaFinal : MonoBehaviour
 
     void Die()
     {
-        PlayerCamera.GetComponentInParent<Scr_MouseLook>().CameraLock = true;
-        PlayerCamera.GetComponentInParent<Scr_MouseLook>().ToLock = true;
+        //PlayerCamera.GetComponentInParent<Scr_MouseLook>().CameraLock = true;
+        //PlayerCamera.GetComponentInParent<Scr_MouseLook>().ToLock = true;
 
         //PlayerCamera.transform.DOMove(Pos_2.position, 0.5f);
-        PlayerCamera.transform.DORotate(Pos_2.position, 0.5f);
+        //PlayerCamera.transform.DORotate(Pos_2.position, 0.5f);
     }
 }
