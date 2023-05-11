@@ -12,7 +12,7 @@ GameObject:
   - component: {fileID: 7704371925249437479}
   - component: {fileID: 6170768481181484007}
   m_Layer: 0
-  m_Name: LuzBombilla
+  m_Name: LuzBombillaGRANDE
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -229,7 +229,7 @@ GameObject:
   - component: {fileID: 6143661005350155842}
   - component: {fileID: 4487853863790998506}
   m_Layer: 0
-  m_Name: LuzBombilla
+  m_Name: LuzBombillaGRANDE
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -446,7 +446,7 @@ GameObject:
   - component: {fileID: 4651082373881203246}
   - component: {fileID: 577269978920991997}
   m_Layer: 0
-  m_Name: LuzBombilla
+  m_Name: LuzBombillaGRANDE
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -663,7 +663,7 @@ GameObject:
   - component: {fileID: 1527807819972626638}
   - component: {fileID: 4513347151850594682}
   m_Layer: 0
-  m_Name: LuzBombilla
+  m_Name: LuzBombillaGRANDE
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -880,7 +880,7 @@ GameObject:
   - component: {fileID: 3082422477652991650}
   - component: {fileID: 6632279339068728022}
   m_Layer: 0
-  m_Name: LuzBombilla
+  m_Name: LuzBombillaGRANDE
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -1130,7 +1130,7 @@ Light:
   m_Type: 2
   m_Shape: 0
   m_Color: {r: 1, g: 1, b: 1, a: 1}
-  m_Intensity: 2.387324
+  m_Intensity: 7.957747
   m_Range: 6
   m_SpotAngle: 30
   m_InnerSpotAngle: 21.80208
@@ -1192,7 +1192,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 7a68c43fe1f2a47cfa234b5eeaa98012, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  m_Intensity: 300
+  m_Intensity: 100
   m_EnableSpotReflector: 1
   m_LuxAtDistance: 1
   m_InnerSpotPercent: 0
@@ -1314,7 +1314,7 @@ GameObject:
   - component: {fileID: 5609209095835358762}
   - component: {fileID: 6351783367731089812}
   m_Layer: 0
-  m_Name: LuzBombilla
+  m_Name: LuzBombillaGRANDE
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -1572,7 +1572,7 @@ GameObject:
   - component: {fileID: 4912922573622086471}
   - component: {fileID: 782486390581120655}
   m_Layer: 0
-  m_Name: LuzBombilla
+  m_Name: LuzBombillaGRANDE
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -1789,7 +1789,7 @@ GameObject:
   - component: {fileID: 314869294831216582}
   - component: {fileID: 3747153290865829484}
   m_Layer: 0
-  m_Name: LuzBombilla
+  m_Name: LuzBombillaGRANDE
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -2006,7 +2006,7 @@ GameObject:
   - component: {fileID: 3890067376098766264}
   - component: {fileID: 4018232724049984402}
   m_Layer: 0
-  m_Name: LuzBombilla
+  m_Name: LuzBombillaGRANDE
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0

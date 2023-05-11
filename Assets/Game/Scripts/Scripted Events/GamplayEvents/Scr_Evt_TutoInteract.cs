@@ -12,6 +12,8 @@ public class Scr_Evt_TutoInteract : MonoBehaviour
     public bool Activate = false;
     public bool LastTextOff = false;
 
+    public AudioClip[] Voces;
+
     // Start is called before the first frame update
     void Start()
     {
@@ -31,9 +33,9 @@ public class Scr_Evt_TutoInteract : MonoBehaviour
             if (Subtitulos.Sub_Text.Count == 0 && SubTuto.Sub_Text.Count == 0)
             {
                 LastTextOff = true;
-                Subtitulos.SaveSubtitle("La puerta está abierta", 3f);
-                Subtitulos.SaveSubtitle("No te preocupes", 2f);
-                Subtitulos.SaveSubtitle("entra y si necesitas ayuda avisame por el walkie", 3f);
+                Subtitulos.SaveSubtitle("La puerta está abierta", 3f, Voces[0]);
+                Subtitulos.SaveSubtitle("No te preocupes", 2f, Voces[1]);
+                Subtitulos.SaveSubtitle("entra y si necesitas ayuda avisame por el walkie", 3f, Voces[2]);
 
                 Subtitulos.isOn = true;
                 Subtitulos.TextDone = true;

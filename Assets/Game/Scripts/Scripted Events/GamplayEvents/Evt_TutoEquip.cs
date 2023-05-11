@@ -9,6 +9,8 @@ public class Evt_TutoEquip : MonoBehaviour
 
     public bool Activate = false;
 
+    public AudioClip[] Voces;
+
     // Start is called before the first frame update
     void Start()
     {
@@ -31,7 +33,7 @@ public class Evt_TutoEquip : MonoBehaviour
 
     void Voices()
     {
-        Subtitulos.SaveSubtitle("Quizas la llave abra el candado", 4f);
+        Subtitulos.SaveSubtitle("Quizas la llave abra el candado", 4f, Voces[0]);
 
         Subtitulos.isOn = true;
         Subtitulos.TextDone = true;

@@ -12,6 +12,8 @@ public class Evt_TutoPistol : MonoBehaviour
 
     public bool Activate = false;
 
+    public AudioClip[] Voces;
+
     // Start is called before the first frame update
     void Start()
     {
@@ -54,7 +56,7 @@ public class Evt_TutoPistol : MonoBehaviour
 
     void Voices()
     {
-        Subtitulos.SaveSubtitle("Tio esto no me gusta nada", 4f);
+        Subtitulos.SaveSubtitle("Tio esto no me gusta nada", 4f, Voces[0]);
 
         Subtitulos.isOn = true;
         Subtitulos.TextDone = true;

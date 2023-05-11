@@ -889,7 +889,7 @@ MonoBehaviour:
     meshQuery:
       layers: 16777223
       maskAndChannels: 234881031
-    surfaceParameter: 32618
+    surfaceParameter: 425116
     meshQueryIndex: 0
     subMeshQueryIndex: 0
     geometryHashValue: 1774036442214313857
@@ -968,6 +968,7 @@ MonoBehaviour:
   Player: {fileID: 1362119461}
   Activate: 0
   LastTextOff: 0
+  Voces: []
 --- !u!1 &188233973
 GameObject:
   m_ObjectHideFlags: 0
@@ -1017,6 +1018,7 @@ MonoBehaviour:
   Inventory: {fileID: 1376046666}
   Puerta: {fileID: 639319611}
   Activate: 0
+  Voces: []
 --- !u!65 &188233976
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -1813,7 +1815,7 @@ MonoBehaviour:
     meshQuery:
       layers: 33554440
       maskAndChannels: 8
-    surfaceParameter: 32656
+    surfaceParameter: 35370
     meshQueryIndex: 1
     subMeshQueryIndex: 0
     geometryHashValue: 1774036442214313857
@@ -6431,7 +6433,7 @@ MonoBehaviour:
     meshQuery:
       layers: 33554440
       maskAndChannels: 8
-    surfaceParameter: 32656
+    surfaceParameter: 35370
     meshQueryIndex: 1
     subMeshQueryIndex: 0
     geometryHashValue: 1774036442214313857
@@ -6854,6 +6856,7 @@ MonoBehaviour:
   Subtitulos: {fileID: 1461322823}
   SubtitulosTuto: {fileID: 493344951}
   Activate: 0
+  Voces: []
 --- !u!65 &1813456258
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -7393,6 +7396,7 @@ MonoBehaviour:
   Subtitulos: {fileID: 1461322823}
   Activate: 0
   KeyRB: {fileID: 1964888619}
+  Voces: []
 --- !u!65 &1881036995
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -8406,6 +8410,7 @@ MonoBehaviour:
   SubtitulosTuto: {fileID: 493344951}
   isMainMenu: 1
   isPlayerMove: 0
+  Voces: []
 --- !u!4 &1983547822
 Transform:
   m_ObjectHideFlags: 0
@@ -8727,6 +8732,7 @@ MonoBehaviour:
   SustoSound: {fileID: 8956045054001372225}
   Paymon: {fileID: 1426446284}
   PlayerCam: {fileID: 1289345383}
+  Voces: []
 --- !u!65 &2057484448
 BoxCollider:
   m_ObjectHideFlags: 0

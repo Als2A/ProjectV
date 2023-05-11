@@ -27,6 +27,8 @@ public class Evt_SustoStart : MonoBehaviour
 
     public GameObject PlayerCam;
 
+    public AudioClip[] Voces;
+
     // Start is called before the first frame update
     void Start()
     {
@@ -55,7 +57,7 @@ public class Evt_SustoStart : MonoBehaviour
 
     void Voices()
     {
-        Subtitulos.SaveSubtitle("Joder sube ya veo algo sospechoso", 4f);
+        Subtitulos.SaveSubtitle("Joder sube ya veo algo sospechoso", 4f, Voces[0]);
 
         Subtitulos.isOn = true;
         Subtitulos.TextDone = true;

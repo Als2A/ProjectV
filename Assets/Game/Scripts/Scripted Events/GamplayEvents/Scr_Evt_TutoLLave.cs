@@ -9,6 +9,8 @@ public class Scr_Evt_TutoLLave : MonoBehaviour
 
     public Rigidbody KeyRB;
 
+    public AudioClip[] Voces;
+
     // Start is called before the first frame update
     void Start()
     {
@@ -37,7 +39,7 @@ public class Scr_Evt_TutoLLave : MonoBehaviour
 
     void Voices()
     {
-        Subtitulos.SaveSubtitle("Esto esta dando mal rollo", 4f);
+        Subtitulos.SaveSubtitle("Esto esta dando mal rollo", 4f, Voces[0]);
 
         Subtitulos.isOn = true;
         Subtitulos.TextDone = true;
