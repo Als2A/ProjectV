@@ -1,6 +1,7 @@
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using DG.Tweening;
 
 public class Scr_CandadoDial : MonoBehaviour
 {
@@ -82,8 +83,7 @@ public class Scr_CandadoDial : MonoBehaviour
 
         isInterface = true;
 
-        Arrow.SetActive(true);
-        TheLight.SetActive(true);
+        Invoke("EndActivate", 0.8f);
 
         UsingObject.gameObject.SetActive(false);
 
@@ -92,12 +92,18 @@ public class Scr_CandadoDial : MonoBehaviour
         Interactive.STOP = true;
 
         SavePosition = PlayerHead.transform.position;
-        SaveRotation = PlayerHead.transform.rotation;
+        SaveRotation = PlayerHead.transform.rotation;       
 
-        PlayerHead.transform.rotation = DesiredTransform.rotation;
-        PlayerHead.transform.position = DesiredTransform.position;
+        PlayerHead.transform.DORotateQuaternion(DesiredTransform.rotation, 1f).SetEase(Ease.InOutSine);
+        PlayerHead.transform.DOMove(DesiredTransform.position,1f).SetEase(Ease.InOutSine);
 
-        PlayerCamera.transform.rotation = DesiredTransform.rotation;
+        PlayerCamera.transform.DORotateQuaternion(DesiredTransform.rotation,1f).SetEase(Ease.InOutSine);
+    }
+
+    public void EndActivate()
+    {
+        Arrow.SetActive(true);
+        TheLight.SetActive(true);
     }
 
     void DesactiveInterface()
@@ -125,8 +131,8 @@ public class Scr_CandadoDial : MonoBehaviour
         Interactive.STOP = false;
 
 
-        PlayerHead.transform.rotation = SaveRotation;
-        PlayerHead.transform.position = SavePosition;
+        PlayerHead.transform.DORotateQuaternion(SaveRotation,1f).SetEase(Ease.InOutSine);
+        PlayerHead.transform.DOMove(SavePosition,1f).SetEase(Ease.InOutSine); 
 
         //PlayerCamera.transform.localPosition = Vector3.zero;
         //PlayerCamera.transform.localRotation = PlayerHead.transform.localRotation;

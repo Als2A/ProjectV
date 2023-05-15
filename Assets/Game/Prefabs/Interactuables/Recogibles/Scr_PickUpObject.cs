@@ -39,6 +39,8 @@ public class Scr_PickUpObject : MonoBehaviour
 
                     PlayerCam = GameObject.Find("PlayerCamera").transform;
                     transform.DOMove(PlayerCam.position + (Vector3.down * 0.25f), 0.2f);
+                    transform.DOScale(transform.localScale * 0.6f, 0.2f);
+
                     Destroy(gameObject,0.5f);
 
                     break;
