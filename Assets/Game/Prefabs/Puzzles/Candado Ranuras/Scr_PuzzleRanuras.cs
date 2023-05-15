@@ -1,6 +1,7 @@
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using DG.Tweening;
 
 public class Scr_PuzzleRanuras : MonoBehaviour
 {
@@ -40,8 +41,11 @@ public class Scr_PuzzleRanuras : MonoBehaviour
                     PuzzleDone = true;
 
                     ObjectInHand.transform.parent = gameObject.transform;
-                    ObjectInHand.transform.localPosition = Vector3.zero + (Vector3.forward * Distancia);
-                    ObjectInHand.transform.localRotation = Quaternion.Euler(Vector3.zero);
+                    //ObjectInHand.transform.localPosition = Vector3.zero + (Vector3.forward * Distancia);
+                    //ObjectInHand.transform.localRotation = Quaternion.Euler(Vector3.zero);
+
+                    ObjectInHand.transform.DOLocalMove(Vector3.zero + (Vector3.forward * Distancia), 0.2f);
+                    ObjectInHand.transform.DOLocalRotate(Vector3.zero, 0.2f);
 
 
                     //Borrar Item del Inventario

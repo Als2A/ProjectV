@@ -1,6 +1,7 @@
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using DG.Tweening;
 
 public class Scr_PickUpObject : MonoBehaviour
 {
@@ -10,6 +11,8 @@ public class Scr_PickUpObject : MonoBehaviour
     public Scr_InteractiveObject UsingObject;
     public Scr_InputSystem Inputs;
     public Scr_Inventory Inventory;
+
+    private Transform PlayerCam;
     // Start is called before the first frame update
     void Start()
     {
@@ -33,7 +36,10 @@ public class Scr_PickUpObject : MonoBehaviour
                     ButtonData.Data = ObjectData;
                     Inventory.Items[i].GetComponentInChildren<Scr_InventoryButtonData>().UpdateSlot();
 
-                    Destroy(gameObject);
+
+                    PlayerCam = GameObject.Find("PlayerCamera").transform;
+                    transform.DOMove(PlayerCam.position + (Vector3.down * 0.25f), 0.2f);
+                    Destroy(gameObject,0.5f);
 
                     break;
                 }     

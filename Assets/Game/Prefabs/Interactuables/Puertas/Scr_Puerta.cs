@@ -39,7 +39,7 @@ public class Scr_Puerta : MonoBehaviour
 
                 UsingObject.SecondaryAction = false;
 
-                transform.DOLocalRotate(new Vector3(0, Abertura * (Locked == true ? Grados = 2f : Grados = 110f), 0), 0.5f).SetEase(Ease.OutSine);
+                transform.DOLocalRotate(new Vector3(0, Abertura * Grados, 0), 0.5f).SetEase(Ease.OutSine);
             }
         }
 
@@ -53,5 +53,7 @@ public class Scr_Puerta : MonoBehaviour
     public void ResetFollowPos()
     {
         Abertura = 0;
+        transform.DOLocalRotate(new Vector3(0, Abertura * Grados, 0), 0.5f).SetEase(Ease.OutSine);
     }
+
 }
