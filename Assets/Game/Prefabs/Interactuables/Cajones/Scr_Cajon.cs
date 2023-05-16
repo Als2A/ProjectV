@@ -18,13 +18,28 @@ public class Scr_Cajon : MonoBehaviour
     public Scr_MouseLook MouseCam;
     public GameObject FollowPos;
 
-    
+    public AudioSource AudioOpen;
+    public AudioSource AudioClose;
+
+
     void Update()
     {
         if(UsingObject.SecondaryAction == true)
         {
-            if (Abertura < 0.5) Abertura = 1;
-            else if (Abertura >= 0.5) Abertura = 0;
+            if (Abertura < 0.5) 
+            {
+                Abertura = 1;                
+
+                AudioOpen.pitch = Random.Range(0.7f, 1.5f);
+                AudioOpen.Play();
+            }
+            else if (Abertura >= 0.5)
+            {
+                Abertura = 0;               
+
+                AudioClose.pitch = Random.Range(0.7f, 1.5f);
+                AudioClose.Play();
+            }
 
             UsingObject.SecondaryAction = false;
         }
@@ -34,6 +49,6 @@ public class Scr_Cajon : MonoBehaviour
 
         FollowPos.transform.localPosition = new Vector3(0,0,Abertura*Distancia);
 
-        transform.DOMove(FollowPos.transform.position, 0.5f);
+        transform.DOMove(FollowPos.transform.position, 0.9f);
     }    
 }

@@ -21,6 +21,12 @@ public class Scr_Puerta : MonoBehaviour
     public Scr_InputSystem Input;
     public GameObject FollowPos;
 
+    public AudioSource AudioOpen;
+    public AudioSource AudioClose;
+
+    public AudioClip[] ClipOpen;
+    public AudioClip[] ClipClose;
+
     private void Start()
     {
         
@@ -33,18 +39,40 @@ public class Scr_Puerta : MonoBehaviour
         {
             if (UsingObject.SecondaryAction == true)
             {
-                if (Abertura < 0.5) Abertura = 1;
-                else if (Abertura >= 0.5) Abertura = 0;
+                if (Abertura < 0.5) 
+                {
+                    Abertura = 1;
+
+                    AudioOpen.clip = ClipOpen[Random.Range(0, ClipOpen.Length)];
+
+                    AudioOpen.pitch = Random.Range(0.9f, 1.8f);
+                    AudioOpen.Play();
+                }
+                else if (Abertura >= 0.5) 
+                {
+                    Abertura = 0;
+
+                    AudioClose.clip = ClipClose[Random.Range(0, ClipClose.Length)];
+
+                    AudioClose.pitch = Random.Range(0.9f, 1.8f);
+                    AudioClose.Play();
+                }
 
 
                 UsingObject.SecondaryAction = false;
 
-                transform.DOLocalRotate(new Vector3(0, Abertura * Grados, 0), 0.5f).SetEase(Ease.OutSine);
+                transform.DOLocalRotate(new Vector3(0, Abertura * Grados, 0), 1f).SetEase(Ease.OutSine);
             }
         }
 
-        if (Abertura > 1) Abertura = 1;
-        if (Abertura < 0) Abertura = 0;
+        if (Abertura > 1)
+        {
+            Abertura = 1;
+        }
+        if (Abertura < 0) 
+        {
+            Abertura = 0;
+        }
 
         if (Locked && Grados >= 0)
             Invoke("ResetFollowPos", 1f * Time.deltaTime);

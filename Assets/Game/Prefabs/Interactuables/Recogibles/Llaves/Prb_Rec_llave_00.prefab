@@ -142,30 +142,35 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 4360802393237397185, guid: 7d1bbe501802a5143a6f8da4e4cf0676,
+        type: 3}
+      propertyPath: m_audioClip
+      value: 
+      objectReference: {fileID: 8300000, guid: 3205df562322d5f4098e8d32b9988d17, type: 3}
     - target: {fileID: 9091691031736381054, guid: 7d1bbe501802a5143a6f8da4e4cf0676,
         type: 3}
       propertyPath: m_LocalScale.x
-      value: 0.2
+      value: 0.13
       objectReference: {fileID: 0}
     - target: {fileID: 9091691031736381054, guid: 7d1bbe501802a5143a6f8da4e4cf0676,
         type: 3}
       propertyPath: m_LocalScale.y
-      value: 0.2
+      value: 0.13
       objectReference: {fileID: 0}
     - target: {fileID: 9091691031736381054, guid: 7d1bbe501802a5143a6f8da4e4cf0676,
         type: 3}
       propertyPath: m_LocalScale.z
-      value: 0.2
+      value: 0.13
       objectReference: {fileID: 0}
     - target: {fileID: 9091691031736381054, guid: 7d1bbe501802a5143a6f8da4e4cf0676,
         type: 3}
       propertyPath: m_LocalPosition.x
-      value: -0.0694
+      value: 0.0372
       objectReference: {fileID: 0}
     - target: {fileID: 9091691031736381054, guid: 7d1bbe501802a5143a6f8da4e4cf0676,
         type: 3}
       propertyPath: m_LocalPosition.y
-      value: 0.049
+      value: 0.0178
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 7d1bbe501802a5143a6f8da4e4cf0676, type: 3}

@@ -32,6 +32,8 @@ public class Scr_ObjectSee : MonoBehaviour
 
     public Scr_BlurUI Blur;
 
+    public AudioSource Audio;
+
 
     [Header("Inspector 3D")]
     public GameObject ViewerSet;
@@ -156,6 +158,9 @@ public class Scr_ObjectSee : MonoBehaviour
             ViewerSet.SetActive(true);
 
             Inputs.Inputs.SwitchCurrentActionMap("Menu");
+
+            Audio.pitch = Random.Range(0.9f, 1.5f);
+            Audio.Play();
         }
     }
 
@@ -172,6 +177,9 @@ public class Scr_ObjectSee : MonoBehaviour
             ViewerSet.SetActive(false);
 
             Inputs.Inputs.SwitchCurrentActionMap("Player");
+
+            Audio.pitch = Random.Range(0.9f, 1.5f);
+            Audio.Play();
         }
     }
 }
