@@ -33,7 +33,7 @@ public class Evt_TutoEquip : MonoBehaviour
 
     void Voices()
     {
-        Subtitulos.SaveSubtitle("Quizas la llave abra el candado", 4f, Voces[0]);
+        Subtitulos.SaveSubtitle("¿Podría usar la llave en el candado?", 4f, Voces[0]);
 
         Subtitulos.isOn = true;
         Subtitulos.TextDone = true;

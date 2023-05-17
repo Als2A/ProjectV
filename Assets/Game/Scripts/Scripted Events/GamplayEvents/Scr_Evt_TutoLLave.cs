@@ -39,7 +39,7 @@ public class Scr_Evt_TutoLLave : MonoBehaviour
 
     void Voices()
     {
-        Subtitulos.SaveSubtitle("Esto esta dando mal rollo", 4f, Voces[0]);
+        Subtitulos.SaveSubtitle("Todo esto no es muy normal...", 4f, Voces[0]);
 
         Subtitulos.isOn = true;
         Subtitulos.TextDone = true;
