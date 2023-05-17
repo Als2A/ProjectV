@@ -40,6 +40,9 @@ public class Evt_InicioGame : MonoBehaviour
 
             if (Subtitulos.Sub_Text.Count == 0 && SubTuto.Sub_Text.Count == 0)
             {
+                Activate = false;
+                var Collider = GetComponent<Collider>().enabled = false;
+
                 LastTextOff = true;
                 Subtitulos.SaveSubtitle("David!", 4f, Voces[0]);
                 Subtitulos.SaveSubtitle("Calmate Raul estoy bien", 3f, Voces[1]);
@@ -52,8 +55,7 @@ public class Evt_InicioGame : MonoBehaviour
 
                 //Invoke("CancelLock", 10f);
 
-                Activate = false;
-                var Collider = GetComponent<Collider>().enabled = false;
+
             }
 
         }
