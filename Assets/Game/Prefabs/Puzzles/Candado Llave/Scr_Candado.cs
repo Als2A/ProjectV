@@ -15,6 +15,7 @@ public class Scr_Candado : MonoBehaviour
     public Rigidbody Rb;
 
     public Scr_Inventory Inventory;
+    public AudioSource Audio;
 
     // Start is called before the first frame update
     void Start()
@@ -49,6 +50,9 @@ public class Scr_Candado : MonoBehaviour
                     Locked = false;
                     Puerta.Locked = false;
                     Puerta.ResetFollowPos();
+
+                    //Audio
+                    Audio.Play();
 
 
                     //Se aplica la gravedad

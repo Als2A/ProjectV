@@ -9,7 +9,7 @@ public class Scr_CuraAnimacionFinal : MonoBehaviour
     // Start is called before the first frame update
     void Start()
     {
-        
+        RB.useGravity = false;
     }
 
     // Update is called once per frame

@@ -19,10 +19,14 @@ public class Scr_DialSolo : MonoBehaviour
 
     public bool isLerp;
 
+    public AudioSource Audio;
+
+    public int LastNumber;
+
     // Start is called before the first frame update
     void Start()
     {
-        
+        LastNumber = Number;
     }
 
     // Update is called once per frame
@@ -54,11 +58,21 @@ public class Scr_DialSolo : MonoBehaviour
             float mouseX = Inputs.Look_y * (Inputs.Sens / 100) * Time.deltaTime;
 
             Vuelta += mouseX;
+
         }
 
         transform.localRotation = Quaternion.Euler(-Vuelta * 360, 0, 0);
 
+
         GradosNumeros();
+
+        if(LastNumber != Number)
+        {
+            LastNumber = Number;
+            Audio.pitch = Random.Range(0.9f, 1.8f);
+            Audio.Play();            
+        }
+
 
 
         if (!isUsing && !isLerp)
@@ -69,9 +83,7 @@ public class Scr_DialSolo : MonoBehaviour
 
         if(isLerp)
         {
-            Vuelta = Mathf.Lerp(Vuelta, Desired, 0.12f);
-
-            
+            Vuelta = Mathf.Lerp(Vuelta, Desired, 0.12f);            
         }
 
         if (Vuelta == Desired && isLerp)
@@ -80,6 +92,8 @@ public class Scr_DialSolo : MonoBehaviour
 
     void GradosNumeros()
     {
+
+
         if (Vuelta >= 1) Vuelta -= 1;
         if (Vuelta < 0) Vuelta += 1;
 
@@ -98,7 +112,9 @@ public class Scr_DialSolo : MonoBehaviour
         if (Number == 10  && !isUsing)
         {
             Vuelta = 1f;
-        }
+        }        
+
+        //Audio.Play();
 
     }
 

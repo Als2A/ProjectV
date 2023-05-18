@@ -14,7 +14,9 @@ public class Scr_CinematicaFinal : MonoBehaviour
     public Transform Pos_2;
 
     public bool AnimStart = false;
-    
+
+    public Scr_FinalSubtitles Subtitulos;
+
 
     // Start is called before the first frame update
     void Start()
@@ -38,6 +40,8 @@ public class Scr_CinematicaFinal : MonoBehaviour
 
                 TimeLine.Play();
 
+                
+
                 Invoke("EnterRoom", 5f);
             }            
         }
@@ -45,8 +49,10 @@ public class Scr_CinematicaFinal : MonoBehaviour
 
     void EnterRoom()
     {
-        PlayerCamera.transform.parent.parent.parent.DOMove(Pos_1.position, 2f);
+        PlayerCamera.transform.parent.parent.parent.DOMove(Pos_1.position, 2f).SetEase(Ease.InOutSine);
         //PlayerCamera.transform.DOMove(transform.position - transform.forward * 2f, 5f);
+
+        Subtitulos.Activate = true;
 
         Invoke("Die", 5f);
     }

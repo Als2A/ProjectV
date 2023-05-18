@@ -28,6 +28,8 @@ public class Scr_CandadoDial : MonoBehaviour
     public GameObject TheLight;
     public int DialPos;
 
+    public AudioSource Audio;
+
 
 
 
@@ -98,7 +100,11 @@ public class Scr_CandadoDial : MonoBehaviour
         PlayerHead.transform.DOMove(DesiredTransform.position,1f).SetEase(Ease.InOutSine);
 
         PlayerCamera.transform.DORotateQuaternion(DesiredTransform.rotation,1f).SetEase(Ease.InOutSine);
+
+        
     }
+
+
 
     public void EndActivate()
     {
@@ -113,9 +119,7 @@ public class Scr_CandadoDial : MonoBehaviour
 
         Inputs.Inputs.SwitchCurrentActionMap("Player");
 
-        PlayerHead.GetComponentInChildren<Scr_MouseLook>().ToLock = false;
 
-        PlayerHead.GetComponentInChildren<Scr_HandBobCam>().isLock = false;
 
         Cursor.lockState = CursorLockMode.Locked;
 
@@ -130,12 +134,21 @@ public class Scr_CandadoDial : MonoBehaviour
 
         Interactive.STOP = false;
 
+        
 
-        PlayerHead.transform.DORotateQuaternion(SaveRotation,1f).SetEase(Ease.InOutSine);
-        PlayerHead.transform.DOMove(SavePosition,1f).SetEase(Ease.InOutSine); 
+        PlayerHead.transform.DORotateQuaternion(SaveRotation, 0.8f).SetEase(Ease.InOutSine);
+        PlayerHead.transform.DOMove(SavePosition, 0.8f).SetEase(Ease.InOutSine);
+
+        Invoke("DesbloquearPlayer", 1f);
 
         //PlayerCamera.transform.localPosition = Vector3.zero;
         //PlayerCamera.transform.localRotation = PlayerHead.transform.localRotation;
+    }
+
+    void DesbloquearPlayer()
+    {
+        PlayerHead.GetComponentInChildren<Scr_MouseLook>().ToLock = false;
+        PlayerHead.GetComponentInChildren<Scr_HandBobCam>().isLock = false;
     }
 
     void ComprobarSolucion()
@@ -154,6 +167,9 @@ public class Scr_CandadoDial : MonoBehaviour
             DoorLock.Locked = false;
 
             DesactiveInterface();
+
+            //Audio
+            Audio.Play();
 
             Rb.isKinematic = false;
         }

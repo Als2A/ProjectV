@@ -17,6 +17,7 @@ public class Scr_PuzzleRanuras : MonoBehaviour
     public Scr_Inventory Inventory;
 
     public float Distancia;
+    public float scaleOBJ;
 
     // Start is called before the first frame update
     void Start()
@@ -27,35 +28,40 @@ public class Scr_PuzzleRanuras : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        if (UsingObject.PrimaryAction == true)
+        if(!PuzzleDone)
         {
-            //Colocar su data en la data del primer hueco vacio.
-            Inputs.ActionOne = false;
-
-            if (HandObject.transform.childCount == 1)
+            if (UsingObject.PrimaryAction == true)
             {
-                ObjectInHand = HandObject.transform.GetChild(0).gameObject;
+                //Colocar su data en la data del primer hueco vacio.
+                Inputs.ActionOne = false;
 
-                if (ObjectInHand.GetComponent<Scr_ObjetoRanuras>().Ranura == RanuraObject)
+                if (HandObject.transform.childCount == 1)
                 {
-                    PuzzleDone = true;
+                    ObjectInHand = HandObject.transform.GetChild(0).gameObject;
 
-                    ObjectInHand.transform.parent = gameObject.transform;
-                    //ObjectInHand.transform.localPosition = Vector3.zero + (Vector3.forward * Distancia);
-                    //ObjectInHand.transform.localRotation = Quaternion.Euler(Vector3.zero);
+                    if (ObjectInHand.GetComponent<Scr_ObjetoRanuras>().Ranura == RanuraObject)
+                    {
+                        PuzzleDone = true;
 
-                    ObjectInHand.transform.DOLocalMove(Vector3.zero + (Vector3.forward * Distancia), 0.2f);
-                    ObjectInHand.transform.DOLocalRotate(Vector3.zero, 0.2f);
+                        ObjectInHand.transform.parent = gameObject.transform;
+                        //ObjectInHand.transform.localPosition = Vector3.zero + (Vector3.forward * Distancia);
+                        //ObjectInHand.transform.localRotation = Quaternion.Euler(Vector3.zero);
+
+                        ObjectInHand.transform.DOLocalMove(Vector3.zero + (Vector3.forward * Distancia), 0.2f);
+                        ObjectInHand.transform.DOLocalRotate(Vector3.zero, 0.2f);
+                        ObjectInHand.transform.DOScale(Vector3.one * scaleOBJ, 0.2f);
 
 
-                    //Borrar Item del Inventario
-                    var ButtonData = Inventory.Items[0].GetComponentInChildren<Scr_InventoryButtonData>();
+                        //Borrar Item del Inventario
+                        var ButtonData = Inventory.Items[0].GetComponentInChildren<Scr_InventoryButtonData>();
 
-                    ButtonData.Data = ButtonData.DataNull;
-                    ButtonData.UpdateSlot();
+                        ButtonData.Data = ButtonData.DataNull;
+                        ButtonData.UpdateSlot();
 
+                    }
                 }
             }
         }
+        
     }
 }
