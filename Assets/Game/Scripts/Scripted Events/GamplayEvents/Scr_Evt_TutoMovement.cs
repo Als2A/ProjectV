@@ -50,8 +50,8 @@ public class Scr_Evt_TutoMovement : MonoBehaviour
 
         if (EventTimer >= EventTime && !EventDo)
         {
-            Subtitulos.SaveSubtitle("¿Está todo bien por ahí arriba?", 4f, Voces[0]);
-            Subtitulos.SaveSubtitle("Muévete y entra en la casa de una vez!", 4f, Voces[1]);
+            Subtitulos.SaveSubtitle("¿Está todo bien por ahí arriba? ¡Muévete y entra en la casa de una vez!", 4f, Voces[0]);
+            //Subtitulos.SaveSubtitle("", 4f, Voces[1]);
 
             Subtitulos.isOn = true;
             Subtitulos.TextDone = true;

@@ -44,9 +44,10 @@ public class Evt_InicioGame : MonoBehaviour
                 var Collider = GetComponent<Collider>().enabled = false;
 
                 LastTextOff = true;
-                Subtitulos.SaveSubtitle("David!", 4f, Voces[0]);
-                Subtitulos.SaveSubtitle("Calmate Raul estoy bien", 3f, Voces[1]);
-                Subtitulos.SaveSubtitle("Joder, te oí gritar por el walkie y he subido corriendo, aunque la puerta ahora está bloqueada.", 5f, Voces[2]);
+                //Subtitulos.SaveSubtitle("David!", 4f, Voces[0]);
+                Subtitulos.SaveSubtitle("Calmate Raul estoy bien", 3f, Voces[0]);
+                Subtitulos.SaveSubtitle("Joder, te oí gritar por el walkie y he subido corriendo, aunque la puerta ahora está bloqueada.", 5.5f, Voces[1]);
+                Subtitulos.SaveSubtitle("Voy a pedir ayuda a la comisaria, intenta hacer lo que puedas.", 5f, Voces[2]);
                 Subtitulos.SaveSubtitle("De acuerdo, ves rápido.", 5f, Voces[3]);
                 Subtitulos.SaveSubtitle("Sobre todo no te metas en problemas.", 5f, Voces[4]);
 

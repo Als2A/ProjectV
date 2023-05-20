@@ -889,7 +889,7 @@ MonoBehaviour:
     meshQuery:
       layers: 16777223
       maskAndChannels: 234881031
-    surfaceParameter: 425116
+    surfaceParameter: 127922
     meshQueryIndex: 0
     subMeshQueryIndex: 0
     geometryHashValue: 1774036442214313857
@@ -968,7 +968,9 @@ MonoBehaviour:
   Player: {fileID: 1362119461}
   Activate: 0
   LastTextOff: 0
-  Voces: []
+  Voces:
+  - {fileID: 8300000, guid: 48c97861a9482fc49809bd0a3e01e033, type: 3}
+  - {fileID: 0}
 --- !u!1 &188233973
 GameObject:
   m_ObjectHideFlags: 0
@@ -1018,7 +1020,9 @@ MonoBehaviour:
   Inventory: {fileID: 1376046666}
   Puerta: {fileID: 639319611}
   Activate: 0
-  Voces: []
+  Voces:
+  - {fileID: 0}
+  - {fileID: 8300000, guid: 4de5caf0b4fb18d40be19c88d2e5044c, type: 3}
 --- !u!65 &188233976
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -1815,7 +1819,7 @@ MonoBehaviour:
     meshQuery:
       layers: 33554440
       maskAndChannels: 8
-    surfaceParameter: 35370
+    surfaceParameter: 36946
     meshQueryIndex: 1
     subMeshQueryIndex: 0
     geometryHashValue: 1774036442214313857
@@ -6433,7 +6437,7 @@ MonoBehaviour:
     meshQuery:
       layers: 33554440
       maskAndChannels: 8
-    surfaceParameter: 35370
+    surfaceParameter: 36946
     meshQueryIndex: 1
     subMeshQueryIndex: 0
     geometryHashValue: 1774036442214313857
@@ -8410,7 +8414,8 @@ MonoBehaviour:
   SubtitulosTuto: {fileID: 493344951}
   isMainMenu: 1
   isPlayerMove: 0
-  Voces: []
+  Voces:
+  - {fileID: 8300000, guid: 7b97a68a89eccb547a80930bfab4e111, type: 3}
 --- !u!4 &1983547822
 Transform:
   m_ObjectHideFlags: 0

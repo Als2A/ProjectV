@@ -57,8 +57,8 @@ public class Evt_TutoPistol : MonoBehaviour
     void Voices()
     {
         Subtitulos.SaveSubtitle("Esto no me gusta nada", 4f, Voces[0]);
-        Subtitulos.SaveSubtitle("Tío solamente nos llaman por unos gritos", 4f, Voces[1]);
-        Subtitulos.SaveSubtitle("calma la familia, y si necesitas ayuda avisame por el walkie.", 4f, Voces[1]);
+        Subtitulos.SaveSubtitle("Tío solamente nos llaman por unos gritos, calma la familia, y si necesitas ayuda avisame por el walkie.", 4f, Voces[1]);
+        //Subtitulos.SaveSubtitle("", 4f, Voces[1]);
 
         Subtitulos.isOn = true;
         Subtitulos.TextDone = true;
