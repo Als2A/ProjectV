@@ -59,9 +59,9 @@ public class Scr_DynamicDepthOfField : MonoBehaviour
     void SetFocus()
     {
         depthOfField.nearFocusStart.value = 0f;
-        depthOfField.nearFocusEnd.value = hitDistance - 2f;
-        depthOfField.farFocusStart.value = hitDistance + 2f;
-        depthOfField.farFocusEnd.value = hitDistance + 10f;
+        depthOfField.nearFocusEnd.value = hitDistance - 5f;
+        depthOfField.farFocusStart.value = hitDistance + 5f;
+        depthOfField.farFocusEnd.value = hitDistance + 25f;
 
         //depthOfField.focusDistance.value = hitDistance;
     }

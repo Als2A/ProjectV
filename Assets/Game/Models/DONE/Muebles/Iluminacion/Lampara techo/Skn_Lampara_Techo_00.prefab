@@ -1097,7 +1097,7 @@ GameObject:
   - component: {fileID: 7849941443946229561}
   - component: {fileID: 6981416751158533555}
   m_Layer: 0
-  m_Name: LuzRelleno
+  m_Name: LuzRellenoGRANDE
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
