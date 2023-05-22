@@ -1,0 +1,256 @@
+fileFormatVersion: 2
+guid: 948ecfd89ea0fb94fa0373444a25b3b7
+ModelImporter:
+  serializedVersion: 21300
+  internalIDToNameTable: []
+  externalObjects:
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: jj_magazine cover_1_005
+    second: {fileID: 2100000, guid: 1ad005a83d4a838469b31a0af75c9d47, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: jj_magazine cover_2_001
+    second: {fileID: 2100000, guid: f8d0dc7ebceb6434784f60bdea6b3d62, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: jj_magazine cover_2_002
+    second: {fileID: 2100000, guid: dfa3032bea250314993758cf7cb76849, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: jj_magazine cover_2_003
+    second: {fileID: 2100000, guid: d3d950ae353e49c4893e7d4a00cf798c, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: jj_magazine cover_2_004
+    second: {fileID: 2100000, guid: 28f19c9e7dc97dc4f84e0ca11a8888a9, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: jj_magazine cover_2_005
+    second: {fileID: 2100000, guid: def62907bdc4e7948adf7726a4cedd85, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: jj_magazine cover_4_1
+    second: {fileID: 2100000, guid: 9d04fe49ba1bba04f8490886d20caca7, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: jj_magazine cover_4_3
+    second: {fileID: 2100000, guid: ac7ee36e48ac41b4483e5a419b115e78, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: jj_magazine cover_4_4
+    second: {fileID: 2100000, guid: aa4bfe5061969b043b9232dfea06b0ae, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: jj_magazine cover_4_7
+    second: {fileID: 2100000, guid: 0cfa15a2176049e48a6bddaef70428f4, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: jj_pages _ 1
+    second: {fileID: 2100000, guid: e3edddec535f9bc4ea0f5ca02832e690, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: jj_pages _ 2
+    second: {fileID: 2100000, guid: 2e2745fedb3420040a888e3162c96dd7, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: notes w
+    second: {fileID: 2100000, guid: 3fcb4d9ba6308bb43ac1b1a6dc9674f0, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: pen color 02
+    second: {fileID: 2100000, guid: 0ba8b86e018c75b499088181389e7a20, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: pen color 03
+    second: {fileID: 2100000, guid: 4ffdbb6e98657f240bd3d9816c6ca769, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: pen color 04
+    second: {fileID: 2100000, guid: 58ebd48de1273be44b7d96b29eb23a42, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: specs_hrom
+    second: {fileID: 2100000, guid: 46cfdb797dfe2404aac775fd123ed23f, type: 2}
+  - first:
+      type: UnityEngine:Texture2D
+      assembly: UnityEngine.CoreModule
+      name: jj_magazine cover_1_005
+    second: {fileID: 2800000, guid: a628207d40f97ca48b7071061f181ddd, type: 3}
+  - first:
+      type: UnityEngine:Texture2D
+      assembly: UnityEngine.CoreModule
+      name: jj_magazine cover_2_001
+    second: {fileID: 2800000, guid: 4415c414a94ba19429921d357566449f, type: 3}
+  - first:
+      type: UnityEngine:Texture2D
+      assembly: UnityEngine.CoreModule
+      name: jj_magazine cover_2_002
+    second: {fileID: 2800000, guid: 89273577e4f4afa49b42a99198061019, type: 3}
+  - first:
+      type: UnityEngine:Texture2D
+      assembly: UnityEngine.CoreModule
+      name: jj_magazine cover_2_004
+    second: {fileID: 2800000, guid: 6a440a89d01139c4f857c3e3ba78ddc6, type: 3}
+  - first:
+      type: UnityEngine:Texture2D
+      assembly: UnityEngine.CoreModule
+      name: jj_magazine cover_2_005
+    second: {fileID: 2800000, guid: 5a290b3f9a88fea4c81fb75fb26a14a1, type: 3}
+  - first:
+      type: UnityEngine:Texture2D
+      assembly: UnityEngine.CoreModule
+      name: jj_magazine cover_3_2
+    second: {fileID: 2800000, guid: 0480ddee2ba716e498a19c867f6c64f1, type: 3}
+  - first:
+      type: UnityEngine:Texture2D
+      assembly: UnityEngine.CoreModule
+      name: jj_magazine cover_4_1
+    second: {fileID: 2800000, guid: 8d744a2177fdc474ab6657f409a1a7d9, type: 3}
+  - first:
+      type: UnityEngine:Texture2D
+      assembly: UnityEngine.CoreModule
+      name: jj_magazine cover_4_3
+    second: {fileID: 2800000, guid: 7de57963c625a5044be461f2fb529f75, type: 3}
+  - first:
+      type: UnityEngine:Texture2D
+      assembly: UnityEngine.CoreModule
+      name: jj_magazine cover_4_7
+    second: {fileID: 2800000, guid: f085dd1e1dddcad4cb5fd6a100828ab8, type: 3}
+  - first:
+      type: UnityEngine:Texture2D
+      assembly: UnityEngine.CoreModule
+      name: jj_notes_002
+    second: {fileID: 2800000, guid: 0e5ff456256efd441bede597af5f79f5, type: 3}
+  - first:
+      type: UnityEngine:Texture2D
+      assembly: UnityEngine.CoreModule
+      name: jj_obl_reflect02
+    second: {fileID: 2800000, guid: 5fee398ab9e19204f8b735920300868b, type: 3}
+  - first:
+      type: UnityEngine:Texture2D
+      assembly: UnityEngine.CoreModule
+      name: jj_pages_01_diff
+    second: {fileID: 2800000, guid: ce321745fa078b842a52f406bed57685, type: 3}
+  - first:
+      type: UnityEngine:Texture2D
+      assembly: UnityEngine.CoreModule
+      name: jj_pages_02_diff
+    second: {fileID: 2800000, guid: c21c2eca957b08a4791b46f65dfe6cb8, type: 3}
+  materials:
+    materialImportMode: 2
+    materialName: 0
+    materialSearch: 1
+    materialLocation: 1
+  animations:
+    legacyGenerateAnimations: 4
+    bakeSimulation: 0
+    resampleCurves: 1
+    optimizeGameObjects: 0
+    removeConstantScaleCurves: 1
+    motionNodeName: 
+    rigImportErrors: 
+    rigImportWarnings: 
+    animationImportErrors: 
+    animationImportWarnings: 
+    animationRetargetingWarnings: 
+    animationDoRetargetingWarnings: 0
+    importAnimatedCustomProperties: 0
+    importConstraints: 0
+    animationCompression: 1
+    animationRotationError: 0.5
+    animationPositionError: 0.5
+    animationScaleError: 0.5
+    animationWrapMode: 0
+    extraExposedTransformPaths: []
+    extraUserProperties: []
+    clipAnimations: []
+    isReadable: 0
+  meshes:
+    lODScreenPercentages: []
+    globalScale: 1
+    meshCompression: 0
+    addColliders: 0
+    useSRGBMaterialColor: 1
+    sortHierarchyByName: 1
+    importVisibility: 1
+    importBlendShapes: 1
+    importCameras: 1
+    importLights: 1
+    nodeNameCollisionStrategy: 1
+    fileIdsGeneration: 2
+    swapUVChannels: 0
+    generateSecondaryUV: 0
+    useFileUnits: 1
+    keepQuads: 0
+    weldVertices: 1
+    bakeAxisConversion: 0
+    preserveHierarchy: 0
+    skinWeightsMode: 0
+    maxBonesPerVertex: 4
+    minBoneWeight: 0.001
+    optimizeBones: 1
+    meshOptimizationFlags: -1
+    indexFormat: 0
+    secondaryUVAngleDistortion: 8
+    secondaryUVAreaDistortion: 15.000001
+    secondaryUVHardAngle: 88
+    secondaryUVMarginMethod: 1
+    secondaryUVMinLightmapResolution: 40
+    secondaryUVMinObjectScale: 1
+    secondaryUVPackMargin: 4
+    useFileScale: 1
+  tangentSpace:
+    normalSmoothAngle: 60
+    normalImportMode: 0
+    tangentImportMode: 3
+    normalCalculationMode: 4
+    legacyComputeAllNormalsFromSmoothingGroupsWhenMeshHasBlendShapes: 0
+    blendShapeNormalImportMode: 1
+    normalSmoothingSource: 0
+  referencedClips: []
+  importAnimation: 1
+  humanDescription:
+    serializedVersion: 3
+    human: []
+    skeleton: []
+    armTwist: 0.5
+    foreArmTwist: 0.5
+    upperLegTwist: 0.5
+    legTwist: 0.5
+    armStretch: 0.05
+    legStretch: 0.05
+    feetSpacing: 0
+    globalScale: 1
+    rootMotionBoneName: 
+    hasTranslationDoF: 0
+    hasExtraRoot: 0
+    skeletonHasParents: 1
+  lastHumanDescriptionAvatarSource: {instanceID: 0}
+  autoGenerateAvatarMappingIfUnspecified: 1
+  animationType: 2
+  humanoidOversampling: 1
+  avatarSetup: 0
+  addHumanoidExtraRootOnlyWhenUsingAvatar: 1
+  remapMaterialsIfMaterialImportModeIsNone: 0
+  additionalBone: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
