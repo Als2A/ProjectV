@@ -11,32 +11,40 @@ public class Scr_PaymonWalk : MonoBehaviour
 
     public GameObject AngryDemon;
 
+    public bool invokeON = true;
+
     // Start is called before the first frame update
-    void Start()
+    void Awake()
     {
-        StartPosition = transform.position;
-        Invoke("ResetDemon", 3f);
+
     }
 
     // Update is called once per frame
     void Update()
     {
         transform.position += transform.forward * Speed * Time.deltaTime;
+
+        if(invokeON)
+        {
+            StartPosition = transform.position;
+            Invoke("ResetDemon", 3f);
+
+            invokeON = false;
+        }
     }
 
     void ResetDemon()
     {
+        invokeON = true;
         Cordura.RestartTimeScream();
-
-        gameObject.SetActive(false);
-
         transform.position = StartPosition;
 
         if (AngryDemon != null && Cordura.Cordura > 500f)
         {
             AngryDemon.SetActive(true);
-        }
+        }        
 
-
+        gameObject.SetActive(false);
     }
+
 }
