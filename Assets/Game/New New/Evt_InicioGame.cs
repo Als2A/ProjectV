@@ -19,6 +19,9 @@ public class Evt_InicioGame : MonoBehaviour
 
     public AudioClip[] Voces;
 
+    public AudioClip[] GritosDavid;
+    public AudioSource AudioPuertaGolpes;
+
 
 
 
@@ -27,6 +30,7 @@ public class Evt_InicioGame : MonoBehaviour
     void Start()
     {
         Invoke("PlayGolpes",65f);
+        Invoke("DavidGritos", 67f);
     }
 
     // Update is called once per frame
@@ -41,7 +45,7 @@ public class Evt_InicioGame : MonoBehaviour
             if (Subtitulos.Sub_Text.Count == 0 && SubTuto.Sub_Text.Count == 0)
             {
                 Activate = false;
-                var Collider = GetComponent<Collider>().enabled = false;
+                Colider.enabled = false;
 
                 LastTextOff = true;
                 //Subtitulos.SaveSubtitle("David!", 4f, Voces[0]);
@@ -81,6 +85,18 @@ public class Evt_InicioGame : MonoBehaviour
     void PlayGolpes()
     {
         PuertaGolpes.Play();
-        Colider.enabled = true;
+        //Colider.enabled = true;
+    }
+
+    void DavidGritos()
+    {
+        AudioPuertaGolpes.clip = GritosDavid[Random.Range(0, GritosDavid.Length)];
+
+        AudioPuertaGolpes.pitch = Random.Range(0.9f, 1.3f);
+        AudioPuertaGolpes.Play();
+
+
+        if (Colider.enabled)
+        Invoke("DavidGritos", Random.Range(2, 4f));
     }
 }
