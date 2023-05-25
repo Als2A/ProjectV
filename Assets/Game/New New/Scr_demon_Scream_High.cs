@@ -10,6 +10,7 @@ public class Scr_demon_Scream_High : MonoBehaviour
 
     public Scr_Cordura Cordura;
 
+    public GameObject Skin;
     public GameObject Parent;
 
     [Header("Player")]
@@ -20,6 +21,15 @@ public class Scr_demon_Scream_High : MonoBehaviour
     public float TimeScream;
 
     Vector3 StartPosition;
+
+    public AudioSource AudioSource;
+
+    public AudioClip[] HighAudios;
+
+    public bool AudioJumpScare;
+
+    public float DistanceJump = 1.5f;
+    public float AlturaJump = 0.8f;
 
     // Start is called before the first frame update
     void Start()
@@ -41,13 +51,15 @@ public class Scr_demon_Scream_High : MonoBehaviour
 
             Animatorr.SetBool("Jump", true);
 
+            High_Audio_JumpScare();
+
             //Parent.transform.DOLookAt(PlayerCam.transform.position, 0.2f, AxisConstraint.Y);            
-            Parent.transform.DOMove(PlayerCam.transform.position + (Vector3.down * 0.8f) + (Parent.transform.forward * -1 * 1.5f), DotweenDuration).SetEase(Ease.InSine);
+            Parent.transform.DOMove(PlayerCam.transform.position + (Vector3.down * AlturaJump) + (Parent.transform.forward * -1 * DistanceJump), DotweenDuration).SetEase(Ease.InSine);
         }
 
         if(Head.JumpScare_Finish == true)
         {
-            Parent.SetActive(false);
+            Skin.SetActive(false);
 
             Parent.transform.position = StartPosition;
 
@@ -55,12 +67,19 @@ public class Scr_demon_Scream_High : MonoBehaviour
             TimeScream = 0;
 
             Invoke("CompJumpScare", 0.2f);
+            Invoke("ParentDesactivate", 7f);
         }
     }
 
     void CompJumpScare()
     {
         Head.JumpScare_Finish = false;
+    }
+
+    public void ParentDesactivate()
+    {        
+        Parent.SetActive(false);
+        Skin.SetActive(true);
     }
 
     public void DemonHide()
@@ -86,8 +105,30 @@ public class Scr_demon_Scream_High : MonoBehaviour
     public void MoveCam()
     {
         //Invoke("RestartAnimator", 5f);
-        PlayerCam.transform.parent.GetComponent<Animator>().SetBool("JumpScare",true);
+        Head.transform.GetComponent<Animator>().SetBool("JumpScare",true);
         //Head.JumpScare_Finish = true;
+    }
+
+    void High_Audio_JumpScare()
+    {
+        if (!AudioJumpScare)
+        {
+            AudioJumpScare = true;
+
+            AudioSource.clip = HighAudios[Random.Range(0, HighAudios.Length)];
+
+            AudioSource.pitch = Random.Range(0.9f, 1.4f);
+            AudioSource.Play();
+
+            Invoke("ResetAudioJumpScare", 5f);
+        }
+
+    }
+
+    void ResetAudioJumpScare()
+    {
+        AudioJumpScare = false;
+        AudioSource.clip = null;
     }
 
     void RestartAnimator()

@@ -11,7 +11,8 @@ public class Scr_ButtonHoverMainMenu : MonoBehaviour
     public bool isMove;
 
     public Vector3 FollowPos;
-    
+
+    public AudioSource Audio;
 
     // Start is called before the first frame update
     void Start()
@@ -26,7 +27,7 @@ public class Scr_ButtonHoverMainMenu : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        if(transform.childCount > 1)
+        if(MainMenu.MenuPos == ButtonPos)
         {
             MoveButton();            
         }
@@ -67,6 +68,9 @@ public class Scr_ButtonHoverMainMenu : MonoBehaviour
             MainMenu.MenuSel.transform.position = gameObject.transform.position;
 
             MainMenu.MenuPos = ButtonPos;
+
+            Audio.pitch = Random.Range(0.95f, 1.05f);
+            Audio.Play();
         }
     }
 }

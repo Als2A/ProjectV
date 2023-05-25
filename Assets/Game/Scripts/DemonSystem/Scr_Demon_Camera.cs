@@ -48,7 +48,7 @@ public class Scr_Demon_Camera : MonoBehaviour
                 Low_Audio_JumpScare();
             }
 
-            if (hit_M.transform.CompareTag("DemonAngry"))
+            if (hit_M.transform.CompareTag("DemonAngry") && hit_M.transform.GetComponentInChildren<Animator>())
             {
                 //Cordura.RestartTimeScream();
 
@@ -57,6 +57,8 @@ public class Scr_Demon_Camera : MonoBehaviour
                 //hit_M.transform.gameObject.SetActive(false);
                 hit_M.transform.GetComponentInChildren<Animator>().SetBool("Alert", true);
                 hit_M.transform.GetComponentInChildren<Scr_demon_Scream_High>().TimeScream += 1 * Time.deltaTime;
+
+                //High_Audio_JumpScare();
             }
 
         }
@@ -81,6 +83,8 @@ public class Scr_Demon_Camera : MonoBehaviour
                 //hit_M.transform.gameObject.SetActive(false);
                 hit_M.transform.GetComponentInChildren<Animator>().SetBool("Alert", true);
                 hit_M.transform.GetComponentInChildren<Scr_demon_Scream_High>().TimeScream += 1 * Time.deltaTime;
+
+                //High_Audio_JumpScare();
             }
 
         }
@@ -105,6 +109,8 @@ public class Scr_Demon_Camera : MonoBehaviour
                 //hit_M.transform.gameObject.SetActive(false);
                 hit_M.transform.GetComponentInChildren<Animator>().SetBool("Alert", true);
                 hit_M.transform.GetComponentInChildren<Scr_demon_Scream_High>().TimeScream += 1 * Time.deltaTime;
+
+                //High_Audio_JumpScare();
             }
 
         }
@@ -148,8 +154,11 @@ public class Scr_Demon_Camera : MonoBehaviour
        
     }
 
+
+
     void ResetAudioJumpScare()
     {
         AudioJumpScare = false;
+        AudioSource.clip = null;
     }
 }
