@@ -169,6 +169,11 @@ MonoBehaviour:
   Animatorr: {fileID: 3963526100398300056}
   Cordura: {fileID: 0}
   Parent: {fileID: 2427777968443322753}
+  AngryDemon: {fileID: 0}
+  AudioSource: {fileID: 0}
+  AudioClips:
+  - {fileID: 8300000, guid: 5ff86635c3f808947a23e202cff534e3, type: 3}
+  - {fileID: 8300000, guid: 3f85ea61d3e4b1e468ee81a0670fd8e9, type: 3}
 --- !u!95 &3963526100398300056 stripped
 Animator:
   m_CorrespondingSourceObject: {fileID: 6495933817299736260, guid: 78df51ff25f20214ba349185b2f70093,

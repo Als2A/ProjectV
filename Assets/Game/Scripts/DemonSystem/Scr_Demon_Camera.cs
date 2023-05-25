@@ -12,6 +12,13 @@ public class Scr_Demon_Camera : MonoBehaviour
 
     float Radius = 0.5f;
 
+    public bool AudioJumpScare;
+
+    public AudioSource AudioSource;
+
+    public AudioClip[] LowAudios;
+    public AudioClip[] HighAudios;
+
     // Start is called before the first frame update
     void Start()
     {
@@ -37,6 +44,8 @@ public class Scr_Demon_Camera : MonoBehaviour
 
                 //hit_M.transform.gameObject.SetActive(false);
                 hit_M.transform.GetComponentInChildren<Animator>().SetBool("Hide", true);
+
+                Low_Audio_JumpScare();
             }
 
             if (hit_M.transform.CompareTag("DemonAngry"))
@@ -60,6 +69,7 @@ public class Scr_Demon_Camera : MonoBehaviour
 
                 hit_R.transform.GetComponentInChildren<Animator>().SetBool("Hide", true);
 
+                Low_Audio_JumpScare();
             }
             
             if (hit_M.transform.CompareTag("DemonAngry"))
@@ -83,6 +93,7 @@ public class Scr_Demon_Camera : MonoBehaviour
 
                 hit_L.transform.GetComponentInChildren<Animator>().SetBool("Hide", true);
 
+                Low_Audio_JumpScare();
             }
 
             if (hit_M.transform.CompareTag("DemonAngry"))
@@ -119,5 +130,26 @@ public class Scr_Demon_Camera : MonoBehaviour
 
         }
 
+    }
+
+    void Low_Audio_JumpScare()
+    {
+        if(!AudioJumpScare)
+        {
+            AudioJumpScare = true;
+
+            AudioSource.clip = LowAudios[Random.Range(0, LowAudios.Length)];
+
+            AudioSource.pitch = Random.Range(0.9f, 1.4f);
+            AudioSource.Play();
+
+            Invoke("ResetAudioJumpScare", 5f);
+        }
+       
+    }
+
+    void ResetAudioJumpScare()
+    {
+        AudioJumpScare = false;
     }
 }

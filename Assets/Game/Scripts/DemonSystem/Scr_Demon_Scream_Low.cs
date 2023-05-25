@@ -13,6 +13,8 @@ public class Scr_Demon_Scream_Low : MonoBehaviour
 
     public GameObject AngryDemon;
 
+
+
     // Start is called before the first frame update
     void Awake()
     {
@@ -23,7 +25,12 @@ public class Scr_Demon_Scream_Low : MonoBehaviour
     {
         Cordura.RestartTimeScream();
 
-        Animatorr.SetBool("Hide", true);        
+        Animatorr.SetBool("Hide", true);
+
+        //AudioSource.clip = AudioClips[Random.Range(0, AudioClips.Length)];
+
+        //AudioSource.pitch = Random.Range(0.9f, 1.8f);
+        //AudioSource.Play();
     }
 
     public void ActivarCollider()
