@@ -9,6 +9,8 @@ public class Scr_ButtonHover : MonoBehaviour
 
     public int ButtonUsesPos;
 
+    public AudioSource HoverSound;
+
     // Start is called before the first frame update
     void Start()
     {
@@ -25,6 +27,9 @@ public class Scr_ButtonHover : MonoBehaviour
     {
         if(!Inventory.isUses)
         {
+            HoverSound.pitch = (Random.Range(0.9f, 1.2f));
+            HoverSound.Play();
+
             Inventory.ItemsSel.transform.parent = gameObject.transform;
             Inventory.ItemsSel.transform.position = gameObject.transform.position;
 
@@ -42,6 +47,9 @@ public class Scr_ButtonHover : MonoBehaviour
     {
         if (Inventory.isUses)
         {
+            HoverSound.pitch = (Random.Range(0.9f, 1.2f));
+            HoverSound.Play();
+
             Inventory.UsesSel.transform.parent = gameObject.transform;
             Inventory.UsesSel.transform.position = gameObject.transform.position;
 

@@ -69,6 +69,12 @@ public class Scr_Inventory : MonoBehaviour
     public GameObject InspectorObject;
     public GameObject InspectorRotatingObject;
 
+    [Header("Audios")]
+    public AudioSource Aud_Open;
+    public AudioSource Aud_Move;
+    public AudioSource Aud_OK;
+
+
 
     // Start is called before the first frame update
     void Start()
@@ -90,6 +96,9 @@ public class Scr_Inventory : MonoBehaviour
                 if (!ItemsMenu.activeSelf)
                 {
                     Blur.BlurOn(1f);
+
+                    Aud_Open.pitch = (Random.Range(0.9f, 1.2f));
+                    Aud_Open.Play();
 
                     InventoryAlpha.DOFade(1f, 0.5f);
 
@@ -637,6 +646,9 @@ public class Scr_Inventory : MonoBehaviour
     public void CloseInventory()
     {
         Blur.BlurOff();
+
+        Aud_Open.pitch = (Random.Range(0.9f, 1.2f));
+        Aud_Open.Play();
 
         InventoryAlpha.DOFade(0f, 0.5f);
 
