@@ -35,7 +35,7 @@ public class Evt_TutoPistol : MonoBehaviour
 
     void Part_00()
     {
-        
+        Puerta.AudioPuertaClose();  
         Puerta.Abertura = 0;
 
         Invoke("PuertaClose", 0.5f);

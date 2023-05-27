@@ -52,10 +52,7 @@ public class Scr_Puerta : MonoBehaviour
                 {
                     Abertura = 0;
 
-                    AudioClose.clip = ClipClose[Random.Range(0, ClipClose.Length)];
-
-                    AudioClose.pitch = Random.Range(0.9f, 1.8f);
-                    AudioClose.Play();
+                    AudioPuertaClose();
                 }
 
 
@@ -82,6 +79,14 @@ public class Scr_Puerta : MonoBehaviour
     {
         Abertura = 0;
         transform.DOLocalRotate(new Vector3(0, Abertura * Grados, 0), 0.5f).SetEase(Ease.OutSine);
+    }
+
+    public void AudioPuertaClose()
+    {
+        AudioClose.clip = ClipClose [Random.Range(0, ClipClose.Length)];
+
+        AudioClose.pitch = Random.Range(0.9f, 1.8f);
+        AudioClose.Play();
     }
 
 }

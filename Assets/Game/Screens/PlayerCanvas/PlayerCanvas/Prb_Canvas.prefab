@@ -950,6 +950,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   Chest: {fileID: 0}
   ButtonUsesPos: 0
+  HoverSound: {fileID: 0}
 --- !u!1 &2247533432845652948
 GameObject:
   m_ObjectHideFlags: 0
@@ -1279,6 +1280,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   Chest: {fileID: 0}
   ButtonUsesPos: 0
+  HoverSound: {fileID: 0}
 --- !u!114 &8274443100188009018
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -2200,6 +2202,9 @@ MonoBehaviour:
   ViewerTexture: {fileID: 5815405419609581016}
   InspectorObject: {fileID: 0}
   InspectorRotatingObject: {fileID: 0}
+  Aud_Open: {fileID: 6893788207110445337}
+  Aud_Move: {fileID: 6105660071199584195}
+  Aud_OK: {fileID: 1990687311216393922}
 --- !u!225 &4083313656892816849
 CanvasGroup:
   m_ObjectHideFlags: 0
@@ -2467,6 +2472,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   Chest: {fileID: 0}
   ButtonUsesPos: 0
+  HoverSound: {fileID: 0}
 --- !u!1 &4637830429353858998
 GameObject:
   m_ObjectHideFlags: 0
@@ -2646,6 +2652,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   Chest: {fileID: 0}
   ButtonUsesPos: 0
+  HoverSound: {fileID: 0}
 --- !u!1 &4855818586772182260
 GameObject:
   m_ObjectHideFlags: 0
@@ -6122,6 +6129,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   Chest: {fileID: 0}
   ButtonUsesPos: 2
+  HoverSound: {fileID: 0}
 --- !u!1001 &34441612591839145
 PrefabInstance:
   m_ObjectHideFlags: 0
