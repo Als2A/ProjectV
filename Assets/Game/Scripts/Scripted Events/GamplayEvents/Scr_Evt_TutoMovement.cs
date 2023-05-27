@@ -50,13 +50,13 @@ public class Scr_Evt_TutoMovement : MonoBehaviour
 
         if (EventTimer >= EventTime && !EventDo)
         {
-            Subtitulos.SaveSubtitle("¿Está todo bien por ahí arriba? ¡Muévete y entra en la casa de una vez!", 4f, Voces[0]);
+            Subtitulos.SaveSubtitle("¿Está todo bien por ahí arriba? ¡Muévete y entra en la casa de una vez!", 5f, Voces[0]);
             //Subtitulos.SaveSubtitle("", 4f, Voces[1]);
 
             Subtitulos.isOn = true;
             Subtitulos.TextDone = true;
 
-            Invoke("subtitulosTuto", 9f);
+            Invoke("subtitulosTuto", 5.5f);
 
             EventDo = true;
         }
@@ -68,8 +68,8 @@ public class Scr_Evt_TutoMovement : MonoBehaviour
 
     void subtitulosTuto()
     {
-        SubtitulosTuto.SaveSubtitle("Usa [WASD] para caminar y [Mouse] para mirar alrededor", 4f);
-        SubtitulosTuto.SaveSubtitle("Pulsa [Shift] para correr y [Ctrl] para agacharte", 4f);
+        SubtitulosTuto.SaveSubtitle("Usa [WASD] para caminar y [Mouse] para mirar alrededor", 2.5f);
+        SubtitulosTuto.SaveSubtitle("Pulsa [Shift] para correr y [Ctrl] para agacharte", 2.5f);
 
         SubtitulosTuto.isOn = true;
         SubtitulosTuto.TextDone = true;

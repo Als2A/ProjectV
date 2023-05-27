@@ -2,6 +2,7 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.Playables;
+using UnityEngine.SceneManagement;
 using DG.Tweening;
 
 public class Scr_CinematicaFinal : MonoBehaviour
@@ -54,15 +55,11 @@ public class Scr_CinematicaFinal : MonoBehaviour
 
         Subtitulos.Activate = true;
 
-        Invoke("Die", 5f);
+        Invoke("MainMenu", 60f);
     }
 
-    void Die()
+    void MainMenu()
     {
-        //PlayerCamera.GetComponentInParent<Scr_MouseLook>().CameraLock = true;
-        //PlayerCamera.GetComponentInParent<Scr_MouseLook>().ToLock = true;
-
-        //PlayerCamera.transform.DOMove(Pos_2.position, 0.5f);
-        //PlayerCamera.transform.DORotate(Pos_2.position, 0.5f);
+        SceneManager.LoadScene("Mapa_00");
     }
 }

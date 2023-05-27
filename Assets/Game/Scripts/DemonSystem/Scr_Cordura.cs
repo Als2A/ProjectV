@@ -54,7 +54,7 @@ public class Scr_Cordura : MonoBehaviour
 
     public void RestartTimeScream()
     {
-        float TimeToJumpscream = Random.Range(15, 30);
+        float TimeToJumpscream = Random.Range(30, 100);
         
         TimeSubstract = true;
         GoScream = false;

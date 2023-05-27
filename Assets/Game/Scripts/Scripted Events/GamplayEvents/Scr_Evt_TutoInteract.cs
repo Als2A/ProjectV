@@ -33,7 +33,7 @@ public class Scr_Evt_TutoInteract : MonoBehaviour
             if (Subtitulos.Sub_Text.Count == 0 && SubTuto.Sub_Text.Count == 0)
             {
                 LastTextOff = true;
-                Subtitulos.SaveSubtitle("¿Ves algo raro?", 3f, Voces[0]);
+                Subtitulos.SaveSubtitle("¿Ves algo raro?", 2.5f, Voces[0]);
                 Subtitulos.SaveSubtitle("La puerta está abierta", 2f, Voces[1]);
                 //Subtitulos.SaveSubtitle("entra y si necesitas ayuda avisame por el walkie", 3f, Voces[2]);
 
@@ -42,9 +42,9 @@ public class Scr_Evt_TutoInteract : MonoBehaviour
 
 
 
-                Invoke("CancelLock", 6f);
+                Invoke("CancelLock", 5f);
 
-                Invoke("subtitulosTuto", 8f);
+                Invoke("subtitulosTuto", 5f);
 
                 Activate = false;
                 var Collider = GetComponent<Collider>().enabled = false;

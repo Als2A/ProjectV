@@ -29,7 +29,7 @@ public class Evt_TutoPistol : MonoBehaviour
 
             Part_00();
 
-            Invoke("Part_01", 1f);
+            Invoke("Part_01", 2f);
         }
     }
 
@@ -37,27 +37,20 @@ public class Evt_TutoPistol : MonoBehaviour
     {
         Puerta.AudioPuertaClose();  
         Puerta.Abertura = 0;
-
-        Invoke("PuertaClose", 0.5f);
-
-    }
-
-    void PuertaClose()
-    {
         Puerta.Locked = true;
     }
 
+  
+
     void Part_01()
     {
-        Voices();
-
-        //Invoke("EquipGun", 4f);        
+        Voices();             
     }
 
     void Voices()
     {
-        Subtitulos.SaveSubtitle("Esto no me gusta nada", 4f, Voces[0]);
-        Subtitulos.SaveSubtitle("Tío solamente nos llaman por unos gritos, calma la familia, y si necesitas ayuda avisame por el walkie.", 4f, Voces[1]);
+        Subtitulos.SaveSubtitle("Esto no me gusta nada", 2.5f, Voces[0]);
+        Subtitulos.SaveSubtitle("Tío solamente nos llaman por unos gritos, calma la familia, y si necesitas ayuda avisame por el walkie.", 7.5f, Voces[1]);
         //Subtitulos.SaveSubtitle("", 4f, Voces[1]);
 
         Subtitulos.isOn = true;

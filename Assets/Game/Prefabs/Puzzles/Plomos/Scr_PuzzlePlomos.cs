@@ -12,6 +12,7 @@ public class Scr_PuzzlePlomos : MonoBehaviour
     public bool PuzzleDesactivate;
 
     public GameObject[] Lights;
+    public AudioSource Audio;
 
 
 
@@ -70,6 +71,8 @@ public class Scr_PuzzlePlomos : MonoBehaviour
 
     void PlomosDesactive()
     {
+        Audio.Play();
+
         int PlomosCambiar = Random.Range(3,6);
 
         for (int i = 0; i < PlomosCambiar; i++)

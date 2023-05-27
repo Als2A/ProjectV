@@ -70,6 +70,7 @@ public class Scr_PuzzleRanuras_Munieca : MonoBehaviour
                     llaveAnimator = ObjectInHand.GetComponent<Animator>();
 
                     Puerta.Locked = true;
+                    Puerta.AudioPuertaClose();
                     Puerta.ResetFollowPos();
                     Invoke("AbrirPuerta", 40f);
 

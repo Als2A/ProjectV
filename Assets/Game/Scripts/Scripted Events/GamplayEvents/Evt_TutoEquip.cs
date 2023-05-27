@@ -24,7 +24,7 @@ public class Evt_TutoEquip : MonoBehaviour
         {
             Voices();
 
-            Invoke("subtitulosTuto", 4.5f);
+            Invoke("subtitulosTuto", 2.5f);
 
             Activate = false;
             var Collider = GetComponent<Collider>().enabled = false;
@@ -33,7 +33,7 @@ public class Evt_TutoEquip : MonoBehaviour
 
     void Voices()
     {
-        Subtitulos.SaveSubtitle("¿Podría usar la llave en el candado?", 4f, Voces[0]);
+        Subtitulos.SaveSubtitle("¿Podría usar la llave en el candado?", 2f, Voces[0]);
 
         Subtitulos.isOn = true;
         Subtitulos.TextDone = true;
@@ -49,8 +49,8 @@ public class Evt_TutoEquip : MonoBehaviour
 
     void subtitulosTuto()
     {
-        SubtitulosTuto.SaveSubtitle("Pulsa [E] para abrir el inventario", 4f);
-        SubtitulosTuto.SaveSubtitle("Equipate la llave para interactuar con el candado", 4f);
+        SubtitulosTuto.SaveSubtitle("Pulsa [E] para abrir el inventario", 2.5f);
+        SubtitulosTuto.SaveSubtitle("Equipate la llave para interactuar con el candado", 2.5f);
 
         SubtitulosTuto.isOn = true;
         SubtitulosTuto.TextDone = true;

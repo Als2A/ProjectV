@@ -31,6 +31,12 @@ public class Scr_demon_Scream_High : MonoBehaviour
     public float DistanceJump = 1.5f;
     public float AlturaJump = 0.8f;
 
+
+    void Awake()
+    {
+        Invoke("ParentDesactivate", 30f);
+    }
+
     // Start is called before the first frame update
     void Start()
     {
