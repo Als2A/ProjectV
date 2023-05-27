@@ -26,9 +26,9 @@ public class Scr_MouseLook : MonoBehaviour
     void Start()
     {
         playerBody = transform.parent.parent.parent.GetComponent<Transform>();
+        //Cursor.lockState = CursorLockMode.Locked;
 
-        if (Inputs.Inputs.currentActionMap == Inputs.PlayerMap)
-        { Cursor.lockState = CursorLockMode.Locked; }
+        Invoke("StartCursor",1f);
     }
 
     // Update is called once per frame
@@ -65,6 +65,12 @@ public class Scr_MouseLook : MonoBehaviour
             }
         }
            
+    }
+
+    public void StartCursor()
+    {
+        if (Inputs.Inputs.currentActionMap == Inputs.PlayerMap)
+        { Cursor.lockState = CursorLockMode.Locked; }
     }
 
     public void CancelLock()

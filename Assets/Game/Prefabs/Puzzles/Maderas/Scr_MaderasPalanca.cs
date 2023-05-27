@@ -38,8 +38,8 @@ public class Scr_MaderasPalanca : MonoBehaviour
                     //Animacion de llave
                     ObjectInHand.transform.parent = gameObject.transform;
 
-                    ObjectInHand.transform.localPosition = Vector3.forward * -0.50f;
-                    ObjectInHand.transform.localRotation = Quaternion.Euler(Vector3.right * 90f);
+                    ObjectInHand.transform.localPosition = Vector3.forward * 0.50f;
+                    ObjectInHand.transform.localRotation = Quaternion.Euler(Vector3.right * -90f);
 
                     UsingObject.gameObject.GetComponent<Collider>().enabled = false;
 

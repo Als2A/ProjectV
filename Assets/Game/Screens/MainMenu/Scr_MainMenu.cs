@@ -29,6 +29,7 @@ public class Scr_MainMenu : MonoBehaviour
     void Start()
     {
         Inputs.Inputs.SwitchCurrentActionMap("Menu");
+        Cursor.lockState = CursorLockMode.None;
     }
 
     // Update is called once per frame

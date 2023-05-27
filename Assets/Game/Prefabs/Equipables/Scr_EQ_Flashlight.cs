@@ -11,6 +11,8 @@ public class Scr_EQ_Flashlight : MonoBehaviour
 
     public Scr_ScripteableInventory Data;
 
+    public AudioSource Audio;
+
     // Start is called before the first frame update
     void Start()
     {
@@ -24,7 +26,10 @@ public class Scr_EQ_Flashlight : MonoBehaviour
         {
             Object.PrimaryAction = false;
 
-            if(!LightOn)
+            Audio.pitch = Random.Range(1.9f, 2.2f);
+            Audio.Play();
+
+            if (!LightOn)
             {
                 Light.SetActive(true);
                 LightOn = true;
@@ -38,7 +43,7 @@ public class Scr_EQ_Flashlight : MonoBehaviour
 
         if(LightOn)
         {
-            Data.Variant -= 1 * Time.deltaTime;
+            Data.Variant -= 0.10f * Time.deltaTime;
         }
 
         if(Data.Variant <= 0)

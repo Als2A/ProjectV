@@ -12,6 +12,8 @@ public class Scr_CandadoRanuras : MonoBehaviour
     public Scr_Puerta DoorLockA;
     public Scr_Puerta DoorLockB;
 
+    public AudioSource AudioDone;
+
     // Start is called before the first frame update
     void Start()
     {
@@ -36,6 +38,9 @@ public class Scr_CandadoRanuras : MonoBehaviour
 
         if (Locks == 0 && !Inputs.ActionOne)
         {
+            if(AudioDone != null)
+            AudioDone.Play();
+
             Locked = false;
             DoorLockA.Locked = false;
 

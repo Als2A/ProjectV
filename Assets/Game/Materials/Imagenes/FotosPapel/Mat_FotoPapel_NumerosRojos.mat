@@ -50,8 +50,8 @@ Material:
         m_Scale: {x: 1, y: 1}
         m_Offset: {x: 0, y: 0}
     - _BaseColorMap:
-        m_Texture: {fileID: 2800000, guid: 65db5df3fe264da4c8016d0007e0ba77, type: 3}
-        m_Scale: {x: 0.86, y: 1.69}
+        m_Texture: {fileID: 2800000, guid: 192b48f8d159cce4482689642cda5e1c, type: 3}
+        m_Scale: {x: 0.88, y: 1.69}
         m_Offset: {x: -0.93, y: 0.01}
     - _BentNormalMap:
         m_Texture: {fileID: 0}
@@ -86,8 +86,8 @@ Material:
         m_Scale: {x: 1, y: 1}
         m_Offset: {x: 0, y: 0}
     - _MainTex:
-        m_Texture: {fileID: 2800000, guid: 65db5df3fe264da4c8016d0007e0ba77, type: 3}
-        m_Scale: {x: 0.86, y: 1.69}
+        m_Texture: {fileID: 2800000, guid: 192b48f8d159cce4482689642cda5e1c, type: 3}
+        m_Scale: {x: 0.88, y: 1.69}
         m_Offset: {x: -0.93, y: 0.01}
     - _MaskMap:
         m_Texture: {fileID: 2800000, guid: 7a576981a0782ac41a547e65c253206d, type: 3}
@@ -139,7 +139,7 @@ Material:
         m_Offset: {x: 0, y: 0}
     m_Ints: []
     m_Floats:
-    - _AORemapMax: 1
+    - _AORemapMax: 0
     - _AORemapMin: 0
     - _ATDistance: 1
     - _AddPrecomputedVelocity: 0
@@ -189,14 +189,14 @@ Material:
     - _HeightPoMAmplitude: 2
     - _HeightTessAmplitude: 2
     - _HeightTessCenter: 0.5
-    - _InvTilingScale: 0.7843137
+    - _InvTilingScale: 0.7782101
     - _Ior: 1.5
     - _IridescenceMask: 1
     - _IridescenceThickness: 1
     - _LinkDetailsWithBase: 1
     - _MaterialID: 1
     - _Metallic: 0
-    - _MetallicRemapMax: 1
+    - _MetallicRemapMax: 0
     - _MetallicRemapMin: 0
     - _NormalMapSpace: 0
     - _NormalScale: 1
@@ -211,7 +211,7 @@ Material:
     - _ReceivesSSRTransparent: 0
     - _RefractionModel: 0
     - _Smoothness: 0.5
-    - _SmoothnessRemapMax: 1
+    - _SmoothnessRemapMax: 0
     - _SmoothnessRemapMin: 0
     - _SpecularAAScreenSpaceVariance: 0.1
     - _SpecularAAThreshold: 0.2

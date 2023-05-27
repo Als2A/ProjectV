@@ -13,6 +13,8 @@ public class Scr_PlomoSolo : MonoBehaviour
 
     public bool isSleep;
 
+    public AudioSource Audio;
+
     // Start is called before the first frame update
     void Start()
     {
@@ -32,6 +34,9 @@ public class Scr_PlomoSolo : MonoBehaviour
 
             UsingObject.PrimaryAction = false;
             isSleep = true;
+
+            Audio.pitch = Random.Range(0.9f, 1.3f);
+            Audio.Play();
 
             Invoke("SleepOff", 0.5f);
         }

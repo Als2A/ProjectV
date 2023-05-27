@@ -34,10 +34,11 @@ public class Scr_CinematicaFinal : MonoBehaviour
             {
                 AnimStart = true;
 
-                PlayerCamera.transform.parent.parent.parent.DOMove(Ranuras.transform.position + Ranuras.transform.forward * 1f + Vector3.down * 1.6f, 2f);
+                
+                //PlayerCamera.transform.parent.parent.parent.DOMove(Ranuras.transform.position + Ranuras.transform.forward * 1f + Vector3.down * 1.6f, 2f);
                 //PlayerCamera.transform.DOLookAt(Ranuras.transform.position,2f);
 
-                PlayerCamera.GetComponentInParent<Scr_PlayerMovement>().isLock = true;
+                //PlayerCamera.GetComponentInParent<Scr_PlayerMovement>().isLock = true;
 
                 TimeLine.Play();
 
