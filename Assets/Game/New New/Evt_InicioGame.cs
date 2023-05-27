@@ -90,13 +90,16 @@ public class Evt_InicioGame : MonoBehaviour
 
     void DavidGritos()
     {
-        AudioPuertaGolpes.clip = GritosDavid[Random.Range(0, GritosDavid.Length)];
-
-        AudioPuertaGolpes.pitch = Random.Range(0.9f, 1.3f);
-        AudioPuertaGolpes.Play();
-
-
         if (Colider.enabled)
-        Invoke("DavidGritos", Random.Range(2, 4f));
+        {
+            AudioPuertaGolpes.clip = GritosDavid[Random.Range(0, GritosDavid.Length)];
+
+            AudioPuertaGolpes.pitch = Random.Range(0.9f, 1.3f);
+            AudioPuertaGolpes.Play();
+
+
+            Invoke("DavidGritos", Random.Range(2, 4f));
+        }
+        
     }
 }
