@@ -7,6 +7,8 @@ public class Scr_ButtonHover_Pause : MonoBehaviour
     Scr_Pause Menu_Pause;
     public int ButtonPos;
 
+    public AudioSource Audio;
+
     // Start is called before the first frame update
     void Start()
     {
@@ -18,6 +20,9 @@ public class Scr_ButtonHover_Pause : MonoBehaviour
     {
         if (gameObject.activeInHierarchy)
         {
+            Audio.pitch = (Random.Range(0.9f, 1.2f));
+            Audio.Play();
+
             Menu_Pause.PauseSel.transform.parent = gameObject.transform;
             Menu_Pause.PauseSel.transform.position = gameObject.transform.position;
 
