@@ -15,7 +15,7 @@ MonoBehaviour:
   id: 200
   Name: LLave
   Image: {fileID: 21300000, guid: 971a68bcc85aa1b46b2a747c1870bc18, type: 3}
-  Descripcion: Llave para abrir puertas
+  Descripcion: Llave para abrir candados
   Object_Prefab: {fileID: 5053729969380909433, guid: 4c848e51570d8cd4893ebcf155ff5148,
     type: 3}
   InspectorScale: 1

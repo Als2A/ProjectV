@@ -61,11 +61,11 @@ public class Scr_EQ_Monoculo : MonoBehaviour
         isActive = false;
 
         //Move Object
-        gameObject.transform.parent = HandObject.transform.parent;
-        gameObject.transform.localPosition = Vector3.zero + (Vector3.forward * 0.05f);
+        //gameObject.transform.parent = HandObject.transform.parent;
+        //gameObject.transform.localPosition = Vector3.zero + (Vector3.forward * 0.05f);
 
         //Open Vintege
-        Invoke("VinetaOn", 0.2f);
+        Invoke("VinetaOn", 0.1f);
         //Invoke("MonoculoFadeOff", 1f);
     }
 
@@ -87,8 +87,8 @@ public class Scr_EQ_Monoculo : MonoBehaviour
         isActive = true;
 
         //Return Object
-        gameObject.transform.parent = HandObject.transform;
-        gameObject.transform.localPosition = Vector3.zero;
+        //gameObject.transform.parent = HandObject.transform;
+        //gameObject.transform.localPosition = Vector3.zero;
 
         //Vintagge
         CancelInvoke("VinetaOn");

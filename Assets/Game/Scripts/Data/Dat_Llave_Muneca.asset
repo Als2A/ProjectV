@@ -15,7 +15,7 @@ MonoBehaviour:
   id: 200
   Name: Llave de correa
   Image: {fileID: 21300000, guid: bfd4eaf9219a68941b1ceefe9c83a88f, type: 3}
-  Descripcion: Llave para abrir puertas
+  Descripcion: "Llave para dar cuerda a un mu\xF1eco."
   Object_Prefab: {fileID: 9172686074997678138, guid: cc2631cda5a994c458929771ce7ec3ee,
     type: 3}
   InspectorScale: 1

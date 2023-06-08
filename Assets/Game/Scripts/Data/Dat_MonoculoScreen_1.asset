@@ -15,7 +15,7 @@ MonoBehaviour:
   id: 802
   Name: Pantalla Roja
   Image: {fileID: 21300000, guid: 9402effc7a952764ab5ffa398d4e5c31, type: 3}
-  Descripcion: Pantalla Roja para colocar en el Monoculo
+  Descripcion: "Pantalla Roja para colocar en el Mon\xF3culo"
   Object_Prefab: {fileID: 8425987615086134902, guid: 79c996092ff6ea24a99a9e5acceb4b0e,
     type: 3}
   InspectorScale: 1

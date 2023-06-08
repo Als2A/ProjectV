@@ -13,14 +13,14 @@ MonoBehaviour:
   m_Name: Dat_Monoculo
   m_EditorClassIdentifier: 
   id: 800
-  Name: Monoculo
+  Name: "Mon\xF3culo"
   Image: {fileID: 21300000, guid: efb6f650d543b6743a1997b2d63fe518, type: 3}
-  Descripcion: 'Instrumento para mirar a traves de el. '
+  Descripcion: "Instrumento para mirar a trav\xE9s de \xE9l. "
   Object_Prefab: {fileID: 1677396061250088059, guid: 5dfcfc42344fd46479f85572b0ab9d88,
     type: 3}
   InspectorScale: 1
   CombineObjectID: -1
-  CombineResult: {fileID: 11400000, guid: b4e4b650ef339f648873565fab32e148, type: 2}
+  CombineResult: {fileID: 11400000, guid: 6b5f93d3f9f473142b4efa454772c06f, type: 2}
   CombinePrimary: 1
   CombineDestroy: 0
   Variant: 0

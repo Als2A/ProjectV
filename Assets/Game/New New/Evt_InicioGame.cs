@@ -29,8 +29,8 @@ public class Evt_InicioGame : MonoBehaviour
     // Start is called before the first frame update
     void Start()
     {
-        Invoke("PlayGolpes",65f);
-        Invoke("DavidGritos", 67f);
+        Invoke("PlayGolpes",50f);
+        Invoke("DavidGritos", 52f);
     }
 
     // Update is called once per frame
@@ -49,11 +49,11 @@ public class Evt_InicioGame : MonoBehaviour
 
                 LastTextOff = true;
                 //Subtitulos.SaveSubtitle("David!", 4f, Voces[0]);
-                Subtitulos.SaveSubtitle("Calmate Raul estoy bien", 3f, Voces[0]);
+                Subtitulos.SaveSubtitle("Calmate Raúl estoy bien", 2f, Voces[0]);
                 Subtitulos.SaveSubtitle("Joder, te oí gritar por el walkie y he subido corriendo, aunque la puerta ahora está bloqueada.", 5.5f, Voces[1]);
-                Subtitulos.SaveSubtitle("Voy a pedir ayuda a la comisaria, intenta hacer lo que puedas.", 5f, Voces[2]);
-                Subtitulos.SaveSubtitle("De acuerdo, ves rápido.", 5f, Voces[3]);
-                Subtitulos.SaveSubtitle("Sobre todo no te metas en problemas.", 5f, Voces[4]);
+                Subtitulos.SaveSubtitle("Voy a pedir ayuda a la comisaría, intenta hacer lo que puedas.", 4f, Voces[2]);
+                Subtitulos.SaveSubtitle("De acuerdo, ves rápido.", 2f, Voces[3]);
+                Subtitulos.SaveSubtitle("Sobre todo no te metas en problemas.", 3f, Voces[4]);
 
                 Subtitulos.isOn = true;
                 Subtitulos.TextDone = true;
